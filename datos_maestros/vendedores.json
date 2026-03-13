@@ -1,0 +1,30 @@
+[
+  {
+    "Codigo":101012,
+    "Nombre":"00000",
+    "Telefono":null,
+    "Presupuesto":0,
+    "Activo":0
+  },
+  {
+    "Codigo":101011,
+    "Nombre":"DAIFER GENEY",
+    "Telefono":null,
+    "Presupuesto":6973839,
+    "Activo":1
+  },
+  {
+    "Codigo":101014,
+    "Nombre":"JOSE PEREZ",
+    "Telefono":null,
+    "Presupuesto":3550253,
+    "Activo":1
+  },
+  {
+    "Codigo":101013,
+    "Nombre":"JUNIOR MARQUEZ",
+    "Telefono":null,
+    "Presupuesto":4075954,
+    "Activo":1
+  }
+]

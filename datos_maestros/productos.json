@@ -1,0 +1,5402 @@
+[
+  {
+    "Codigo":"0105",
+    "Nombre":"L.PAST ENTERA COLANTA BOL X1000ML",
+    "PrecioBase":3550,
+    "PrecioCompra":0,
+    "Stock":999918,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0112",
+    "Nombre":"L.PAST ENTERA COLANTA BOL X500ML",
+    "PrecioBase":1790,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0223",
+    "Nombre":"ANCHETA DULCE TRADICION POR 720 G",
+    "PrecioBase":49301,
+    "PrecioCompra":0,
+    "Stock":9998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0224",
+    "Nombre":"ANCHETA ENCANTO NAVIDEÑO POR 1.220 G",
+    "PrecioBase":66120,
+    "PrecioCompra":0,
+    "Stock":10000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0225",
+    "Nombre":"AREQUIPE 220 G SOBRECOPA MINIOBLEAS22G",
+    "PrecioBase":7851,
+    "PrecioCompra":0,
+    "Stock":896,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0241",
+    "Nombre":"LONCHERA MULTISABOR COLANTA",
+    "PrecioBase":13300,
+    "PrecioCompra":0,
+    "Stock":9997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0259",
+    "Nombre":"ANCHETA COMPARTIR X 1370 G",
+    "PrecioBase":52344,
+    "PrecioCompra":0,
+    "Stock":99,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0261",
+    "Nombre":"DUO DE QUESOS COLANTA X 500 G",
+    "PrecioBase":45050,
+    "PrecioCompra":0,
+    "Stock":10000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0262",
+    "Nombre":"PERNIL DE CERDO AHUMADO B800G + TMADERA",
+    "PrecioBase":54630,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0280",
+    "Nombre":"ANCHETA ILUSION 2023",
+    "PrecioBase":85050,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0285",
+    "Nombre":"ANCHETA TRADICION 2023",
+    "PrecioBase":38726,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0289",
+    "Nombre":"COMBO CELEBRACION X 450G",
+    "PrecioBase":29146,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0290",
+    "Nombre":"COMBO DELEITE X 287G",
+    "PrecioBase":12183,
+    "PrecioCompra":0,
+    "Stock":9998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0298",
+    "Nombre":"LUHT SEMIDESCREMADA COLANTA BOLSA 900 ML",
+    "PrecioBase":3970,
+    "PrecioCompra":0,
+    "Stock":999994,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0299",
+    "Nombre":"PAQ LUHT SEMIDESCREMADA COL BOLSA 900X6U",
+    "PrecioBase":23650,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0308",
+    "Nombre":"L.UHT ENTERA COLANTA SLIM X200ML X6U",
+    "PrecioBase":9540,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0340",
+    "Nombre":"L.UHT DESLAC COLANTA BOL X1100ML",
+    "PrecioBase":4980,
+    "PrecioCompra":0,
+    "Stock":998948,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0340EC",
+    "Nombre":"PAGUE 14 LLEVE 16L. DESLA X 1100",
+    "PrecioBase":69720,
+    "PrecioCompra":0,
+    "Stock":10000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0355",
+    "Nombre":"LUHT ENTERA BOLSA X 1000 ML",
+    "PrecioBase":4265,
+    "PrecioCompra":0,
+    "Stock":999603,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0361",
+    "Nombre":"L.UHT ENTERA COLANTA BOL X1100ML X6U",
+    "PrecioBase":29650,
+    "PrecioCompra":0,
+    "Stock":996127,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0363",
+    "Nombre":"L.UHT ENTERA COLANTA BOL X900ML X6U",
+    "PrecioBase":25720,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0365",
+    "Nombre":"L.UHT ENTERA COLANTA BOL X1100ML",
+    "PrecioBase":4358,
+    "PrecioCompra":0,
+    "Stock":999948,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0365EC",
+    "Nombre":"PAGUE 14 LLEVE 16 L. ENTERA X 1100",
+    "PrecioBase":69720,
+    "PrecioCompra":0,
+    "Stock":10000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0367",
+    "Nombre":"L.UHT ENTERA COLANTA BOL X900ML",
+    "PrecioBase":3988,
+    "PrecioCompra":0,
+    "Stock":997197,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0367EC",
+    "Nombre":"PAGUE 13 LLEVE 14 L.ENTERX900",
+    "PrecioBase":55832,
+    "PrecioCompra":0,
+    "Stock":9935,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0369",
+    "Nombre":"L.UHT ENTERA COLANTA BOL X200ML",
+    "PrecioBase":901,
+    "PrecioCompra":0,
+    "Stock":991892,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0369EC",
+    "Nombre":"PAGUE 7 LLEVE 8 L.ENTERX200",
+    "PrecioBase":7208,
+    "PrecioCompra":0,
+    "Stock":9968,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0370",
+    "Nombre":"L.UHT DESLAC COLANTA BOL X900ML",
+    "PrecioBase":4320,
+    "PrecioCompra":0,
+    "Stock":997696,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0371",
+    "Nombre":"L.UHT DESLAC COLANTA BOL X900ML X6U",
+    "PrecioBase":25720,
+    "PrecioCompra":0,
+    "Stock":10000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0378",
+    "Nombre":"L.UHT DESC COLANTA BOL X900ML",
+    "PrecioBase":4530,
+    "PrecioCompra":0,
+    "Stock":967849,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0379",
+    "Nombre":"L.UHT DESC COLANTA BOL X900ML X12U",
+    "PrecioBase":53650,
+    "PrecioCompra":0,
+    "Stock":999581,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0380",
+    "Nombre":"L.UHT DESC COLANTA BOL X900ML X6U",
+    "PrecioBase":26840,
+    "PrecioCompra":0,
+    "Stock":909285,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0409",
+    "Nombre":"TAMPICO CERO AZUCAR GARRAFA 2L",
+    "PrecioBase":6870,
+    "PrecioCompra":0,
+    "Stock":998600,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0423",
+    "Nombre":"L.UHT ENTERA COLANTA EDGE X1000ML",
+    "PrecioBase":5190,
+    "PrecioCompra":0,
+    "Stock":977839,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0424",
+    "Nombre":"L.UHT ENTERA COLANTA EDGE X1000ML X6U",
+    "PrecioBase":30410,
+    "PrecioCompra":0,
+    "Stock":999796,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0425",
+    "Nombre":"L.UHT SEMIDESC COLANTA EDGE X1000ML",
+    "PrecioBase":5180,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0426",
+    "Nombre":"L.UHT SEMIDESC COLANTA EDGE X1000ML X6U",
+    "PrecioBase":30250,
+    "PrecioCompra":0,
+    "Stock":999999,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0427",
+    "Nombre":"L.UHT DESL SEMI COLANTA EDGE X1L",
+    "PrecioBase":5190,
+    "PrecioCompra":0,
+    "Stock":999840,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0428",
+    "Nombre":"L.UHT DESL SEMI COLANTA EDGE X1L X6U",
+    "PrecioBase":30410,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0429",
+    "Nombre":"L.UHT DESC COLANTA EDGE X1000ML",
+    "PrecioBase":5180,
+    "PrecioCompra":0,
+    "Stock":999987,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0430",
+    "Nombre":"L.UHT DESC COLANTA EDGE X1000ML X6U",
+    "PrecioBase":30250,
+    "PrecioCompra":0,
+    "Stock":999801,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0431",
+    "Nombre":"L.UHT DESLAC DESC COLANTA EDGE X1000ML",
+    "PrecioBase":5160,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0432",
+    "Nombre":"L.UHT DESLAC DESC COLANTA EDGE X1000ML6U",
+    "PrecioBase":30190,
+    "PrecioCompra":0,
+    "Stock":999982,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0444",
+    "Nombre":"L.UHT DESLAC MONTEFRIO BOLSA X900ML",
+    "PrecioBase":3570,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0445",
+    "Nombre":"L.UHT DESLAC MONTEFRIO BOLSA X900ML X6U",
+    "PrecioBase":21200,
+    "PrecioCompra":0,
+    "Stock":998339,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0450",
+    "Nombre":"LECHE UHT ENTERA BOLSA 400ML",
+    "PrecioBase":1609,
+    "PrecioCompra":0,
+    "Stock":988173,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0450EC",
+    "Nombre":"PAGUE 8 LLEVE 9 L.ENTER X 400",
+    "PrecioBase":14481,
+    "PrecioCompra":0,
+    "Stock":9560,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0451",
+    "Nombre":"LECHE UHT DESLACTOSADA BOLSA 400ML",
+    "PrecioBase":1584,
+    "PrecioCompra":0,
+    "Stock":994624,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0451EC",
+    "Nombre":"P0AGUE 7 LLEVE 8 L. DESLA X 400",
+    "PrecioBase":12672,
+    "PrecioCompra":0,
+    "Stock":9755,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0457",
+    "Nombre":"LPOLVO DESCREMADA SLIGHT COLANTAX380G",
+    "PrecioBase":13390,
+    "PrecioCompra":0,
+    "Stock":999992,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0458",
+    "Nombre":"LPOLVO DESLACTOSADA SEMIDES COLANTAX380G",
+    "PrecioBase":14520,
+    "PrecioCompra":0,
+    "Stock":999832,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0459",
+    "Nombre":"YOGUR ENTERO FRESA BOLSA X 900G",
+    "PrecioBase":7895,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0460",
+    "Nombre":"YOGUR ENTERO MORA BOLSA X 900G",
+    "PrecioBase":7987,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0461",
+    "Nombre":"YOGUR ENTERO MELOCOTON X 900G",
+    "PrecioBase":7895,
+    "PrecioCompra":0,
+    "Stock":999933,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0470",
+    "Nombre":"QUESO MOZARELLA CUBICADO X 500G",
+    "PrecioBase":19320,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0472",
+    "Nombre":"L.UHT SEMIDESCREMADA MONTEFRIO BOL 900ML",
+    "PrecioBase":3570,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0473",
+    "Nombre":"L.UHT SEMIDESCREMA MONTEFRIO BOL 900MLX6",
+    "PrecioBase":21200,
+    "PrecioCompra":0,
+    "Stock":999978,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0480",
+    "Nombre":"CHORIZO ARGENTINO x 500 G",
+    "PrecioBase":18140,
+    "PrecioCompra":0,
+    "Stock":999958,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0481",
+    "Nombre":"CHORIZO DE ANTAÑO  x 500 G",
+    "PrecioBase":17481,
+    "PrecioCompra":0,
+    "Stock":999870,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0482",
+    "Nombre":"COSTILLA AHUMADA PREASADA COLANTA X 500G",
+    "PrecioBase":23146,
+    "PrecioCompra":0,
+    "Stock":862773,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0496",
+    "Nombre":"LUHT ENTERA COLANTA BOLSA X1000MLX6U",
+    "PrecioBase":27650,
+    "PrecioCompra":0,
+    "Stock":996159,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0497",
+    "Nombre":"LUHT DESLACTOSADA COLANTA BOLSA X 1000ML",
+    "PrecioBase":4620,
+    "PrecioCompra":0,
+    "Stock":932474,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0498",
+    "Nombre":"LUHT DESLAC COLANTA BOL X1000MLX6U",
+    "PrecioBase":27650,
+    "PrecioCompra":0,
+    "Stock":997742,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0505",
+    "Nombre":"LECHE POLVO ENTERA COLANTA GRANEL X25KG",
+    "PrecioBase":716925,
+    "PrecioCompra":0,
+    "Stock":999932,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"050A",
+    "Nombre":"LECHE POLVO ENTERA X350G DE LA CUESTA",
+    "PrecioBase":0,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0517",
+    "Nombre":"LECHE POLVO ENTERA COLANTA X200G",
+    "PrecioBase":7210,
+    "PrecioCompra":0,
+    "Stock":999862,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0521",
+    "Nombre":"LECHE POLVO ENTERA COLANTA X25G X12U",
+    "PrecioBase":11623,
+    "PrecioCompra":0,
+    "Stock":999995,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0521EC",
+    "Nombre":"PAGUE 11 LLEVE 12 L.POLVO RISTRA",
+    "PrecioBase":11623,
+    "PrecioCompra":42168,
+    "Stock":999976,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0522",
+    "Nombre":"LECHE POLVO ENTERA COLANTA X25G",
+    "PrecioBase":1090,
+    "PrecioCompra":0,
+    "Stock":99997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0523",
+    "Nombre":"LECHE POLVO MONTEFRIO X380G",
+    "PrecioBase":12120,
+    "PrecioCompra":0,
+    "Stock":999987,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0528",
+    "Nombre":"LECHE POLVO MONTEFRIO X900G",
+    "PrecioBase":27270,
+    "PrecioCompra":0,
+    "Stock":999998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0531",
+    "Nombre":"LECHE POLVO ENTERA COLANTA X380G",
+    "PrecioBase":12860,
+    "PrecioCompra":0,
+    "Stock":999954,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0532",
+    "Nombre":"LECHE POLVO ENTERA COLANTA X900G",
+    "PrecioBase":29360,
+    "PrecioCompra":0,
+    "Stock":996440,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0550",
+    "Nombre":"LECHE POLVO DESC COLANTA GRANEL X25KG",
+    "PrecioBase":687300,
+    "PrecioCompra":0,
+    "Stock":9997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0613",
+    "Nombre":"L.UHT SEMIDESC COLANTA BOL X1100ML",
+    "PrecioBase":4760,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0614",
+    "Nombre":"L.UHT SEMIDESC COLANTA BOL X1100ML X6U",
+    "PrecioBase":28340,
+    "PrecioCompra":0,
+    "Stock":999994,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0619",
+    "Nombre":"L.UHT DESLAC COLANTA BOL X1100ML X6U",
+    "PrecioBase":29650,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0620",
+    "Nombre":"L.UHT ENTERA MONTEFRIO BOLSA X900ML",
+    "PrecioBase":3570,
+    "PrecioCompra":0,
+    "Stock":999800,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0621",
+    "Nombre":"L.UHT ENTERA MONTEFRIO BOLSA X900ML X6U",
+    "PrecioBase":21200,
+    "PrecioCompra":0,
+    "Stock":999789,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0683",
+    "Nombre":"L.UHT ENTERA COLANTA BOL X200ML X6U",
+    "PrecioBase":6410,
+    "PrecioCompra":0,
+    "Stock":999981,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0723",
+    "Nombre":"LPOLVO ENTERA 900G GRATIS AREQUIPE 250G",
+    "PrecioBase":29360,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0724",
+    "Nombre":"LPOLVO ENTERA 380G GRATIS AREQUIPE 100G",
+    "PrecioBase":12860,
+    "PrecioCompra":0,
+    "Stock":999946,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0749",
+    "Nombre":"AREQUIPE X450G SOBRECOPA PALITR SUSANITA",
+    "PrecioBase":11110,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0805",
+    "Nombre":"SUERO EN POLVO COLANTA X25KG",
+    "PrecioBase":204090,
+    "PrecioCompra":0,
+    "Stock":999994,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"082714",
+    "Nombre":"BOLSA ECOLOGICA REGALO",
+    "PrecioBase":3000,
+    "PrecioCompra":0,
+    "Stock":999811,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"087460",
+    "Nombre":"VACA MUSICAL PROMOCIONAL COLANTA",
+    "PrecioBase":4901,
+    "PrecioCompra":0,
+    "Stock":999862,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0911",
+    "Nombre":"CREMA DE LECHE PASTEURIZ COLANTA  X9700G",
+    "PrecioBase":173230,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0921",
+    "Nombre":"QUESO MONTERREY JACK TAJADO X 250G",
+    "PrecioBase":19040,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"0922",
+    "Nombre":"AREQUIPE COLANTA TARRINA X 220G",
+    "PrecioBase":5990,
+    "PrecioCompra":0,
+    "Stock":999791,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1007",
+    "Nombre":"FRESCOLANTA UHT SURT BOL X200ML X6U",
+    "PrecioBase":9021,
+    "PrecioCompra":0,
+    "Stock":998837,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1007B",
+    "Nombre":"FRESCOLANTA SURT BOLSA X6 GRATIS 1 UNI",
+    "PrecioBase":9020,
+    "PrecioCompra":42168,
+    "Stock":999931,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1008",
+    "Nombre":"FRESCOLANTA UHT CHOC BOL X200ML",
+    "PrecioBase":1570,
+    "PrecioCompra":0,
+    "Stock":999997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1009",
+    "Nombre":"FRESCOLANTA UHT FRESA BOL X200ML",
+    "PrecioBase":1570,
+    "PrecioCompra":0,
+    "Stock":999994,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1010",
+    "Nombre":"FRESCOLANTA UHT VLLA BOL X200ML",
+    "PrecioBase":1570,
+    "PrecioCompra":0,
+    "Stock":999998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"101010",
+    "Nombre":"PAQUETE DERIVADO",
+    "PrecioBase":10000,
+    "PrecioCompra":8239,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1049",
+    "Nombre":"FRESCOLANTA UHT SURT SLIM X200ML X6U",
+    "PrecioBase":12831,
+    "PrecioCompra":0,
+    "Stock":999992,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1050",
+    "Nombre":"FRESCOLANTA UHT CHOC SLIM X200ML",
+    "PrecioBase":2290,
+    "PrecioCompra":0,
+    "Stock":9969,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1051",
+    "Nombre":"FRESCOLANTA UHT FRESA SLIM X200ML",
+    "PrecioBase":2290,
+    "PrecioCompra":0,
+    "Stock":999823,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1052",
+    "Nombre":"FRESCOLANTA UHT VLLA SLIM X200ML",
+    "PrecioBase":2290,
+    "PrecioCompra":0,
+    "Stock":999976,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1057",
+    "Nombre":"FRESCOLANTA CHOCOLATE UHT SLIM 5X6",
+    "PrecioBase":11440,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1060",
+    "Nombre":"FRESCOLANTA UHT SURT SLIM X200ML X3U",
+    "PrecioBase":6580,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1063",
+    "Nombre":"AVENA UHT COLANTA BOL X200ML X6U",
+    "PrecioBase":8316,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1064",
+    "Nombre":"AVENA UHT COLANTA BOL X200ML",
+    "PrecioBase":1406,
+    "PrecioCompra":0,
+    "Stock":997842,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1064EC",
+    "Nombre":"PAGUE 13 LLEVE 16 AVENA BOLSA X200",
+    "PrecioBase":22496,
+    "PrecioCompra":0,
+    "Stock":9875,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1065",
+    "Nombre":"AVENA UHT COLANTA SLIM X200ML X6U",
+    "PrecioBase":11275,
+    "PrecioCompra":0,
+    "Stock":999919,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1066",
+    "Nombre":"AVENA COLANTA UHT CANELA SLIM X200ML",
+    "PrecioBase":2026,
+    "PrecioCompra":0,
+    "Stock":998708,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1104",
+    "Nombre":"FRESCOLANTA UHT CHOC SLIM X200ML X6U",
+    "PrecioBase":12831,
+    "PrecioCompra":0,
+    "Stock":999954,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1105",
+    "Nombre":"FRESCOLANTA UHT CHOC BOL X200ML X6U",
+    "PrecioBase":9021,
+    "PrecioCompra":0,
+    "Stock":999939,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1135",
+    "Nombre":"AVENA NATUR UHT COLANTA BOL X200ML",
+    "PrecioBase":1730,
+    "PrecioCompra":0,
+    "Stock":998942,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1136",
+    "Nombre":"AVENA NATUR UHT COLANTA BOL X200ML X6U",
+    "PrecioBase":9935,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1137",
+    "Nombre":"AVENA NATUR UHT COLANTA SLIM X200ML",
+    "PrecioBase":2026,
+    "PrecioCompra":0,
+    "Stock":999857,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1138",
+    "Nombre":"AVENA NATUR UHT COLANTA SLIM X200ML X6U",
+    "PrecioBase":11275,
+    "PrecioCompra":0,
+    "Stock":999965,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1142",
+    "Nombre":"AVENA NATUR UHT COLANTA EDGE X1000ML",
+    "PrecioBase":6819,
+    "PrecioCompra":0,
+    "Stock":999969,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1143",
+    "Nombre":"AVENA NATUR UHT COLANTA BOL X1100ML",
+    "PrecioBase":6103,
+    "PrecioCompra":0,
+    "Stock":999984,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1180",
+    "Nombre":"MORTADELA SELECCIONAD COLANTA 225G 15TAJ",
+    "PrecioBase":4841,
+    "PrecioCompra":0,
+    "Stock":999902,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1181",
+    "Nombre":"MORTADELA SELECCIONADA COLANTA 105G 7TAJ",
+    "PrecioBase":2310,
+    "PrecioCompra":0,
+    "Stock":999605,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1182",
+    "Nombre":"MORTADELA SELECCIONAD COLANTA 450G 30TAJ",
+    "PrecioBase":9340,
+    "PrecioCompra":0,
+    "Stock":999953,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1183",
+    "Nombre":"SALCHICHA TIPICA COLANTA X 225 G - 9 UDS",
+    "PrecioBase":5420,
+    "PrecioCompra":0,
+    "Stock":999960,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1203",
+    "Nombre":"L.UHT ENTERA PROLINCO BOLSA X900ML",
+    "PrecioBase":3570,
+    "PrecioCompra":0,
+    "Stock":966712,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1204",
+    "Nombre":"L.UHT ENTERA PROLINCO BOLSA X900ML X6U",
+    "PrecioBase":21200,
+    "PrecioCompra":0,
+    "Stock":999082,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1224",
+    "Nombre":"L.UHT DESLAC SEMI PROLINCO BOL X900ML",
+    "PrecioBase":3570,
+    "PrecioCompra":0,
+    "Stock":999996,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1225",
+    "Nombre":"L.UHT DESLAC SEMI PROLINCO BOL X900ML X6",
+    "PrecioBase":21200,
+    "PrecioCompra":0,
+    "Stock":971713,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1233",
+    "Nombre":"L.UHT ENTERA PROLINCO BOLSA X400ML",
+    "PrecioBase":1620,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1296",
+    "Nombre":"COMBO TENTACION 470G",
+    "PrecioBase":24795,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1298",
+    "Nombre":"COMBO SANDUCHE 500G (JAMON+QTIPOAMERICA)",
+    "PrecioBase":15470,
+    "PrecioCompra":0,
+    "Stock":997783,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1305",
+    "Nombre":"QUESO BLANCO INDUSTRIAL COLANTA X1KG",
+    "PrecioBase":26320,
+    "PrecioCompra":0,
+    "Stock":999963,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1371",
+    "Nombre":"YAGUR BOLSA 145ML X 7UND",
+    "PrecioBase":6770,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1408",
+    "Nombre":"QUESITO MONTEFRIO X 200G",
+    "PrecioBase":4110,
+    "PrecioCompra":0,
+    "Stock":998814,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1416",
+    "Nombre":"CUAJADA COLANTA X500G",
+    "PrecioBase":11500,
+    "PrecioCompra":0,
+    "Stock":999948,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1417",
+    "Nombre":"CUAJADA COLANTA X250G",
+    "PrecioBase":5940,
+    "PrecioCompra":0,
+    "Stock":999987,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1424",
+    "Nombre":"QUESITO MONTEFRIO X 380G",
+    "PrecioBase":7480,
+    "PrecioCompra":0,
+    "Stock":999985,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1426",
+    "Nombre":"QUESITO COLANTA X 380G",
+    "PrecioBase":7980,
+    "PrecioCompra":0,
+    "Stock":999166,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1429",
+    "Nombre":"QUESITO MONTEFRIO AL VACIO X 200G",
+    "PrecioBase":4110,
+    "PrecioCompra":0,
+    "Stock":995910,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1432",
+    "Nombre":"QUESITO COLANTA AL VACIO X 380G",
+    "PrecioBase":7980,
+    "PrecioCompra":0,
+    "Stock":999992,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1455",
+    "Nombre":"QUESITO COLANTA AL VACIO X450G",
+    "PrecioBase":9930,
+    "PrecioCompra":0,
+    "Stock":999486,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1460",
+    "Nombre":"QUESITO COLANTA AL VACIO X250G",
+    "PrecioBase":5520,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1517",
+    "Nombre":"QUESO BLANCO COLANTA X2KG",
+    "PrecioBase":55730,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1520",
+    "Nombre":"QUESO BLANCO COLANTA X1KG",
+    "PrecioBase":27900,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1521",
+    "Nombre":"QUESO BLANCO COLANTA X125G",
+    "PrecioBase":3710,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1540",
+    "Nombre":"QUESO BLANCO COLANTA X500G",
+    "PrecioBase":14350,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1545",
+    "Nombre":"QUESO BLANCO COLANTA X250G",
+    "PrecioBase":7210,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1552",
+    "Nombre":"QUESO CAMPESINO COLANTA X250G",
+    "PrecioBase":7210,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1564",
+    "Nombre":"QUESO PARA ASAR COLANTA X250G",
+    "PrecioBase":9790,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1565",
+    "Nombre":"QUESO PARA ASAR COLANTA X500G",
+    "PrecioBase":18390,
+    "PrecioCompra":0,
+    "Stock":999999,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1566",
+    "Nombre":"QUESO PARA ASAR COLANTA +\/- 1KG",
+    "PrecioBase":30820,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1568",
+    "Nombre":"2Q BLANCOX250G GRATIS AREQ DOYPACKX100G",
+    "PrecioBase":14430,
+    "PrecioCompra":0,
+    "Stock":999998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1569",
+    "Nombre":"2Q BLANCOX125G GRATIS 2 AREQU SACHETX20G",
+    "PrecioBase":7410,
+    "PrecioCompra":0,
+    "Stock":999850,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1601",
+    "Nombre":"2QUESOBLANCO125 GRATISYAGURVASO150",
+    "PrecioBase":7410,
+    "PrecioCompra":0,
+    "Stock":999955,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1631",
+    "Nombre":"QUESO COSTEÑO COLANTA BLOQUE +\/- 2.5KG",
+    "PrecioBase":32290,
+    "PrecioCompra":0,
+    "Stock":999999,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1633",
+    "Nombre":"QUESO COSTEÑO COLANTA  +\/- 10 KG",
+    "PrecioBase":32070,
+    "PrecioCompra":0,
+    "Stock":999986,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1641",
+    "Nombre":"QUESO COSTEÑO COLANTA BLOQUE X1000G",
+    "PrecioBase":29410,
+    "PrecioCompra":0,
+    "Stock":999989,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1642",
+    "Nombre":"QUESO COSTEÑO COLANTA BLOQUE X500G",
+    "PrecioBase":14860,
+    "PrecioCompra":0,
+    "Stock":999885,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1643",
+    "Nombre":"QUESO COSTEÑO COLANTA RALLADO X500G",
+    "PrecioBase":15260,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1645",
+    "Nombre":"QUESO COSTEÑO COLANTA MOLIDO X1000G",
+    "PrecioBase":30310,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1710",
+    "Nombre":"QUESO HOLANDES COLANTA TAJADO X200G",
+    "PrecioBase":13361,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1764",
+    "Nombre":"QUESO HOLANDES COLANTA BLOQUE +\/- 2KG",
+    "PrecioBase":57370,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1765",
+    "Nombre":"QUESO HOLANDES TIPO GOUADA COLANTA X2KG",
+    "PrecioBase":114661,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1770",
+    "Nombre":"QUESO HOLANDES COLANTA X475G",
+    "PrecioBase":34670,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1775",
+    "Nombre":"QUESO HOLANDES COLANTA X250G",
+    "PrecioBase":20060,
+    "PrecioCompra":0,
+    "Stock":999999,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1781",
+    "Nombre":"QUESO HOLANDES NAVIDEÑO COLANTA X475G",
+    "PrecioBase":35380,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1782",
+    "Nombre":"QUESO HOLANDES NAVIDEÑO COLANTA X250G",
+    "PrecioBase":20060,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1787",
+    "Nombre":"Q. HOLANDES EDI ESP 250GR (PEPPERONCINO)",
+    "PrecioBase":20051,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1822",
+    "Nombre":"QUESO CHEDDAR CON PIMENTON BLOQUE X 200G",
+    "PrecioBase":13411,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1830",
+    "Nombre":"QUESO FUNDIDO COLANTA TAJADO X250G",
+    "PrecioBase":9780,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1840",
+    "Nombre":"QUESO FUNDIDO UNTABLE COLANTA X200G",
+    "PrecioBase":7281,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1904",
+    "Nombre":"QUESO PARMESANO COLANTA BLOQUE X1KG",
+    "PrecioBase":75561,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1906",
+    "Nombre":"QUESO PARMESANO COLANTA CUÑA X1KG",
+    "PrecioBase":78800,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1922",
+    "Nombre":"QUESO PARMESANO RALLADO COLANTA X1KG",
+    "PrecioBase":87620,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1923",
+    "Nombre":"QUESO PARMESANO RALLADO COLANTA X500G",
+    "PrecioBase":44251,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1925",
+    "Nombre":"QUESO PARMESANO RALLADO COLANTA X250G",
+    "PrecioBase":22211,
+    "PrecioCompra":0,
+    "Stock":999997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1930",
+    "Nombre":"QUESO PARMESANO RALLADO COLANTA X100G",
+    "PrecioBase":9841,
+    "PrecioCompra":0,
+    "Stock":999975,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1931",
+    "Nombre":"QUESO PARMESANO RALLADO COLANTA X40G",
+    "PrecioBase":4170,
+    "PrecioCompra":0,
+    "Stock":999980,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1951",
+    "Nombre":"QUESO EMMENTAL COLANTA CUÑA",
+    "PrecioBase":85270,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1953",
+    "Nombre":"QUESO TILSIT COLANTA CUÑA",
+    "PrecioBase":72611,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1955",
+    "Nombre":"QUESO GRUYERE COLANTA CUÑA",
+    "PrecioBase":81750,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1957",
+    "Nombre":"QUESO CHEDDAR COLANTA TAJADO X200G",
+    "PrecioBase":13411,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1960",
+    "Nombre":"QUESO CHEDDAR COLANTA CUÑA",
+    "PrecioBase":70481,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1966",
+    "Nombre":"QUESO MONTEREY JACK COLANTA X475G",
+    "PrecioBase":32860,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1967",
+    "Nombre":"QUESO MONTEREY JACK COLANTA BQUE +\/- 2KG",
+    "PrecioBase":56360,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1968",
+    "Nombre":"QUESO MONTEREY JACK COLANTA X250G",
+    "PrecioBase":18300,
+    "PrecioCompra":0,
+    "Stock":1000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1977",
+    "Nombre":"QUESO PECORINO COLANTA CUÑA X1KG",
+    "PrecioBase":69631,
+    "PrecioCompra":0,
+    "Stock":999998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1985",
+    "Nombre":"QUESO PECORINO COLANTA BLOQUE X1KG",
+    "PrecioBase":67851,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1990",
+    "Nombre":"QUESO CINCUENTENARIO COLANTA X475G",
+    "PrecioBase":32860,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"1991",
+    "Nombre":"QUESO CINCUENTENARIO COLANTA X250G",
+    "PrecioBase":18300,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2009",
+    "Nombre":"QUESO DOBLECREMA GANITAS COLANTA X50G 6U",
+    "PrecioBase":13310,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2012",
+    "Nombre":"QUESO MOZZARELLA DE BUFALA COLANTA X450G",
+    "PrecioBase":18240,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2013",
+    "Nombre":"QUESO MOZZARELLA DE BUFALA COLANTA X250G",
+    "PrecioBase":10550,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2020",
+    "Nombre":"QUESILLO COLANTA X250G",
+    "PrecioBase":8790,
+    "PrecioCompra":0,
+    "Stock":999962,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2025",
+    "Nombre":"QUESO MOZZARELLA COLANTA BLOQUE X2.5KG",
+    "PrecioBase":84580,
+    "PrecioCompra":0,
+    "Stock":999785,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2027",
+    "Nombre":"QUESO MOZZARELLA COLANTA BLOQUE X1KG",
+    "PrecioBase":33820,
+    "PrecioCompra":0,
+    "Stock":999677,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2030",
+    "Nombre":"QUESO MOZZARELLA COLANTA X450G",
+    "PrecioBase":16290,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2042",
+    "Nombre":"QUESO MOZZARELLA COLANTA X1KG",
+    "PrecioBase":35490,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2046",
+    "Nombre":"QUESO MOZZARELLA CUBICADO COLANTA +\/-6KG",
+    "PrecioBase":32390,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2050",
+    "Nombre":"QUESO DOBLECREMA COLANTA X2500G",
+    "PrecioBase":81340,
+    "PrecioCompra":0,
+    "Stock":999994,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2052",
+    "Nombre":"QUESO DOBLECREMA COLANTA +\/- 2.5KG",
+    "PrecioBase":28590,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2058",
+    "Nombre":"QUESO DOBLECREMA COLANTA BQUE X500G",
+    "PrecioBase":18330,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2060",
+    "Nombre":"QUESO DOBLECREMA COLANTA X250G",
+    "PrecioBase":8910,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2062",
+    "Nombre":"QUESO DOBLECREMA COLANTA TAJADO X250G",
+    "PrecioBase":10490,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2064",
+    "Nombre":"QUESO DOBLECREMA COLANTA TAJ X2KG TAJ17G",
+    "PrecioBase":68580,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2070",
+    "Nombre":"QUESO MOZZARELLA COLANTA TAJADO X2KG",
+    "PrecioBase":74350,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2072",
+    "Nombre":"QUESO MOZZARELLA COLANTA TAJADO X1KG",
+    "PrecioBase":37380,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2073",
+    "Nombre":"QUESO DOBLECREMA COLANTA TAJADO X125G",
+    "PrecioBase":4590,
+    "PrecioCompra":0,
+    "Stock":999938,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2075",
+    "Nombre":"QUESO MOZZARELLA COLANTA TAJADO X500G",
+    "PrecioBase":19580,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2080",
+    "Nombre":"QUESO MOZZARELLA COLANTA TAJADO X250G",
+    "PrecioBase":10350,
+    "PrecioCompra":0,
+    "Stock":999799,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2097",
+    "Nombre":"QUESO DOBLECREMA COLANTA X1KG",
+    "PrecioBase":33920,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2101",
+    "Nombre":"QUESO MOZZAR BUFALA FHIERB COLANTA X250G",
+    "PrecioBase":10770,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2107",
+    "Nombre":"QUESILLO TAJADO MONTEFRIO X250G",
+    "PrecioBase":8940,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2120",
+    "Nombre":"QUESO DOBLE CREMA MONTEFRIO BLOQUE 2500G",
+    "PrecioBase":64770,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2125",
+    "Nombre":"QUESO FUNDIDO AMERICANO TAJADO 250G",
+    "PrecioBase":6986,
+    "PrecioCompra":0,
+    "Stock":999990,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2126",
+    "Nombre":"QUESO DOBLE CREMA MONTEFRIO TAJADO 250G",
+    "PrecioBase":7970,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2129",
+    "Nombre":"QRELLENO CON BOCADILLO COLANTA 60Gx6U",
+    "PrecioBase":16700,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2130",
+    "Nombre":"SNACK QUESO MOZZARELLAX 6 UNDADE X180GRS",
+    "PrecioBase":11030,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2503",
+    "Nombre":"QUESO CREMA COLANTA X150G",
+    "PrecioBase":3680,
+    "PrecioCompra":0,
+    "Stock":999902,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2505",
+    "Nombre":"QUESO CREMA COLANTA CAJA X4KG",
+    "PrecioBase":78990,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2508",
+    "Nombre":"QUESO CREMA TOCINETA X 150G",
+    "PrecioBase":4350,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2515",
+    "Nombre":"QUESO CREMA COLANTA X400G",
+    "PrecioBase":8940,
+    "PrecioCompra":0,
+    "Stock":999899,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2520",
+    "Nombre":"QUESO CREMA COLANTA X230G",
+    "PrecioBase":5340,
+    "PrecioCompra":0,
+    "Stock":999882,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2529",
+    "Nombre":"QUESO CREMA SLIGHT COLANTA X230G",
+    "PrecioBase":6620,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"259",
+    "Nombre":"ANCHETA COMPARTIR X1370G",
+    "PrecioBase":50460,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2590",
+    "Nombre":"YOGUR GRIEGO COLANTA NATURAL 450 GR",
+    "PrecioBase":12130,
+    "PrecioCompra":0,
+    "Stock":998425,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2591",
+    "Nombre":"YOGUR GRIEGO COLANTA NATURAL 900GR",
+    "PrecioBase":18530,
+    "PrecioCompra":0,
+    "Stock":999998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2592",
+    "Nombre":"PAQUETE MIX YOGUR-YAGUR",
+    "PrecioBase":9851,
+    "PrecioCompra":0,
+    "Stock":998600,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"2593",
+    "Nombre":"PAQUETE PELICULA GRATIS LECHE UHT",
+    "PrecioBase":26993,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"262",
+    "Nombre":"PERNIL DE CERDO AHUMADO B800+ TMADERA",
+    "PrecioBase":50150,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"290",
+    "Nombre":"COMBO DELEITE X 287G",
+    "PrecioBase":12226,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"298",
+    "Nombre":"LECHE COLANTA SEMIDESCREMADAX900ml",
+    "PrecioBase":3590,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"3003",
+    "Nombre":"MANTEQUILLA COLANTA X10KG",
+    "PrecioBase":443900,
+    "PrecioCompra":0,
+    "Stock":999995,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"3015",
+    "Nombre":"MANTEQUILLA COLANTA X500G",
+    "PrecioBase":25281,
+    "PrecioCompra":0,
+    "Stock":999997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"3023",
+    "Nombre":"MANTEQUILLA CON SAL X250G",
+    "PrecioBase":12820,
+    "PrecioCompra":0,
+    "Stock":999985,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"3024",
+    "Nombre":"MANTEQUILLA CON SAL X125G",
+    "PrecioBase":6761,
+    "PrecioCompra":0,
+    "Stock":999961,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"3025",
+    "Nombre":"MANTEQUILLA COLANTA X250G",
+    "PrecioBase":12820,
+    "PrecioCompra":0,
+    "Stock":999105,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"3026",
+    "Nombre":"MANTEQUILLA COLANTA EN BARRA X125G",
+    "PrecioBase":6761,
+    "PrecioCompra":0,
+    "Stock":999964,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"3032",
+    "Nombre":"MANTEQUILLA COLANTA UNIPERSONAL X10G 30U",
+    "PrecioBase":15711,
+    "PrecioCompra":0,
+    "Stock":999966,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"3037",
+    "Nombre":"MANTEQUILLA COLANTA X250G X3U",
+    "PrecioBase":37290,
+    "PrecioCompra":0,
+    "Stock":998675,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"340",
+    "Nombre":"L.UHT DESLAC COLANTA BOL X1100ML",
+    "PrecioBase":4500,
+    "PrecioCompra":4094,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"3527",
+    "Nombre":"CREMA LECHE UHT COLANTA SLIM X200ML",
+    "PrecioBase":5150,
+    "PrecioCompra":0,
+    "Stock":999980,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"3544",
+    "Nombre":"CREMA LECHE UHT COLANTA BOL X900ML",
+    "PrecioBase":17340,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"3551",
+    "Nombre":"CREMA LECHE UHT SEMIENTE COL BOLSA 870G",
+    "PrecioBase":15730,
+    "PrecioCompra":0,
+    "Stock":999889,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"3553",
+    "Nombre":"CREMA LECHE UHT SEMIENTERA COL BOL 175G",
+    "PrecioBase":3200,
+    "PrecioCompra":0,
+    "Stock":999718,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"3585",
+    "Nombre":"CREMA AGRIA COLANTA X400G",
+    "PrecioBase":10681,
+    "PrecioCompra":0,
+    "Stock":999815,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"3587",
+    "Nombre":"SUERO COSTEÑO COLANTA DOYPACK  X 200G",
+    "PrecioBase":4131,
+    "PrecioCompra":0,
+    "Stock":999999,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"3588",
+    "Nombre":"SUERO COSTEÑO ATOYABUEYX230G COLANTA",
+    "PrecioBase":6210,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"3589",
+    "Nombre":"CREMA AGRIA COLANTA X200G",
+    "PrecioBase":6000,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"3603",
+    "Nombre":"FRIJOLES CON CHORIZO CAMP COLANTA X580G",
+    "PrecioBase":10660,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4000",
+    "Nombre":"LECHE CONDENSADA COLANTA DOYPACK X100G",
+    "PrecioBase":2190,
+    "PrecioCompra":0,
+    "Stock":999891,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4002",
+    "Nombre":"AREQUIPE COLANTA CAJA X5KG",
+    "PrecioBase":94901,
+    "PrecioCompra":0,
+    "Stock":999856,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4020",
+    "Nombre":"AREQUIPE COLANTA TARRINA X50G X6U",
+    "PrecioBase":7220,
+    "PrecioCompra":0,
+    "Stock":999589,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4025",
+    "Nombre":"AREQUIPE COLANTA TARRINA X50G",
+    "PrecioBase":1320,
+    "PrecioCompra":0,
+    "Stock":999563,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4026",
+    "Nombre":"AREQUIPE COLANTA TARRINA X50G X12U",
+    "PrecioBase":14000,
+    "PrecioCompra":0,
+    "Stock":999623,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4037",
+    "Nombre":"AREQUIPE COLANTA TARRINA X50G X24U",
+    "PrecioBase":28511,
+    "PrecioCompra":0,
+    "Stock":999993,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4040",
+    "Nombre":"AREQUIPE KIPE COLANTA SACHET X20G X12U",
+    "PrecioBase":5850,
+    "PrecioCompra":0,
+    "Stock":999950,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4041",
+    "Nombre":"LECHE CONDENSADA COLANTA DOYPACK X300G",
+    "PrecioBase":6360,
+    "PrecioCompra":0,
+    "Stock":999955,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4042",
+    "Nombre":"LECHE CONDENSADA COLANTA DOYPACK X1KG",
+    "PrecioBase":15860,
+    "PrecioCompra":0,
+    "Stock":999992,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4049",
+    "Nombre":"LECHE CONDENSADA COLANTA  X5KG",
+    "PrecioBase":72800,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4052",
+    "Nombre":"AREQUIPE COLANTA DOYPACK X100G",
+    "PrecioBase":1969,
+    "PrecioCompra":0,
+    "Stock":999333,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4053",
+    "Nombre":"AREQUIPE SOLUC COLANTA DOYPACK X250G",
+    "PrecioBase":5550,
+    "PrecioCompra":0,
+    "Stock":997110,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4054",
+    "Nombre":"AREQUIPE SOLUC COLANTA DOYPACK X1KG",
+    "PrecioBase":21420,
+    "PrecioCompra":0,
+    "Stock":999998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4057",
+    "Nombre":"AREQUIPE BUFALA COLANTA TARRINA X270G",
+    "PrecioBase":8440,
+    "PrecioCompra":0,
+    "Stock":999984,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4065",
+    "Nombre":"AREQUIPE COLANTA TARRINA X50G X24U+EXHIB",
+    "PrecioBase":28511,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"406J",
+    "Nombre":"QUESILLO TAJADO DEL ORIENTE X125G",
+    "PrecioBase":4290,
+    "PrecioCompra":0,
+    "Stock":999963,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"406K",
+    "Nombre":"QUESILLO TAJADO DEL ORIENTE X250G",
+    "PrecioBase":7350,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"406M",
+    "Nombre":"QUESILLO TAJADO DEL ORIENTE X2500G",
+    "PrecioBase":71430,
+    "PrecioCompra":0,
+    "Stock":998705,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"406P",
+    "Nombre":"QUESILLO ENTERO DEL ORIENTE X2500G",
+    "PrecioBase":69990,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4077",
+    "Nombre":"LECHE CONDENSADA COLANTA SACHET X20G 12U",
+    "PrecioBase":5080,
+    "PrecioCompra":0,
+    "Stock":999798,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4081",
+    "Nombre":"AREQUIPE TARRINA 450 G",
+    "PrecioBase":10580,
+    "PrecioCompra":0,
+    "Stock":999999,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4088",
+    "Nombre":"MANJAR BLANCO COLANTA X 220G",
+    "PrecioBase":6250,
+    "PrecioCompra":0,
+    "Stock":999413,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4132",
+    "Nombre":"YOGUR GRIEGO VLLA COLANTA X125G",
+    "PrecioBase":2560,
+    "PrecioCompra":0,
+    "Stock":999844,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4133",
+    "Nombre":"YOGUR GRIEGO PIÑA COLANTA X125G",
+    "PrecioBase":2605,
+    "PrecioCompra":0,
+    "Stock":999992,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4134",
+    "Nombre":"YOGUR GRIEGO LIMON COLANTA X125G",
+    "PrecioBase":2605,
+    "PrecioCompra":0,
+    "Stock":999414,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4135",
+    "Nombre":"YOGUR GRIEGO FRESA COLANTA X125G",
+    "PrecioBase":2605,
+    "PrecioCompra":0,
+    "Stock":999577,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4152",
+    "Nombre":"YOGUR GRIEGO COLANTA X125G X8U",
+    "PrecioBase":19656,
+    "PrecioCompra":0,
+    "Stock":999903,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4176",
+    "Nombre":"YOGUR VIDA MORA COLANTA BTLLA X100G",
+    "PrecioBase":2173,
+    "PrecioCompra":0,
+    "Stock":999999,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4177",
+    "Nombre":"YOGUR VIDA FRESA COLANTA BTLLA X100G",
+    "PrecioBase":2173,
+    "PrecioCompra":0,
+    "Stock":998731,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4178",
+    "Nombre":"YOGUR VIDA MELO COLANTA BTLLA X100G",
+    "PrecioBase":2173,
+    "PrecioCompra":0,
+    "Stock":999208,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4180",
+    "Nombre":"YOGUR VIDA SURT COLANTA BTLLA X100G X6U",
+    "PrecioBase":12297,
+    "PrecioCompra":0,
+    "Stock":999997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4181",
+    "Nombre":"YOGUR DE BUFALA MARACUYA COLANTA X170G",
+    "PrecioBase":3447,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4182",
+    "Nombre":"YOGUR DE BUFALA MORA COLANTA X170G",
+    "PrecioBase":3447,
+    "PrecioCompra":0,
+    "Stock":999999,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4184",
+    "Nombre":"YOGUR DE BUFALA FRESA COLANTA X170G",
+    "PrecioBase":3447,
+    "PrecioCompra":0,
+    "Stock":999994,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4185",
+    "Nombre":"YOGUR DE BUFALA SURT COLANTA X170G X3U",
+    "PrecioBase":9801,
+    "PrecioCompra":0,
+    "Stock":999621,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4214",
+    "Nombre":"PETITO FRESA COLANTA X50G X2U",
+    "PrecioBase":2570,
+    "PrecioCompra":0,
+    "Stock":999995,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4215",
+    "Nombre":"PETITO MELO COLANTA X50G X2U",
+    "PrecioBase":2570,
+    "PrecioCompra":0,
+    "Stock":999993,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4216",
+    "Nombre":"PETITO MORA COLANTA X50G X2U",
+    "PrecioBase":2570,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4217",
+    "Nombre":"PETITO SURT COLANTA X100G X3U",
+    "PrecioBase":6870,
+    "PrecioCompra":0,
+    "Stock":999676,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4222",
+    "Nombre":"NEVAR DE MORA x 200G",
+    "PrecioBase":4800,
+    "PrecioCompra":0,
+    "Stock":999899,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4234",
+    "Nombre":"NEVAR DE MARACUYA x 200G",
+    "PrecioBase":4800,
+    "PrecioCompra":0,
+    "Stock":999989,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4250",
+    "Nombre":"PAGUE 3 LLEVE 4 YOGUR ENTERO VASO 145 ML",
+    "PrecioBase":5808,
+    "PrecioCompra":0,
+    "Stock":999972,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4269",
+    "Nombre":"YOGUR KID BOLSA FRESA 1000 G",
+    "PrecioBase":6117,
+    "PrecioCompra":0,
+    "Stock":999984,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4270",
+    "Nombre":"YOGUR KID BOLSA MELOCOTON 1000 G",
+    "PrecioBase":6117,
+    "PrecioCompra":0,
+    "Stock":999997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4271",
+    "Nombre":"YOGUR KID BOLSA MORA 1000 G",
+    "PrecioBase":6117,
+    "PrecioCompra":0,
+    "Stock":999976,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4303",
+    "Nombre":"YOGUR SLIGHT FRESA COLANTA GFAX1KG",
+    "PrecioBase":12780,
+    "PrecioCompra":0,
+    "Stock":999997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4304",
+    "Nombre":"YOGUR SLIGHT MELO COLANTA GFAX1KG",
+    "PrecioBase":12780,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4305",
+    "Nombre":"YOGUR SLIGHT MORA COLANTA GFAX1KG",
+    "PrecioBase":12780,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4314",
+    "Nombre":"YOGUR SLIGHT FRESA COLANTA VASO X200G",
+    "PrecioBase":2680,
+    "PrecioCompra":0,
+    "Stock":999998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4315",
+    "Nombre":"YOGUR SLIGHT MELO COLANTA VASO X200G",
+    "PrecioBase":2680,
+    "PrecioCompra":0,
+    "Stock":999998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4316",
+    "Nombre":"YOGUR SLIGHT MORA COLANTA VASO X200G",
+    "PrecioBase":2680,
+    "PrecioCompra":0,
+    "Stock":999998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4317",
+    "Nombre":"YOGUR SLIGHT SURT COLANTA VASO X200G X4U",
+    "PrecioBase":10231,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4401",
+    "Nombre":"YOGURKID CEREAL FRESA COLANTAX132G",
+    "PrecioBase":2006,
+    "PrecioCompra":0,
+    "Stock":998876,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4402",
+    "Nombre":"YOGURKID CEREAL AZUC MORA COLANTA X132G",
+    "PrecioBase":2006,
+    "PrecioCompra":0,
+    "Stock":999644,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4403",
+    "Nombre":"YOGURKID CEREAL AZUC MELO COLANTA X132G",
+    "PrecioBase":2006,
+    "PrecioCompra":0,
+    "Stock":999713,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4404",
+    "Nombre":"YOGURKID CEREAL SURT COLANTA132G 3U",
+    "PrecioBase":5787,
+    "PrecioCompra":0,
+    "Stock":999964,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4405",
+    "Nombre":"YOGURKID CEREAL SURT COLANTA132G 6U",
+    "PrecioBase":11522,
+    "PrecioCompra":0,
+    "Stock":999956,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4435",
+    "Nombre":"YOGUR SLIGHT MORA COLANTA BOL X1L",
+    "PrecioBase":8181,
+    "PrecioCompra":0,
+    "Stock":999995,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4440",
+    "Nombre":"YOGURKID FRESA COLANTA BOL X200G",
+    "PrecioBase":1276,
+    "PrecioCompra":0,
+    "Stock":999994,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4441",
+    "Nombre":"YOGURKID MELO COLANTA BOL X200G",
+    "PrecioBase":1276,
+    "PrecioCompra":0,
+    "Stock":999995,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4442",
+    "Nombre":"YOGURKID MORA COLANTA BOL X200G",
+    "PrecioBase":1276,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4443",
+    "Nombre":"YOGURKID SURT COLANTA X200G X6U",
+    "PrecioBase":7143,
+    "PrecioCompra":0,
+    "Stock":999988,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4445",
+    "Nombre":"YOGUR SLIGHT SURT COLANTA BOL X200G X6U",
+    "PrecioBase":8210,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4459",
+    "Nombre":"YOGUR SURT COLANTA BOL X200G X6U",
+    "PrecioBase":9679,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"449Z",
+    "Nombre":"VINO TINTO ROSALEDA CABERNET SAUVIG750ML",
+    "PrecioBase":22183,
+    "PrecioCompra":0,
+    "Stock":999997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4501",
+    "Nombre":"YOGUR AREQUIPE PASAS COLANTA GFA X1L",
+    "PrecioBase":13042,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4502",
+    "Nombre":"YOGUR FRESA COLANTA GFA X1L",
+    "PrecioBase":13042,
+    "PrecioCompra":0,
+    "Stock":999994,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4504",
+    "Nombre":"YOGUR MELO COLANTA GFA X1L",
+    "PrecioBase":13042,
+    "PrecioCompra":0,
+    "Stock":999996,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4505",
+    "Nombre":"YOGUR MORA COLANTA GFA X1L",
+    "PrecioBase":13162,
+    "PrecioCompra":0,
+    "Stock":999998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4536",
+    "Nombre":"YOGUR PIÑA COLADA COLANTA VASO X200G",
+    "PrecioBase":2658,
+    "PrecioCompra":0,
+    "Stock":999998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4546",
+    "Nombre":"YOGUR AREQUIPE PASAS COLANTA VASO X150G",
+    "PrecioBase":2005,
+    "PrecioCompra":0,
+    "Stock":986427,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4547",
+    "Nombre":"YOGUR FRESA COLANTA VASO X150G",
+    "PrecioBase":2005,
+    "PrecioCompra":0,
+    "Stock":996377,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4548",
+    "Nombre":"YOGUR GUANABANA COLANTA VASO X150G",
+    "PrecioBase":2005,
+    "PrecioCompra":0,
+    "Stock":999004,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4549",
+    "Nombre":"YOGUR MELO COLANTA VASO X150G",
+    "PrecioBase":2005,
+    "PrecioCompra":0,
+    "Stock":999859,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4550",
+    "Nombre":"YOGUR MORA COLANTA VASO X150G",
+    "PrecioBase":2027,
+    "PrecioCompra":0,
+    "Stock":999996,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4578",
+    "Nombre":"YOGUR SURT COLANTA VASO X150G X4U",
+    "PrecioBase":7675,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4579",
+    "Nombre":"YOGUR SLIGHT SURT COLANTA VASO X150G X4U",
+    "PrecioBase":7751,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"459",
+    "Nombre":"YOGUR ENTERO FRESA BOLSAX900G",
+    "PrecioBase":7580,
+    "PrecioCompra":6025,
+    "Stock":999993,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"460",
+    "Nombre":"YOGUR ENTERO MORA BOLSAX900G",
+    "PrecioBase":7670,
+    "PrecioCompra":5795,
+    "Stock":999997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4612",
+    "Nombre":"YOG GRIEGO CEREAL ARANDANOS COLANTA 120G",
+    "PrecioBase":2530,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4621",
+    "Nombre":"KUMIS COLANTA GFA X4L",
+    "PrecioBase":34803,
+    "PrecioCompra":0,
+    "Stock":999997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4625",
+    "Nombre":"KUMIS COLANTA GFA X1L",
+    "PrecioBase":12099,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4636",
+    "Nombre":"KUMIS COLANTA BOL X200G",
+    "PrecioBase":1636,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4637",
+    "Nombre":"KUMIS COLANTA BOL X1L",
+    "PrecioBase":7878,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4638",
+    "Nombre":"KUMIS COLANTA BOL X200G X6U",
+    "PrecioBase":9534,
+    "PrecioCompra":0,
+    "Stock":999996,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4644",
+    "Nombre":"KUMIS COLANTA VASO X150G",
+    "PrecioBase":1995,
+    "PrecioCompra":0,
+    "Stock":999994,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4645",
+    "Nombre":"KUMIS COLANTA VASO X150G X4U",
+    "PrecioBase":7526,
+    "PrecioCompra":0,
+    "Stock":999997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4653",
+    "Nombre":"YOGUR BENECOL BOTELLA COLANTA X100G 4U",
+    "PrecioBase":9841,
+    "PrecioCompra":0,
+    "Stock":999991,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4679",
+    "Nombre":"YOGUR BENECOL DESLAC F VDE COLANTA X1L",
+    "PrecioBase":19810,
+    "PrecioCompra":0,
+    "Stock":999812,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4680",
+    "Nombre":"YOGUR BENECOL DESLAC FRESA COLANTA X1L",
+    "PrecioBase":19810,
+    "PrecioCompra":0,
+    "Stock":999199,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4681",
+    "Nombre":"YOGUR BENECOL DESLAC F ROJ COLANTA X1L",
+    "PrecioBase":19810,
+    "PrecioCompra":0,
+    "Stock":999782,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4682",
+    "Nombre":"YOGUR BENECOL DESLAC MELO COLANTA X1L",
+    "PrecioBase":19810,
+    "PrecioCompra":0,
+    "Stock":999816,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4683",
+    "Nombre":"YOGUR BENECOL DESLAC F VDE COLANTA X100G",
+    "PrecioBase":2521,
+    "PrecioCompra":0,
+    "Stock":999904,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4684",
+    "Nombre":"YOGUR BENECOL DESLAC FRESA COLANTA X100G",
+    "PrecioBase":2521,
+    "PrecioCompra":0,
+    "Stock":999999,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4685",
+    "Nombre":"YOGUR BENECOL DESLAC F ROJ COLANTA X100G",
+    "PrecioBase":2521,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4686",
+    "Nombre":"YOGUR BENECOL DESLAC MELO COLANTA X100G",
+    "PrecioBase":2521,
+    "PrecioCompra":0,
+    "Stock":999993,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4687",
+    "Nombre":"YOGUR BENECOL DESL SURT COLANTA X100G 8U",
+    "PrecioBase":18991,
+    "PrecioCompra":0,
+    "Stock":999997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4713",
+    "Nombre":"YAGUR AL FRESA BOLSA 900G",
+    "PrecioBase":5430,
+    "PrecioCompra":0,
+    "Stock":999609,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4714",
+    "Nombre":"YAGUR AL MORA BOLSA 900G",
+    "PrecioBase":5430,
+    "PrecioCompra":0,
+    "Stock":999971,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4715",
+    "Nombre":"YAGUR AL MELOCOT BOLSA 900G",
+    "PrecioBase":5430,
+    "PrecioCompra":0,
+    "Stock":999999,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"472",
+    "Nombre":"L.UHT SEMIDESCREMADA MONTEFRIO BOL X 900",
+    "PrecioBase":3570,
+    "PrecioCompra":42168,
+    "Stock":999998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4724",
+    "Nombre":"SUPERBOOM ARROZ  ACHOCOLATADO 169G",
+    "PrecioBase":3068,
+    "PrecioCompra":0,
+    "Stock":999984,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"473",
+    "Nombre":"L.UT SEMIDESCREMADA MONTEFRIO BOLX900 X6U",
+    "PrecioBase":21200,
+    "PrecioCompra":42168,
+    "Stock":999997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4730",
+    "Nombre":"SUPERBOOM GRANOLA 180G",
+    "PrecioBase":3158,
+    "PrecioCompra":0,
+    "Stock":999995,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4732",
+    "Nombre":"SUPERBOOM HOJUELAS AZUCARADAS 170G",
+    "PrecioBase":2622,
+    "PrecioCompra":0,
+    "Stock":999803,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4762",
+    "Nombre":"YAGUR AL FRESA VASO 150G",
+    "PrecioBase":1211,
+    "PrecioCompra":0,
+    "Stock":999030,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4763",
+    "Nombre":"YAGUR AL MORA VASO 150G",
+    "PrecioBase":1211,
+    "PrecioCompra":0,
+    "Stock":999589,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4764",
+    "Nombre":"YAGUR AL MELOCOT VASO 150G",
+    "PrecioBase":1211,
+    "PrecioCompra":0,
+    "Stock":999938,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4765",
+    "Nombre":"PQ YAGUR AL SUR VASO 150GX4",
+    "PrecioBase":4751,
+    "PrecioCompra":0,
+    "Stock":999988,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4767",
+    "Nombre":"PQ YAGUR AL BOLSA 150GX10U",
+    "PrecioBase":9641,
+    "PrecioCompra":0,
+    "Stock":999951,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4768",
+    "Nombre":"PQ YAGUR AL BOLSA 200G X6U",
+    "PrecioBase":7490,
+    "PrecioCompra":0,
+    "Stock":999987,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4773",
+    "Nombre":"PAQUETE TEMPORADA ESCOLAR SCRIBE-YOGUR",
+    "PrecioBase":16979,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4777",
+    "Nombre":"YOGUR SLIGHT CEREAL COLANTA X170G",
+    "PrecioBase":3041,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4778",
+    "Nombre":"YOGUR SLIGHT CEREAL COLANTA X170G X4U",
+    "PrecioBase":11501,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4783",
+    "Nombre":"YOGUR CON CEREAL QUINOA COLANTA X170G",
+    "PrecioBase":3425,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"4784",
+    "Nombre":"SUPER BOOM ED ES FESTI MINICHIPS *170GR",
+    "PrecioBase":3070,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"50K5",
+    "Nombre":"TAMPICO CITRUS X2L GTS TAMP CERO X500ML",
+    "PrecioBase":6870,
+    "PrecioCompra":0,
+    "Stock":999939,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"571Z",
+    "Nombre":"SUERO COSTEÑO DEL ORIENTE DOYPACK X 200G",
+    "PrecioBase":3670,
+    "PrecioCompra":0,
+    "Stock":999968,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5812",
+    "Nombre":"AGUA MONTEFRIO BOTELLA X600ML",
+    "PrecioBase":1600,
+    "PrecioCompra":0,
+    "Stock":999970,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5812P",
+    "Nombre":"AGUA MONTEFRIO BOTELLA X600ML PG 5-6",
+    "PrecioBase":6665,
+    "PrecioCompra":0,
+    "Stock":9999,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5839",
+    "Nombre":"AGUA GASIFICADA MONTEFRIO BOTELLA X600ML",
+    "PrecioBase":1600,
+    "PrecioCompra":0,
+    "Stock":999998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5839P",
+    "Nombre":"AGUA GASIFICADA MONTEFRIO BOTELLA X600ML PG 5-6",
+    "PrecioBase":6665,
+    "PrecioCompra":0,
+    "Stock":10000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5944",
+    "Nombre":"TAMPICO CITRUS PET X250ML",
+    "PrecioBase":1250,
+    "PrecioCompra":0,
+    "Stock":998841,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5945",
+    "Nombre":"TAMPICO CERO CITRUS BTLL X500ML",
+    "PrecioBase":2321,
+    "PrecioCompra":0,
+    "Stock":999997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5946",
+    "Nombre":"TAMPICO CERO CITRUS BTLL X250ML",
+    "PrecioBase":1250,
+    "PrecioCompra":0,
+    "Stock":999942,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5947",
+    "Nombre":"TAMPICO CERO CITRUS BOL X250ML X6U",
+    "PrecioBase":4170,
+    "PrecioCompra":0,
+    "Stock":998203,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5948",
+    "Nombre":"TAMPICO CERO BOT X250ML X6U",
+    "PrecioBase":7290,
+    "PrecioCompra":0,
+    "Stock":999901,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5952",
+    "Nombre":"TAMPICO CITRUS TETRABASE X200ML X3U",
+    "PrecioBase":2971,
+    "PrecioCompra":0,
+    "Stock":999944,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5953",
+    "Nombre":"TAMPICO CITRUS TETRABASE X200ML X9U",
+    "PrecioBase":8810,
+    "PrecioCompra":0,
+    "Stock":988862,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5954",
+    "Nombre":"TAMPICO CITRUS BTLL X250ML X6U",
+    "PrecioBase":7290,
+    "PrecioCompra":0,
+    "Stock":996882,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5959",
+    "Nombre":"TAMPICO CITRUS PUNCH TETRA 1000 ML",
+    "PrecioBase":3941,
+    "PrecioCompra":0,
+    "Stock":998564,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5962",
+    "Nombre":"TAMPICO TETRA 1L GRATIS TAMPICO PET 330",
+    "PrecioBase":3941,
+    "PrecioCompra":0,
+    "Stock":999869,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5963",
+    "Nombre":"TAMPICO BLUEBERRY PET 330",
+    "PrecioBase":1551,
+    "PrecioCompra":0,
+    "Stock":999219,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5963OF",
+    "Nombre":"TAMPICO BLUBERY X 330 PAGUE 5 LLEVE 6",
+    "PrecioBase":7550,
+    "PrecioCompra":0,
+    "Stock":10000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5965",
+    "Nombre":"TAMPICO CITRUS TETRA SLIM200X6",
+    "PrecioBase":5601,
+    "PrecioCompra":0,
+    "Stock":999885,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5966",
+    "Nombre":"TAMPICO CITRUS TETRA SLIM PAQUETE X12",
+    "PrecioBase":11031,
+    "PrecioCompra":0,
+    "Stock":999999,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5969",
+    "Nombre":"TAMPICO CERO CITRUS PET 330ML",
+    "PrecioBase":1551,
+    "PrecioCompra":0,
+    "Stock":999941,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5969P",
+    "Nombre":"TAMPICO CERO PETX330ML PAGUE 6 LLEVE 1BLUEGRATIS",
+    "PrecioBase":8940,
+    "PrecioCompra":42168,
+    "Stock":999865,
+    "PuntoReorden":0,
+    "Activo":0,
+    "UM":null
+  },
+  {
+    "Codigo":"5974",
+    "Nombre":"TAMPICO CERO BOT X250ML X6U + OBSEQUIO",
+    "PrecioBase":7290,
+    "PrecioCompra":0,
+    "Stock":999999,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5975",
+    "Nombre":"TAMPICO CITRUS BTLL X250ML X6U +OBSEQUIO",
+    "PrecioBase":7290,
+    "PrecioCompra":0,
+    "Stock":999902,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5979",
+    "Nombre":"TAMPICO TETRA 2 UNIDADES GRATISPALOMITAS",
+    "PrecioBase":8100,
+    "PrecioCompra":0,
+    "Stock":999993,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"5981",
+    "Nombre":"TAMPICO JUNGLA PET 330 ML",
+    "PrecioBase":1551,
+    "PrecioCompra":0,
+    "Stock":999812,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6002",
+    "Nombre":"TAMPICO CITRUS GFA X4L",
+    "PrecioBase":13020,
+    "PrecioCompra":0,
+    "Stock":999998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6005",
+    "Nombre":"TAMPICO CITRUS GFA X2L",
+    "PrecioBase":6870,
+    "PrecioCompra":0,
+    "Stock":999990,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6008",
+    "Nombre":"TAMPICO CITRUS GFA X1 L",
+    "PrecioBase":3970,
+    "PrecioCompra":0,
+    "Stock":999947,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6013",
+    "Nombre":"TAMPICO CITRUS BOL X200ML",
+    "PrecioBase":700,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6020",
+    "Nombre":"TAMPICO CITRUS JUNIOR X150ML",
+    "PrecioBase":911,
+    "PrecioCompra":0,
+    "Stock":997804,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6021",
+    "Nombre":"TAMPICO CITRUS JUNIOR X150ML X8U",
+    "PrecioBase":6761,
+    "PrecioCompra":0,
+    "Stock":988609,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6027",
+    "Nombre":"TAMPICO CITRUS X250ML X6U",
+    "PrecioBase":4170,
+    "PrecioCompra":0,
+    "Stock":999990,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6031",
+    "Nombre":"TAMPICO CITRUS BTLL X240ML",
+    "PrecioBase":1100,
+    "PrecioCompra":0,
+    "Stock":998886,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6032",
+    "Nombre":"TAMPICO CITRUS BTLL X240ML X6U",
+    "PrecioBase":6280,
+    "PrecioCompra":0,
+    "Stock":999975,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6061",
+    "Nombre":"TAMPICO CITRUS BOL X125ML",
+    "PrecioBase":471,
+    "PrecioCompra":0,
+    "Stock":999561,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6069",
+    "Nombre":"TAMPICO CITRUS PET X500ML",
+    "PrecioBase":2321,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6099",
+    "Nombre":"TAMPICO CITRUS PET X330ML",
+    "PrecioBase":1551,
+    "PrecioCompra":0,
+    "Stock":999809,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6099OF",
+    "Nombre":"TAMPICO PETX 330 PAGUE 5 LLEVE 6",
+    "PrecioBase":7750,
+    "PrecioCompra":0,
+    "Stock":9835,
+    "PuntoReorden":0,
+    "Activo":0,
+    "UM":null
+  },
+  {
+    "Codigo":"6105",
+    "Nombre":"GELAT TWISTY FRESA COLANTA X120G",
+    "PrecioBase":1300,
+    "PrecioCompra":0,
+    "Stock":998186,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6107",
+    "Nombre":"GELAT TWISTY MORA COLANTA X120G",
+    "PrecioBase":1300,
+    "PrecioCompra":0,
+    "Stock":998971,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6108",
+    "Nombre":"GELAT TWISTY NARANJA COLANTA X120G",
+    "PrecioBase":1300,
+    "PrecioCompra":0,
+    "Stock":998895,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6109",
+    "Nombre":"GELAT TWISTY UVACOLANTA X120G",
+    "PrecioBase":1300,
+    "PrecioCompra":0,
+    "Stock":999393,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6117",
+    "Nombre":"GELAT TWISTY SURTIDA COLANTA X120G X4U",
+    "PrecioBase":4941,
+    "PrecioCompra":0,
+    "Stock":9988,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6118",
+    "Nombre":"GELATINA TWISTY FRESA L. CONDENS X140G",
+    "PrecioBase":2030,
+    "PrecioCompra":0,
+    "Stock":998361,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6119",
+    "Nombre":"GELATINA TWISTY MORA L. CONDENS X140G",
+    "PrecioBase":2030,
+    "PrecioCompra":0,
+    "Stock":999559,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6120",
+    "Nombre":"GELATINA TWISTY NARANJA L. CONDENS X140G",
+    "PrecioBase":2030,
+    "PrecioCompra":0,
+    "Stock":999995,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6121",
+    "Nombre":"GELATINA TWISTY UVA L. CONDENS X140G",
+    "PrecioBase":2030,
+    "PrecioCompra":0,
+    "Stock":999858,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"613",
+    "Nombre":"L.UHT SEMIDESC COLANTA BOL X1100ML",
+    "PrecioBase":4200,
+    "PrecioCompra":3875,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6207",
+    "Nombre":"CARNE MOLIDA CERDO X500G",
+    "PrecioBase":9530,
+    "PrecioCompra":0,
+    "Stock":999773,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6208",
+    "Nombre":"MILANESA DE CERDO X500G AL VACIO",
+    "PrecioBase":9580,
+    "PrecioCompra":0,
+    "Stock":999970,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6209",
+    "Nombre":"CARNE PULPA DE CERDO X500G",
+    "PrecioBase":10010,
+    "PrecioCompra":0,
+    "Stock":999999965,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6211",
+    "Nombre":"CHICHARRONCITOS X500G",
+    "PrecioBase":6950,
+    "PrecioCompra":0,
+    "Stock":999981,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6212",
+    "Nombre":"COSTILLA DE CERDO X500G",
+    "PrecioBase":9750,
+    "PrecioCompra":0,
+    "Stock":999878,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6213",
+    "Nombre":"STEAK DE LOMO DE CERDO",
+    "PrecioBase":13120,
+    "PrecioCompra":0,
+    "Stock":999611,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6299",
+    "Nombre":"LOMO DE CERDO 2 TAJADO X 250G APILADO",
+    "PrecioBase":18361,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6302",
+    "Nombre":"CENA NAVIDEÑA COLANTA",
+    "PrecioBase":60775,
+    "PrecioCompra":0,
+    "Stock":976533,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6305",
+    "Nombre":"PERNIL DE CERDO AHUMADO COLANTA TAJ 250G",
+    "PrecioBase":18361,
+    "PrecioCompra":0,
+    "Stock":999964,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6310",
+    "Nombre":"CAÑON DE CERDO AL VACIO",
+    "PrecioBase":26980,
+    "PrecioCompra":0,
+    "Stock":999995,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6315",
+    "Nombre":"CAÑON TROPICAL DE CERDO COLANTA TAJX500G",
+    "PrecioBase":35530,
+    "PrecioCompra":0,
+    "Stock":990396,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6316",
+    "Nombre":"LOMO DE CERDO AHUMADO COLANTA TAJ X 500G",
+    "PrecioBase":35530,
+    "PrecioCompra":0,
+    "Stock":999936,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6333",
+    "Nombre":"PERNIL DE CERDO AHUMADO COLANTA X1,5KG",
+    "PrecioBase":80751,
+    "PrecioCompra":0,
+    "Stock":993390,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6335",
+    "Nombre":"PERNIL DE CERDO AHUMADO COLANTA X800G",
+    "PrecioBase":54486,
+    "PrecioCompra":0,
+    "Stock":999888,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6359",
+    "Nombre":"ESPECIAL DE TEMPORADA X500G",
+    "PrecioBase":35530,
+    "PrecioCompra":0,
+    "Stock":999130,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6368",
+    "Nombre":"CAÑON TROPICAL COLANTA X250G",
+    "PrecioBase":18361,
+    "PrecioCompra":0,
+    "Stock":9835,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6393",
+    "Nombre":"POLLO RELLENO COLANTA TAJADO X500G",
+    "PrecioBase":29835,
+    "PrecioCompra":0,
+    "Stock":974073,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6442",
+    "Nombre":"CHUZO DE CERDO PQT X 1000G",
+    "PrecioBase":31331,
+    "PrecioCompra":0,
+    "Stock":992356,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6519",
+    "Nombre":"CARNE DE RES COLANTA FINAS HIERBAS X400G",
+    "PrecioBase":17010,
+    "PrecioCompra":0,
+    "Stock":993580,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6527",
+    "Nombre":"CARNE DE RES COLANTA CON SALSA BBQ X400G",
+    "PrecioBase":17010,
+    "PrecioCompra":0,
+    "Stock":996497,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6528",
+    "Nombre":"CARNE DE CERDO COLANTA SALSA BBQ X400G",
+    "PrecioBase":10470,
+    "PrecioCompra":0,
+    "Stock":999589,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6529",
+    "Nombre":"TOCINO JAMONADO PORCION COLANTA X 400G",
+    "PrecioBase":12770,
+    "PrecioCompra":0,
+    "Stock":999628,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6531",
+    "Nombre":"TOCINO JAMONADO PICADO COLANTA X 400G",
+    "PrecioBase":12770,
+    "PrecioCompra":0,
+    "Stock":999949,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6627",
+    "Nombre":"CARNE DE RES MOLIDA AL VACIO X500G",
+    "PrecioBase":13300,
+    "PrecioCompra":0,
+    "Stock":999943,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6628",
+    "Nombre":"CARNE DE RES PORCIONADA COLANTA X500G",
+    "PrecioBase":16220,
+    "PrecioCompra":0,
+    "Stock":999986,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6631",
+    "Nombre":"CARNE RES PARA SUDAR X500G",
+    "PrecioBase":13850,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6929",
+    "Nombre":"AGUA MONTEFRIO LIMA LIMON X600ML",
+    "PrecioBase":1760,
+    "PrecioCompra":0,
+    "Stock":999960,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6934",
+    "Nombre":"AGUA MONTEFRIO MARACUYA X600ML",
+    "PrecioBase":1760,
+    "PrecioCompra":0,
+    "Stock":999976,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"6939",
+    "Nombre":"AGUA MONTEFRIO FRUTOS ROJOS X600ML",
+    "PrecioBase":1760,
+    "PrecioCompra":0,
+    "Stock":999972,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7201",
+    "Nombre":"CHORIZO COCTEL JALAPEÑO COLANTA X300G",
+    "PrecioBase":12020,
+    "PrecioCompra":0,
+    "Stock":999995,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7213",
+    "Nombre":"CHORIZO CAMPESINO COLANTA X2,5KG X50U",
+    "PrecioBase":75051,
+    "PrecioCompra":0,
+    "Stock":999988,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7216",
+    "Nombre":"CHORIZO TERNERA COLANTA DPACK X100G",
+    "PrecioBase":3830,
+    "PrecioCompra":0,
+    "Stock":999945,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7217",
+    "Nombre":"CHORIZO CAMPESINO COLANTA X50G X2U",
+    "PrecioBase":3431,
+    "PrecioCompra":0,
+    "Stock":999835,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7225",
+    "Nombre":"CHORIZO STARROSANO COLANTA X500G",
+    "PrecioBase":16931,
+    "PrecioCompra":0,
+    "Stock":999981,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7232",
+    "Nombre":"CHORIZO CAMPESINO COLANTA X500G",
+    "PrecioBase":11380,
+    "PrecioCompra":9545,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":0,
+    "UM":null
+  },
+  {
+    "Codigo":"7233",
+    "Nombre":"CHORIZO STARROSANO COLANTA X250G",
+    "PrecioBase":8520,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7234",
+    "Nombre":"CHORIZO CAMPESINO COLANTA X250G",
+    "PrecioBase":8071,
+    "PrecioCompra":0,
+    "Stock":999982,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7241",
+    "Nombre":"CHORIZO STARROSANO DUOPACK COLANTA X100G",
+    "PrecioBase":3901,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7242",
+    "Nombre":"CHORIZO CERDO CHAMPIÑONES Y PIMENT X250G",
+    "PrecioBase":8150,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7245",
+    "Nombre":"CHORIZO COCTEL TERNERA COLANTA X300G",
+    "PrecioBase":14060,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7258",
+    "Nombre":"PQTE CARNICOS PARA BROCHETA COLANTA 600G",
+    "PrecioBase":24381,
+    "PrecioCompra":0,
+    "Stock":999999,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7274",
+    "Nombre":"BLACK PUDDING COLANTA X300G",
+    "PrecioBase":6061,
+    "PrecioCompra":0,
+    "Stock":999996,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7291",
+    "Nombre":"CHORIZO STARROSANO MONTEF ESTANDAR X250G",
+    "PrecioBase":6331,
+    "PrecioCompra":0,
+    "Stock":999994,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7292",
+    "Nombre":"CHORIZO TERNERA MONT ECONOMICO X250G",
+    "PrecioBase":6264,
+    "PrecioCompra":0,
+    "Stock":999753,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7307",
+    "Nombre":"SALCHICHA COLANTA X450G",
+    "PrecioBase":10121,
+    "PrecioCompra":0,
+    "Stock":999999,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7316",
+    "Nombre":"SALCHICHA COLANTA X225G",
+    "PrecioBase":5420,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7323",
+    "Nombre":"SALCHICHA HOT DOG X 770 G – 10 UDS",
+    "PrecioBase":17121,
+    "PrecioCompra":0,
+    "Stock":999999,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7330",
+    "Nombre":"SALCHICHA XL COLANTA X1KG",
+    "PrecioBase":15700,
+    "PrecioCompra":13159,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7333",
+    "Nombre":"SALCHICHA BERLINESA 400G",
+    "PrecioBase":16180,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7334",
+    "Nombre":"SALCHICHA XL COLANTA X 900G GRATIS 1 UND",
+    "PrecioBase":18681,
+    "PrecioCompra":0,
+    "Stock":999997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7335",
+    "Nombre":"SALCHICHA WEST COLANTA X36G X2U",
+    "PrecioBase":2511,
+    "PrecioCompra":0,
+    "Stock":999971,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7336",
+    "Nombre":"SALCHICHA WEST COLANTA X215G",
+    "PrecioBase":7330,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7337",
+    "Nombre":"SALCHICHA WEST COLANTA X430G",
+    "PrecioBase":13340,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7338",
+    "Nombre":"SALCHICHA XL COLANTA X 900 G",
+    "PrecioBase":19360,
+    "PrecioCompra":0,
+    "Stock":999998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7339",
+    "Nombre":"SALCHICHA XL COLANTA X 360 G",
+    "PrecioBase":7241,
+    "PrecioCompra":0,
+    "Stock":999914,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7339DESC",
+    "Nombre":"SALCHICHA XL COLANTA X360G",
+    "PrecioBase":6100,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":0,
+    "UM":null
+  },
+  {
+    "Codigo":"7340",
+    "Nombre":"SALCHICHA XL COLANTA X 1800 G",
+    "PrecioBase":38840,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7341",
+    "Nombre":"SALCHICHA  DUO PACK COLANTA X 90 G",
+    "PrecioBase":2151,
+    "PrecioCompra":0,
+    "Stock":999983,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7349",
+    "Nombre":"SALCHICHA TIPO VIENA X170G",
+    "PrecioBase":3870,
+    "PrecioCompra":0,
+    "Stock":999972,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7350",
+    "Nombre":"CHORIZO CON TERNERA COLANTA X 450G",
+    "PrecioBase":15810,
+    "PrecioCompra":0,
+    "Stock":999933,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7351",
+    "Nombre":"CHORIZO TERNERA COLANTA 2813GX50U",
+    "PrecioBase":96180,
+    "PrecioCompra":0,
+    "Stock":999577,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7352",
+    "Nombre":"CHORIZO TERNERA COLANTA 1125X20U",
+    "PrecioBase":39040,
+    "PrecioCompra":0,
+    "Stock":999357,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7353",
+    "Nombre":"CHORIZO TERNERA COLANTA X225G",
+    "PrecioBase":8271,
+    "PrecioCompra":0,
+    "Stock":999793,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7354",
+    "Nombre":"CHORIZO CAMPESINO COLANTA X450G",
+    "PrecioBase":14880,
+    "PrecioCompra":0,
+    "Stock":999972,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7355",
+    "Nombre":"CHORIZO SANTARROSANO COLANTA X1125G X20U",
+    "PrecioBase":38100,
+    "PrecioCompra":0,
+    "Stock":999997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7356",
+    "Nombre":"JAMON SANDUCHE COLANTA TAJADO X902G",
+    "PrecioBase":31220,
+    "PrecioCompra":0,
+    "Stock":999891,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7358",
+    "Nombre":"JAMON SANDUCHE COLANTA TAJADO X143G",
+    "PrecioBase":5021,
+    "PrecioCompra":0,
+    "Stock":999917,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7360",
+    "Nombre":"MORCILLA COLANTA X  450 G",
+    "PrecioBase":8531,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7361",
+    "Nombre":"MORCILLA COLANTA X 225 G",
+    "PrecioBase":4500,
+    "PrecioCompra":0,
+    "Stock":999997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7362",
+    "Nombre":"MORCILLA COLANTA X 1.125 G",
+    "PrecioBase":19861,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7363",
+    "Nombre":"MORCILLA PARA BROCHETA COLANTA X 450 G",
+    "PrecioBase":9721,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7366",
+    "Nombre":"TOCINETA COLANTA X 135 G",
+    "PrecioBase":8681,
+    "PrecioCompra":0,
+    "Stock":999943,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7367",
+    "Nombre":"TOCINETA ECONOMICA COLANTA X 1800 G",
+    "PrecioBase":85630,
+    "PrecioCompra":0,
+    "Stock":997294,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7368",
+    "Nombre":"SALCHICHON MONTEFRIO ESTANDAR X 450 G",
+    "PrecioBase":4654,
+    "PrecioCompra":0,
+    "Stock":999801,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7369",
+    "Nombre":"SALCHICHON MONTEFRIO ESTADAR X 225 G",
+    "PrecioBase":2700,
+    "PrecioCompra":0,
+    "Stock":999613,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7394",
+    "Nombre":"CHORIZO SANTARROSANO TAJADO 225G",
+    "PrecioBase":8870,
+    "PrecioCompra":0,
+    "Stock":999979,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7396",
+    "Nombre":"MIX PICADA X 900G",
+    "PrecioBase":31840,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7405",
+    "Nombre":"SALCHICHON CERVECERO COLANTA X1KG",
+    "PrecioBase":20611,
+    "PrecioCompra":0,
+    "Stock":-2,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7410",
+    "Nombre":"SALCHICHON CERVECERO COLANTA X500G",
+    "PrecioBase":10481,
+    "PrecioCompra":0,
+    "Stock":999973,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7413",
+    "Nombre":"SNACK DE JAMÓN X 50 G",
+    "PrecioBase":2561,
+    "PrecioCompra":0,
+    "Stock":999510,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7416",
+    "Nombre":"SALCHICHON CERVECERO COLANTA TAJADO X50G",
+    "PrecioBase":1157,
+    "PrecioCompra":0,
+    "Stock":999769,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7417",
+    "Nombre":"SALCHICHON CERVECERO TAJADO 50G X4",
+    "PrecioBase":5111,
+    "PrecioCompra":0,
+    "Stock":999999,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7418",
+    "Nombre":"SNACK DE JAMÓN X 50 G X4",
+    "PrecioBase":9130,
+    "PrecioCompra":0,
+    "Stock":999943,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7420",
+    "Nombre":"SALCHICHA WEST 138G",
+    "PrecioBase":3810,
+    "PrecioCompra":0,
+    "Stock":999214,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7431",
+    "Nombre":"SALCHICHON FINO COLANTA X900G",
+    "PrecioBase":11791,
+    "PrecioCompra":0,
+    "Stock":999995,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7432",
+    "Nombre":"PQTE ECO900G 2SALCHICHON225+2MORTAD225G",
+    "PrecioBase":14221,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7436",
+    "Nombre":"SALCHICHON FINO COLANTA X 450G",
+    "PrecioBase":6290,
+    "PrecioCompra":0,
+    "Stock":999779,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7437",
+    "Nombre":"SALCHICHON MONTEFRIO ESTANDAR X500G",
+    "PrecioBase":4920,
+    "PrecioCompra":4109,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":0,
+    "UM":null
+  },
+  {
+    "Codigo":"7438",
+    "Nombre":"SALCHICHON MONTEFRIO ESTADAR X250G",
+    "PrecioBase":2531,
+    "PrecioCompra":2108,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":0,
+    "UM":null
+  },
+  {
+    "Codigo":"7441",
+    "Nombre":"SALCHICHON FINO COLANTA X 225G",
+    "PrecioBase":3250,
+    "PrecioCompra":0,
+    "Stock":999987,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7444",
+    "Nombre":"SALCHICHON FINO COLANTA X125G",
+    "PrecioBase":1811,
+    "PrecioCompra":0,
+    "Stock":998998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7459",
+    "Nombre":"CARNE DE RES TIPO ROAST BEEF  POR 250 G",
+    "PrecioBase":18361,
+    "PrecioCompra":0,
+    "Stock":999963,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7460",
+    "Nombre":"PERNIL CERDO BRUSCHETTA COLANTA TAJ 250",
+    "PrecioBase":18361,
+    "PrecioCompra":0,
+    "Stock":999992,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7477",
+    "Nombre":"BUTIFARRA COLANTA X100G",
+    "PrecioBase":2430,
+    "PrecioCompra":0,
+    "Stock":999983,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7478",
+    "Nombre":"BUTIFARRA COLANTA X 450 G",
+    "PrecioBase":9901,
+    "PrecioCompra":0,
+    "Stock":999696,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7485",
+    "Nombre":"BUTIFARRA COLANTA X250G",
+    "PrecioBase":5631,
+    "PrecioCompra":0,
+    "Stock":999987,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7487",
+    "Nombre":"BUTIFARRA COLANTA X500G",
+    "PrecioBase":8831,
+    "PrecioCompra":7399,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":0,
+    "UM":null
+  },
+  {
+    "Codigo":"749",
+    "Nombre":"AREQUIPE X450G SOBRECOPA PALITR SUSANITA",
+    "PrecioBase":10580,
+    "PrecioCompra":42168,
+    "Stock":999995,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7501",
+    "Nombre":"JAMON COLANTA +\/- 2,5K",
+    "PrecioBase":33181,
+    "PrecioCompra":0,
+    "Stock":999293,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7502",
+    "Nombre":"JAMON COLANTA BLOQUE X2,5KG",
+    "PrecioBase":84740,
+    "PrecioCompra":0,
+    "Stock":999983,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7511",
+    "Nombre":"JAMON SELECCIONADO COLANTA X450G",
+    "PrecioBase":15260,
+    "PrecioCompra":0,
+    "Stock":999965,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7524",
+    "Nombre":"JAMON SELECCIONADO COLANTA X225G",
+    "PrecioBase":7900,
+    "PrecioCompra":0,
+    "Stock":999914,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7555",
+    "Nombre":"JAMON AHUMADO BUFFET COLANTA TAJ X500G",
+    "PrecioBase":29241,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7607",
+    "Nombre":"HAMBURGUESA PREASADA SELEC COLANTA X500G",
+    "PrecioBase":23330,
+    "PrecioCompra":0,
+    "Stock":999998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7608",
+    "Nombre":"HAMBURGUESA PRE ASADA COLANTA X400G",
+    "PrecioBase":14501,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7646",
+    "Nombre":"HAMBURGUESA MONTEFRIO X 1.800 G",
+    "PrecioBase":65691,
+    "PrecioCompra":0,
+    "Stock":998188,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7649",
+    "Nombre":"HAMBURGUESA COLANTA X2KG",
+    "PrecioBase":52290,
+    "PrecioCompra":43721,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7658",
+    "Nombre":"HAMBURGUESA MONTEFRIO X 450 G",
+    "PrecioBase":15271,
+    "PrecioCompra":0,
+    "Stock":995774,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7672",
+    "Nombre":"MORTADELA COLANTA TAJADA X500G",
+    "PrecioBase":8810,
+    "PrecioCompra":7388,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7676",
+    "Nombre":"MORTADELA MONTEFRIO ECONOMICA X 225 G",
+    "PrecioBase":3310,
+    "PrecioCompra":0,
+    "Stock":999950,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7678",
+    "Nombre":"MORTADELA COLANTA TAJADA X125G",
+    "PrecioBase":2180,
+    "PrecioCompra":1828,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":0,
+    "UM":null
+  },
+  {
+    "Codigo":"7711",
+    "Nombre":"TOCINETA COLANTA X 900 G",
+    "PrecioBase":45711,
+    "PrecioCompra":0,
+    "Stock":9997,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7716",
+    "Nombre":"TOCINETA COLANTA X 450 G",
+    "PrecioBase":23681,
+    "PrecioCompra":0,
+    "Stock":999941,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7717",
+    "Nombre":"TOCINETA COLANTA AL VACIO X250G",
+    "PrecioBase":10299,
+    "PrecioCompra":8631,
+    "Stock":999998,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"7718",
+    "Nombre":"TOCINETA COLANTA X 225 G",
+    "PrecioBase":12701,
+    "PrecioCompra":0,
+    "Stock":999783,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"8001",
+    "Nombre":"JUGO NARANJA COLANTA BTLL X500ML",
+    "PrecioBase":3728,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"8003",
+    "Nombre":"JUGO MANDARINA COLANTA BTLL X500ML",
+    "PrecioBase":4586,
+    "PrecioCompra":0,
+    "Stock":998111,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"8056",
+    "Nombre":"PULPY TETRA SLIM MANGO 200ML",
+    "PrecioBase":1192,
+    "PrecioCompra":0,
+    "Stock":999942,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"8068",
+    "Nombre":"PULPY TETRA SLIM MORA 200ML",
+    "PrecioBase":1248,
+    "PrecioCompra":0,
+    "Stock":999979,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"8069",
+    "Nombre":"PULPY TETRA SLIM MARACUYA 200ML",
+    "PrecioBase":1192,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"8081",
+    "Nombre":"JUGO NARANJA COLANTA TETRA X1LT",
+    "PrecioBase":6950,
+    "PrecioCompra":0,
+    "Stock":998096,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"8092",
+    "Nombre":"PULPY SURTIDO SLIM PAGUE 5 LLEVE 6",
+    "PrecioBase":6375,
+    "PrecioCompra":0,
+    "Stock":999930,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"8093",
+    "Nombre":"PULPY SURTIDO SLIM PAGUE 10 LLEVE 12",
+    "PrecioBase":12749,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"8203",
+    "Nombre":"ARROZ COLANTA BULTO X10KG",
+    "PrecioBase":47400,
+    "PrecioCompra":0,
+    "Stock":999657,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"8205",
+    "Nombre":"ARROZ COLANTA BOLSA X2,5KG",
+    "PrecioBase":11900,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"8212",
+    "Nombre":"ARROZ COLANTA BOLSA X500G",
+    "PrecioBase":2400,
+    "PrecioCompra":0,
+    "Stock":1000000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"82946",
+    "Nombre":"VACAS LUMINOSAS PROMOCIONALES COLANTA",
+    "PrecioBase":3900,
+    "PrecioCompra":0,
+    "Stock":999892,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"8423",
+    "Nombre":"MIEL BOTELLA X490G",
+    "PrecioBase":16120,
+    "PrecioCompra":0,
+    "Stock":994260,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"85798",
+    "Nombre":"LLAVERO 3D PROMOC LICENCIA PING SOLUTION",
+    "PrecioBase":4500,
+    "PrecioCompra":0,
+    "Stock":10000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"9044",
+    "Nombre":"CAJA OBSEQUIO - ANCHETA PEQUEÑA",
+    "PrecioBase":3800,
+    "PrecioCompra":0,
+    "Stock":10000,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  },
+  {
+    "Codigo":"9072",
+    "Nombre":"CAJA OBSEQUIO - ANCHETA",
+    "PrecioBase":4000,
+    "PrecioCompra":0,
+    "Stock":999993,
+    "PuntoReorden":0,
+    "Activo":1,
+    "UM":null
+  }
+]

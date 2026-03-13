@@ -1,0 +1,2274 @@
+[
+  {
+    "Cliente":"TIENDA LA BENDICION DE DIOS",
+    "Barrio":"LAS AMERICAS",
+    "DiaVisita":null,
+    "Latitud":8.9490625,
+    "Longitud":-75.454401,
+    "NOMBRE_NORM":"TIENDA LA BENDICION DE DIOS"
+  },
+  {
+    "Cliente":"TIENDA LA GRACIA DE DIOS",
+    "Barrio":"LAS AMERICAS",
+    "DiaVisita":null,
+    "Latitud":8.9491151,
+    "Longitud":-75.4544328,
+    "NOMBRE_NORM":"TIENDA LA GRACIA DE DIOS"
+  },
+  {
+    "Cliente":"LOS OLIVOS",
+    "Barrio":"LAS AMERICAS",
+    "DiaVisita":null,
+    "Latitud":8.9492648,
+    "Longitud":-75.454579,
+    "NOMBRE_NORM":"LOS OLIVOS"
+  },
+  {
+    "Cliente":"EL OFERTON",
+    "Barrio":"LAS AMERICAS",
+    "DiaVisita":null,
+    "Latitud":8.9509778,
+    "Longitud":-75.4568284,
+    "NOMBRE_NORM":"EL OFERTON"
+  },
+  {
+    "Cliente":"TIENDA MIRAFLORES",
+    "Barrio":"MIRAFLORES",
+    "DiaVisita":null,
+    "Latitud":8.9516968,
+    "Longitud":-75.4582399,
+    "NOMBRE_NORM":"TIENDA MIRAFLORES"
+  },
+  {
+    "Cliente":"TIENDA NUEVO PODER",
+    "Barrio":"MIRAFLORES",
+    "DiaVisita":null,
+    "Latitud":8.9523707,
+    "Longitud":-75.4579649,
+    "NOMBRE_NORM":"TIENDA NUEVO PODER"
+  },
+  {
+    "Cliente":"TIENDA DONDE INGRITH",
+    "Barrio":"MIRAFLORES",
+    "DiaVisita":null,
+    "Latitud":8.9520551,
+    "Longitud":-75.4572294,
+    "NOMBRE_NORM":"TIENDA DONDE INGRITH"
+  },
+  {
+    "Cliente":"TIENDA ANGELA",
+    "Barrio":"MIRAFLORES",
+    "DiaVisita":null,
+    "Latitud":8.9528159,
+    "Longitud":-75.4564113,
+    "NOMBRE_NORM":"TIENDA ANGELA"
+  },
+  {
+    "Cliente":"TIENDA EL PAISA",
+    "Barrio":"MIRAFLORES",
+    "DiaVisita":null,
+    "Latitud":8.9526357,
+    "Longitud":-75.4566453,
+    "NOMBRE_NORM":"TIENDA EL PAISA"
+  },
+  {
+    "Cliente":"TIENDA MIRAFLORES #2",
+    "Barrio":"MIRAFLORES",
+    "DiaVisita":null,
+    "Latitud":8.9515895,
+    "Longitud":-75.4561756,
+    "NOMBRE_NORM":"TIENDA MIRAFLORES #2"
+  },
+  {
+    "Cliente":"TIENDA LA BENDICION",
+    "Barrio":"MIRAFLORES",
+    "DiaVisita":null,
+    "Latitud":8.9511477,
+    "Longitud":-75.4555439,
+    "NOMBRE_NORM":"TIENDA LA BENDICION"
+  },
+  {
+    "Cliente":"TIENDA CARPA AZUL",
+    "Barrio":"LAS AMERICAS",
+    "DiaVisita":null,
+    "Latitud":8.9512742,
+    "Longitud":-75.4553253,
+    "NOMBRE_NORM":"TIENDA CARPA AZUL"
+  },
+  {
+    "Cliente":"TIENDA EL ALMENDRO",
+    "Barrio":"LAS AMERICAS",
+    "DiaVisita":null,
+    "Latitud":8.9508555,
+    "Longitud":-75.4538957,
+    "NOMBRE_NORM":"TIENDA EL ALMENDRO"
+  },
+  {
+    "Cliente":"TIENDA LAS AMERICAS",
+    "Barrio":"LAS AMERICAS",
+    "DiaVisita":null,
+    "Latitud":8.9505436,
+    "Longitud":-75.4536687,
+    "NOMBRE_NORM":"TIENDA LAS AMERICAS"
+  },
+  {
+    "Cliente":"TIENDA Y VARIEDADES LEDYS",
+    "Barrio":"LAS AMERICAS",
+    "DiaVisita":null,
+    "Latitud":8.9511122,
+    "Longitud":-75.4539369,
+    "NOMBRE_NORM":"TIENDA Y VARIEDADES LEDYS"
+  },
+  {
+    "Cliente":"TIENDA LA VICTORIA",
+    "Barrio":"LAS AMERICAS",
+    "DiaVisita":null,
+    "Latitud":8.9517832,
+    "Longitud":-75.4544264,
+    "NOMBRE_NORM":"TIENDA LA VICTORIA"
+  },
+  {
+    "Cliente":"TIENDA EVERMARY",
+    "Barrio":"LAS AMERICAS",
+    "DiaVisita":null,
+    "Latitud":8.952332,
+    "Longitud":-75.4542618,
+    "NOMBRE_NORM":"TIENDA EVERMARY"
+  },
+  {
+    "Cliente":"DONDE ENITH",
+    "Barrio":"LAS AMERICAS",
+    "DiaVisita":null,
+    "Latitud":8.9537028,
+    "Longitud":-75.4565601,
+    "NOMBRE_NORM":"DONDE ENITH"
+  },
+  {
+    "Cliente":"TIENDA NUEVA VIDA",
+    "Barrio":"LAS AMERICAS",
+    "DiaVisita":null,
+    "Latitud":8.9547527,
+    "Longitud":-75.4586342,
+    "NOMBRE_NORM":"TIENDA NUEVA VIDA"
+  },
+  {
+    "Cliente":"TIENDA SANTANDER",
+    "Barrio":"ISLAS DE CAPRI",
+    "DiaVisita":null,
+    "Latitud":8.9554323,
+    "Longitud":-75.4582758,
+    "NOMBRE_NORM":"TIENDA SANTANDER"
+  },
+  {
+    "Cliente":"TIENDA FRUVERCAR",
+    "Barrio":"ISLAS DE CAPRI",
+    "DiaVisita":null,
+    "Latitud":8.9553044,
+    "Longitud":-75.457802,
+    "NOMBRE_NORM":"TIENDA FRUVERCAR"
+  },
+  {
+    "Cliente":"TIENDA LA ORIENTAL",
+    "Barrio":"ISLAS DE CAPRI",
+    "DiaVisita":null,
+    "Latitud":8.9556446,
+    "Longitud":-75.4576696,
+    "NOMBRE_NORM":"TIENDA LA ORIENTAL"
+  },
+  {
+    "Cliente":"TIENDA J A",
+    "Barrio":"ISLAS DE CAPRI",
+    "DiaVisita":null,
+    "Latitud":8.9562682,
+    "Longitud":-75.4588554,
+    "NOMBRE_NORM":"TIENDA J A"
+  },
+  {
+    "Cliente":"TIENDA DIM",
+    "Barrio":"ISLAS DE CAPRI",
+    "DiaVisita":null,
+    "Latitud":8.9560407,
+    "Longitud":-75.4577158,
+    "NOMBRE_NORM":"TIENDA DIM"
+  },
+  {
+    "Cliente":"TIENDA EL ARCA",
+    "Barrio":"ISLAS DE CAPRI",
+    "DiaVisita":null,
+    "Latitud":8.9554323,
+    "Longitud":-75.4570315,
+    "NOMBRE_NORM":"TIENDA EL ARCA"
+  },
+  {
+    "Cliente":"TIENDA CAR Y HEL",
+    "Barrio":"ISLAS DE CAPRI",
+    "DiaVisita":null,
+    "Latitud":8.9551104,
+    "Longitud":-75.4556774,
+    "NOMBRE_NORM":"TIENDA CAR Y HEL"
+  },
+  {
+    "Cliente":"TIENDA LA COLOMBIANA",
+    "Barrio":"BARRIO DE LOS PROFESORES",
+    "DiaVisita":null,
+    "Latitud":8.9538684,
+    "Longitud":-75.4555174,
+    "NOMBRE_NORM":"TIENDA LA COLOMBIANA"
+  },
+  {
+    "Cliente":"DONDE ALEJO",
+    "Barrio":"ISLAS DE CAPRI",
+    "DiaVisita":null,
+    "Latitud":8.9562483,
+    "Longitud":-75.4550692,
+    "NOMBRE_NORM":"DONDE ALEJO"
+  },
+  {
+    "Cliente":"TIENDA \"CASA BLANCA\"",
+    "Barrio":"EL 16",
+    "DiaVisita":null,
+    "Latitud":8.9567126,
+    "Longitud":-75.4549213,
+    "NOMBRE_NORM":"TIENDA \"CASA BLANCA\""
+  },
+  {
+    "Cliente":"SUPERTIENDA LA 16",
+    "Barrio":"EL 16",
+    "DiaVisita":null,
+    "Latitud":8.9580162,
+    "Longitud":-75.4533214,
+    "NOMBRE_NORM":"SUPERTIENDA LA 16"
+  },
+  {
+    "Cliente":"TIENDA LOLA 1",
+    "Barrio":"EL 16",
+    "DiaVisita":null,
+    "Latitud":8.9580162,
+    "Longitud":-75.4533214,
+    "NOMBRE_NORM":"TIENDA LOLA 1"
+  },
+  {
+    "Cliente":"TIENDA MI HERMANO Y YO",
+    "Barrio":"EL 16",
+    "DiaVisita":null,
+    "Latitud":8.9582742,
+    "Longitud":-75.454296,
+    "NOMBRE_NORM":"TIENDA MI HERMANO Y YO"
+  },
+  {
+    "Cliente":"TIENDA MAYERLI",
+    "Barrio":"EL 16",
+    "DiaVisita":null,
+    "Latitud":8.9590697,
+    "Longitud":-75.4546621,
+    "NOMBRE_NORM":"TIENDA MAYERLI"
+  },
+  {
+    "Cliente":"VIVERES Y ABASTOS",
+    "Barrio":"EL 16",
+    "DiaVisita":null,
+    "Latitud":8.9598867,
+    "Longitud":-75.4557028,
+    "NOMBRE_NORM":"VIVERES Y ABASTOS"
+  },
+  {
+    "Cliente":"TIENDA LA DESPENSA",
+    "Barrio":"EL 16",
+    "DiaVisita":null,
+    "Latitud":8.9601206,
+    "Longitud":-75.4560089,
+    "NOMBRE_NORM":"TIENDA LA DESPENSA"
+  },
+  {
+    "Cliente":"TIENDA MEJOR ESQUINA",
+    "Barrio":"EL 16",
+    "DiaVisita":null,
+    "Latitud":8.9610661,
+    "Longitud":-75.462515,
+    "NOMBRE_NORM":"TIENDA MEJOR ESQUINA"
+  },
+  {
+    "Cliente":"TIENDA LA FLACA",
+    "Barrio":"EL 16",
+    "DiaVisita":null,
+    "Latitud":8.9604623,
+    "Longitud":-75.46326,
+    "NOMBRE_NORM":"TIENDA LA FLACA"
+  },
+  {
+    "Cliente":"LA NUEVA",
+    "Barrio":"RENACER",
+    "DiaVisita":null,
+    "Latitud":8.9614407,
+    "Longitud":-75.4554759,
+    "NOMBRE_NORM":"LA NUEVA"
+  },
+  {
+    "Cliente":"TIENDA RENACER",
+    "Barrio":"RENACER",
+    "DiaVisita":null,
+    "Latitud":8.9605779,
+    "Longitud":-75.4551597,
+    "NOMBRE_NORM":"TIENDA RENACER"
+  },
+  {
+    "Cliente":"QUIEN COMO DIOS",
+    "Barrio":"RENACER",
+    "DiaVisita":null,
+    "Latitud":8.962315,
+    "Longitud":-75.4540452,
+    "NOMBRE_NORM":"QUIEN COMO DIOS"
+  },
+  {
+    "Cliente":"TIENDA EL OLIVO",
+    "Barrio":"RENACER",
+    "DiaVisita":null,
+    "Latitud":8.9607624,
+    "Longitud":-75.4541492,
+    "NOMBRE_NORM":"TIENDA EL OLIVO"
+  },
+  {
+    "Cliente":"TIENDA KYCELL",
+    "Barrio":"RENACER",
+    "DiaVisita":null,
+    "Latitud":8.9607988,
+    "Longitud":-75.454239,
+    "NOMBRE_NORM":"TIENDA KYCELL"
+  },
+  {
+    "Cliente":"TIENDA YOLI",
+    "Barrio":"RENACER",
+    "DiaVisita":null,
+    "Latitud":8.9600891,
+    "Longitud":-75.4546601,
+    "NOMBRE_NORM":"TIENDA YOLI"
+  },
+  {
+    "Cliente":"TIENDA ARGELIO",
+    "Barrio":"RENACER",
+    "DiaVisita":null,
+    "Latitud":8.959334,
+    "Longitud":-75.454356,
+    "NOMBRE_NORM":"TIENDA ARGELIO"
+  },
+  {
+    "Cliente":"TIENDA BARCELONA",
+    "Barrio":"RENACER",
+    "DiaVisita":null,
+    "Latitud":8.9598215,
+    "Longitud":-75.4529328,
+    "NOMBRE_NORM":"TIENDA BARCELONA"
+  },
+  {
+    "Cliente":"PANADERIA DELITORTAS",
+    "Barrio":"AVENIDA",
+    "DiaVisita":null,
+    "Latitud":8.9570548,
+    "Longitud":-75.4519796,
+    "NOMBRE_NORM":"PANADERIA DELITORTAS"
+  },
+  {
+    "Cliente":"TIENDA EL TOTUMO",
+    "Barrio":"COROCITO",
+    "DiaVisita":null,
+    "Latitud":8.9564421,
+    "Longitud":-75.4524601,
+    "NOMBRE_NORM":"TIENDA EL TOTUMO"
+  },
+  {
+    "Cliente":"TIENDA JIRETH",
+    "Barrio":"COROCITO",
+    "DiaVisita":null,
+    "Latitud":8.9566603,
+    "Longitud":-75.4516695,
+    "NOMBRE_NORM":"TIENDA JIRETH"
+  },
+  {
+    "Cliente":"SUPERTIENDA LA PRINCIPAL",
+    "Barrio":"COROCITO",
+    "DiaVisita":null,
+    "Latitud":8.9558552,
+    "Longitud":-75.4530961,
+    "NOMBRE_NORM":"SUPERTIENDA LA PRINCIPAL"
+  },
+  {
+    "Cliente":"EL MAMONAL",
+    "Barrio":"MAMONAL",
+    "DiaVisita":null,
+    "Latitud":8.9547408,
+    "Longitud":-75.4533559,
+    "NOMBRE_NORM":"EL MAMONAL"
+  },
+  {
+    "Cliente":"LA BENDICION DE DIOS",
+    "Barrio":"MAMONAL",
+    "DiaVisita":null,
+    "Latitud":8.9547408,
+    "Longitud":-75.4533559,
+    "NOMBRE_NORM":"LA BENDICION DE DIOS"
+  },
+  {
+    "Cliente":"TIENDA AFUERA",
+    "Barrio":"MAMONAL",
+    "DiaVisita":null,
+    "Latitud":8.9542324,
+    "Longitud":-75.453887,
+    "NOMBRE_NORM":"TIENDA AFUERA"
+  },
+  {
+    "Cliente":"TIENDA JR",
+    "Barrio":"MAMONAL",
+    "DiaVisita":null,
+    "Latitud":8.954808,
+    "Longitud":-75.4533569,
+    "NOMBRE_NORM":"TIENDA JR"
+  },
+  {
+    "Cliente":"SUPERTIENDA LA BENDICION",
+    "Barrio":"MAMONAL",
+    "DiaVisita":null,
+    "Latitud":8.9543417,
+    "Longitud":-75.4529811,
+    "NOMBRE_NORM":"SUPERTIENDA LA BENDICION"
+  },
+  {
+    "Cliente":"LA RESERVA",
+    "Barrio":"MAMONAL",
+    "DiaVisita":null,
+    "Latitud":8.9538661,
+    "Longitud":-75.4525506,
+    "NOMBRE_NORM":"LA RESERVA"
+  },
+  {
+    "Cliente":"EL VECI",
+    "Barrio":"MAMONAL",
+    "DiaVisita":null,
+    "Latitud":8.9530639,
+    "Longitud":-75.4528218,
+    "NOMBRE_NORM":"EL VECI"
+  },
+  {
+    "Cliente":"PAN PRIMO",
+    "Barrio":"MAMONAL",
+    "DiaVisita":null,
+    "Latitud":8.9537813,
+    "Longitud":-75.4515246,
+    "NOMBRE_NORM":"PAN PRIMO"
+  },
+  {
+    "Cliente":"LA 17 CON 1",
+    "Barrio":"MAMONAL",
+    "DiaVisita":null,
+    "Latitud":8.9543135,
+    "Longitud":-75.4519189,
+    "NOMBRE_NORM":"LA 17 CON 1"
+  },
+  {
+    "Cliente":"TIENDA SAMARA",
+    "Barrio":"NUEVA GRANADA",
+    "DiaVisita":null,
+    "Latitud":8.9523784,
+    "Longitud":-75.4524202,
+    "NOMBRE_NORM":"TIENDA SAMARA"
+  },
+  {
+    "Cliente":"TIENDA LA FE",
+    "Barrio":"NUEVA GRANADA",
+    "DiaVisita":null,
+    "Latitud":8.9527218,
+    "Longitud":-75.4510194,
+    "NOMBRE_NORM":"TIENDA LA FE"
+  },
+  {
+    "Cliente":"MAKPAN",
+    "Barrio":"NUEVA GRANADA",
+    "DiaVisita":null,
+    "Latitud":8.954288,
+    "Longitud":-75.4490171,
+    "NOMBRE_NORM":"MAKPAN"
+  },
+  {
+    "Cliente":"TIENDA ANA",
+    "Barrio":"NUEVA GRANADA",
+    "DiaVisita":null,
+    "Latitud":8.9528851,
+    "Longitud":-75.4493933,
+    "NOMBRE_NORM":"TIENDA ANA"
+  },
+  {
+    "Cliente":"MERKEFULL",
+    "Barrio":"NUEVA GRANADA",
+    "DiaVisita":null,
+    "Latitud":8.9536614,
+    "Longitud":-75.4483744,
+    "NOMBRE_NORM":"MERKEFULL"
+  },
+  {
+    "Cliente":"TIENDA EL RETORNO",
+    "Barrio":"NUEVA GRANADA",
+    "DiaVisita":null,
+    "Latitud":8.9532093,
+    "Longitud":-75.4501698,
+    "NOMBRE_NORM":"TIENDA EL RETORNO"
+  },
+  {
+    "Cliente":"TIENDA JOCHE",
+    "Barrio":"NUEVA GRANADA",
+    "DiaVisita":null,
+    "Latitud":8.9511414,
+    "Longitud":-75.452167,
+    "NOMBRE_NORM":"TIENDA JOCHE"
+  },
+  {
+    "Cliente":"TIENDA LA MISMITA",
+    "Barrio":"SAN PEDRO",
+    "DiaVisita":null,
+    "Latitud":8.9498881,
+    "Longitud":-75.4498995,
+    "NOMBRE_NORM":"TIENDA LA MISMITA"
+  },
+  {
+    "Cliente":"SUPERTIENDA EL ÉXITO",
+    "Barrio":"SAN PEDRO",
+    "DiaVisita":null,
+    "Latitud":8.9479112,
+    "Longitud":-75.4500578,
+    "NOMBRE_NORM":"SUPERTIENDA EL ÉXITO"
+  },
+  {
+    "Cliente":"EL CARRIEL PAISA",
+    "Barrio":"SAN PEDRO",
+    "DiaVisita":null,
+    "Latitud":8.9477191,
+    "Longitud":-75.4497986,
+    "NOMBRE_NORM":"EL CARRIEL PAISA"
+  },
+  {
+    "Cliente":"ABASTOS LA BENDICION",
+    "Barrio":"SAN PEDRO",
+    "DiaVisita":null,
+    "Latitud":8.9487369,
+    "Longitud":-75.4493095,
+    "NOMBRE_NORM":"ABASTOS LA BENDICION"
+  },
+  {
+    "Cliente":"TIENDA MARIA",
+    "Barrio":"SAN PEDRO",
+    "DiaVisita":null,
+    "Latitud":8.9482004,
+    "Longitud":-75.4483053,
+    "NOMBRE_NORM":"TIENDA MARIA"
+  },
+  {
+    "Cliente":"RICO PAN",
+    "Barrio":"SAN PEDRO",
+    "DiaVisita":null,
+    "Latitud":8.9493181,
+    "Longitud":-75.4487606,
+    "NOMBRE_NORM":"RICO PAN"
+  },
+  {
+    "Cliente":"TIENDA LA ECONOMIA",
+    "Barrio":"SAN PEDRO",
+    "DiaVisita":null,
+    "Latitud":8.9500567,
+    "Longitud":-75.4477598,
+    "NOMBRE_NORM":"TIENDA LA ECONOMIA"
+  },
+  {
+    "Cliente":"VARIEDADES MARY",
+    "Barrio":"SAN PEDRO",
+    "DiaVisita":null,
+    "Latitud":8.9516199,
+    "Longitud":-75.4480438,
+    "NOMBRE_NORM":"VARIEDADES MARY"
+  },
+  {
+    "Cliente":"TIENDA EL BUEN GUSTO",
+    "Barrio":"SAN PEDRO",
+    "DiaVisita":null,
+    "Latitud":8.95177,
+    "Longitud":-75.448313,
+    "NOMBRE_NORM":"TIENDA EL BUEN GUSTO"
+  },
+  {
+    "Cliente":"DESECHABLES CENTENARIO",
+    "Barrio":"CENTENARIO",
+    "DiaVisita":null,
+    "Latitud":8.951403,
+    "Longitud":-75.4461136,
+    "NOMBRE_NORM":"DESECHABLES CENTENARIO"
+  },
+  {
+    "Cliente":"DROGUERIA LA 14",
+    "Barrio":"CENTENARIO",
+    "DiaVisita":null,
+    "Latitud":8.9484898,
+    "Longitud":-75.4472023,
+    "NOMBRE_NORM":"DROGUERIA LA 14"
+  },
+  {
+    "Cliente":"DROGUERIA UNIFARMA",
+    "Barrio":"CENTENARIO",
+    "DiaVisita":null,
+    "Latitud":8.9484858,
+    "Longitud":-75.4470554,
+    "NOMBRE_NORM":"DROGUERIA UNIFARMA"
+  },
+  {
+    "Cliente":"DROGUERIA MANANTIAL",
+    "Barrio":"CENTENARIO",
+    "DiaVisita":null,
+    "Latitud":8.9483501,
+    "Longitud":-75.4467456,
+    "NOMBRE_NORM":"DROGUERIA MANANTIAL"
+  },
+  {
+    "Cliente":"CAFETERIA LA 14",
+    "Barrio":"BOSQUE CENTRO",
+    "DiaVisita":null,
+    "Latitud":8.9483308,
+    "Longitud":-75.4467151,
+    "NOMBRE_NORM":"CAFETERIA LA 14"
+  },
+  {
+    "Cliente":"PANADERIA PAN PRIMO",
+    "Barrio":"BOSQUE CENTRO",
+    "DiaVisita":null,
+    "Latitud":8.9478804,
+    "Longitud":-75.4458233,
+    "NOMBRE_NORM":"PANADERIA PAN PRIMO"
+  },
+  {
+    "Cliente":"TIENDA KINCAYA",
+    "Barrio":"BOSQUE CENTRO",
+    "DiaVisita":null,
+    "Latitud":8.9475386,
+    "Longitud":-75.4468811,
+    "NOMBRE_NORM":"TIENDA KINCAYA"
+  },
+  {
+    "Cliente":"TIENDA LA CASONA",
+    "Barrio":"BOSQUE CENTRO",
+    "DiaVisita":null,
+    "Latitud":8.94604,
+    "Longitud":-75.4466135,
+    "NOMBRE_NORM":"TIENDA LA CASONA"
+  },
+  {
+    "Cliente":"TIENDA EL MONO",
+    "Barrio":"SAN PEDRO",
+    "DiaVisita":null,
+    "Latitud":8.9466626,
+    "Longitud":-75.44859,
+    "NOMBRE_NORM":"TIENDA EL MONO"
+  },
+  {
+    "Cliente":"TIENDA LOS BISCOCHOS",
+    "Barrio":"SAN PEDRO",
+    "DiaVisita":null,
+    "Latitud":8.9446665,
+    "Longitud":-75.4470614,
+    "NOMBRE_NORM":"TIENDA LOS BISCOCHOS"
+  },
+  {
+    "Cliente":"TIENDA BUENAVISTA",
+    "Barrio":"SAN PEDRO",
+    "DiaVisita":null,
+    "Latitud":8.9446665,
+    "Longitud":-75.4470614,
+    "NOMBRE_NORM":"TIENDA BUENAVISTA"
+  },
+  {
+    "Cliente":"DEPOSITO LA MANO DE DIOS",
+    "Barrio":"SAN PEDRO",
+    "DiaVisita":null,
+    "Latitud":8.9452994,
+    "Longitud":-75.4481873,
+    "NOMBRE_NORM":"DEPOSITO LA MANO DE DIOS"
+  },
+  {
+    "Cliente":"EL CAMPESINO",
+    "Barrio":"SAN PEDRO",
+    "DiaVisita":null,
+    "Latitud":8.9452994,
+    "Longitud":-75.4481873,
+    "NOMBRE_NORM":"EL CAMPESINO"
+  },
+  {
+    "Cliente":"LOLO VARIEDADES",
+    "Barrio":"SAN PEDRO",
+    "DiaVisita":null,
+    "Latitud":8.9447649,
+    "Longitud":-75.4488877,
+    "NOMBRE_NORM":"LOLO VARIEDADES"
+  },
+  {
+    "Cliente":"TIENDA R y V",
+    "Barrio":"SAN PEDRO",
+    "DiaVisita":null,
+    "Latitud":8.9447649,
+    "Longitud":-75.4488877,
+    "NOMBRE_NORM":"TIENDA R Y V"
+  },
+  {
+    "Cliente":"DEPOSITO Y MERCADO ANTIOQUIA",
+    "Barrio":"CENTRO",
+    "DiaVisita":null,
+    "Latitud":8.9484405,
+    "Longitud":-75.4455245,
+    "NOMBRE_NORM":"DEPOSITO Y MERCADO ANTIOQUIA"
+  },
+  {
+    "Cliente":"TIENDA DIANA",
+    "Barrio":"CENTRO",
+    "DiaVisita":null,
+    "Latitud":8.9484491,
+    "Longitud":-75.4455034,
+    "NOMBRE_NORM":"TIENDA DIANA"
+  },
+  {
+    "Cliente":"DEPOSITO Y MERCADO ANTIOQUIA #2",
+    "Barrio":"CENTRO",
+    "DiaVisita":null,
+    "Latitud":8.9484405,
+    "Longitud":-75.4455245,
+    "NOMBRE_NORM":"DEPOSITO Y MERCADO ANTIOQUIA #2"
+  },
+  {
+    "Cliente":"DEPOSITO Y MERCADO ANTIOQUIA #4",
+    "Barrio":"CENTRO",
+    "DiaVisita":null,
+    "Latitud":8.9485657,
+    "Longitud":-75.4451527,
+    "NOMBRE_NORM":"DEPOSITO Y MERCADO ANTIOQUIA #4"
+  },
+  {
+    "Cliente":"LA KOLMENA DISTRIPAN",
+    "Barrio":"CENTRO",
+    "DiaVisita":null,
+    "Latitud":8.9489555,
+    "Longitud":-75.4443501,
+    "NOMBRE_NORM":"LA KOLMENA DISTRIPAN"
+  },
+  {
+    "Cliente":"DEPOSITO JHON GOMEZ",
+    "Barrio":"CENTRO",
+    "DiaVisita":null,
+    "Latitud":8.948986,
+    "Longitud":-75.4444862,
+    "NOMBRE_NORM":"DEPOSITO JHON GOMEZ"
+  },
+  {
+    "Cliente":"POLLO CENTRAL",
+    "Barrio":"CENTRO",
+    "DiaVisita":null,
+    "Latitud":8.9490211,
+    "Longitud":-75.4445945,
+    "NOMBRE_NORM":"POLLO CENTRAL"
+  },
+  {
+    "Cliente":"DEPOSITO LA OCTAVA",
+    "Barrio":"CENTRO",
+    "DiaVisita":null,
+    "Latitud":8.9487488,
+    "Longitud":-75.4446853,
+    "NOMBRE_NORM":"DEPOSITO LA OCTAVA"
+  },
+  {
+    "Cliente":"RIKYPAN",
+    "Barrio":"CENTRO",
+    "DiaVisita":null,
+    "Latitud":8.9472025,
+    "Longitud":-75.4442354,
+    "NOMBRE_NORM":"RIKYPAN"
+  },
+  {
+    "Cliente":"PANADERIA LA 11",
+    "Barrio":"CENTRO",
+    "DiaVisita":null,
+    "Latitud":8.9474694,
+    "Longitud":-75.4427914,
+    "NOMBRE_NORM":"PANADERIA LA 11"
+  },
+  {
+    "Cliente":"PANADERIA OSCAR",
+    "Barrio":"CENTRO",
+    "DiaVisita":null,
+    "Latitud":8.9474005,
+    "Longitud":-75.4430837,
+    "NOMBRE_NORM":"PANADERIA OSCAR"
+  },
+  {
+    "Cliente":"TIENDA ONALPE",
+    "Barrio":"CENTRO",
+    "DiaVisita":null,
+    "Latitud":8.9455064,
+    "Longitud":-75.4435508,
+    "NOMBRE_NORM":"TIENDA ONALPE"
+  },
+  {
+    "Cliente":"TIENDA CAPRICHO",
+    "Barrio":"PLAYA RICA",
+    "DiaVisita":null,
+    "Latitud":8.9514182,
+    "Longitud":-75.4426093,
+    "NOMBRE_NORM":"TIENDA CAPRICHO"
+  },
+  {
+    "Cliente":"SUPER POLLO",
+    "Barrio":"PLAYA RICA",
+    "DiaVisita":null,
+    "Latitud":8.9510509,
+    "Longitud":-75.4416742,
+    "NOMBRE_NORM":"SUPER POLLO"
+  },
+  {
+    "Cliente":"TIENDA LILI",
+    "Barrio":"PLAYA RICA",
+    "DiaVisita":null,
+    "Latitud":8.9496556,
+    "Longitud":-75.4417775,
+    "NOMBRE_NORM":"TIENDA LILI"
+  },
+  {
+    "Cliente":"TIENDA JISIC",
+    "Barrio":"SAN JUAN",
+    "DiaVisita":null,
+    "Latitud":8.947549,
+    "Longitud":-75.441227,
+    "NOMBRE_NORM":"TIENDA JISIC"
+  },
+  {
+    "Cliente":"El BARATON",
+    "Barrio":"SAN JUAN",
+    "DiaVisita":null,
+    "Latitud":8.9492536,
+    "Longitud":-75.4405987,
+    "NOMBRE_NORM":"EL BARATON"
+  },
+  {
+    "Cliente":"PUNTO AZUL",
+    "Barrio":"SAN JUAN",
+    "DiaVisita":null,
+    "Latitud":8.9496772,
+    "Longitud":-75.4408367,
+    "NOMBRE_NORM":"PUNTO AZUL"
+  },
+  {
+    "Cliente":"LA BENDICION HD",
+    "Barrio":"SAN JUAN",
+    "DiaVisita":null,
+    "Latitud":8.9505505,
+    "Longitud":-75.4404015,
+    "NOMBRE_NORM":"LA BENDICION HD"
+  },
+  {
+    "Cliente":"TIENDA EL CHAMO",
+    "Barrio":"SAN JUAN",
+    "DiaVisita":null,
+    "Latitud":8.9503003,
+    "Longitud":-75.439452,
+    "NOMBRE_NORM":"TIENDA EL CHAMO"
+  },
+  {
+    "Cliente":"TIENDA A y L",
+    "Barrio":"SAN JUAN",
+    "DiaVisita":null,
+    "Latitud":8.9509478,
+    "Longitud":-75.4383464,
+    "NOMBRE_NORM":"TIENDA A Y L"
+  },
+  {
+    "Cliente":"TIENDA EL MANA",
+    "Barrio":"SAN JUAN",
+    "DiaVisita":null,
+    "Latitud":8.9499477,
+    "Longitud":-75.4375169,
+    "NOMBRE_NORM":"TIENDA EL MANA"
+  },
+  {
+    "Cliente":"TIENDA YULI",
+    "Barrio":"SAN JUAN",
+    "DiaVisita":null,
+    "Latitud":8.9516279,
+    "Longitud":-75.4371037,
+    "NOMBRE_NORM":"TIENDA YULI"
+  },
+  {
+    "Cliente":"TIENDA LA ESQUINITA",
+    "Barrio":"SAN JUAN",
+    "DiaVisita":null,
+    "Latitud":8.9500017,
+    "Longitud":-75.4384743,
+    "NOMBRE_NORM":"TIENDA LA ESQUINITA"
+  },
+  {
+    "Cliente":"TIENDA JP",
+    "Barrio":"SAN JUAN",
+    "DiaVisita":null,
+    "Latitud":8.9495122,
+    "Longitud":-75.4382091,
+    "NOMBRE_NORM":"TIENDA JP"
+  },
+  {
+    "Cliente":"TIENDA SAN JUAN",
+    "Barrio":"SAN JUAN",
+    "DiaVisita":null,
+    "Latitud":8.9487713,
+    "Longitud":-75.4385649,
+    "NOMBRE_NORM":"TIENDA SAN JUAN"
+  },
+  {
+    "Cliente":"TIENDA LA MEJOR",
+    "Barrio":"SAN NICOLAS",
+    "DiaVisita":null,
+    "Latitud":8.9485667,
+    "Longitud":-75.4382993,
+    "NOMBRE_NORM":"TIENDA LA MEJOR"
+  },
+  {
+    "Cliente":"TIENDA SOFIA",
+    "Barrio":"SAN NICOLAS",
+    "DiaVisita":null,
+    "Latitud":8.9483024,
+    "Longitud":-75.4379255,
+    "NOMBRE_NORM":"TIENDA SOFIA"
+  },
+  {
+    "Cliente":"BEBIDAS Y ABARROTES",
+    "Barrio":"SAN ROQUE",
+    "DiaVisita":null,
+    "Latitud":8.9470392,
+    "Longitud":-75.4392237,
+    "NOMBRE_NORM":"BEBIDAS Y ABARROTES"
+  },
+  {
+    "Cliente":"DROGUERIA JOHOYS",
+    "Barrio":"SAN ROQUE",
+    "DiaVisita":null,
+    "Latitud":8.9469922,
+    "Longitud":-75.4391754,
+    "NOMBRE_NORM":"DROGUERIA JOHOYS"
+  },
+  {
+    "Cliente":"TIENDA PUNTO ROJO",
+    "Barrio":"SAN ROQUE",
+    "DiaVisita":null,
+    "Latitud":8.946857,
+    "Longitud":-75.440599,
+    "NOMBRE_NORM":"TIENDA PUNTO ROJO"
+  },
+  {
+    "Cliente":"TIENDA LA 14",
+    "Barrio":"SAN ROQUE",
+    "DiaVisita":null,
+    "Latitud":8.9456478,
+    "Longitud":-75.441284,
+    "NOMBRE_NORM":"TIENDA LA 14"
+  },
+  {
+    "Cliente":"LA SUPER TIENDA",
+    "Barrio":"SAN ROQUE",
+    "DiaVisita":null,
+    "Latitud":8.9455743,
+    "Longitud":-75.4399247,
+    "NOMBRE_NORM":"LA SUPER TIENDA"
+  },
+  {
+    "Cliente":"PANADERIA SAN ROQUE",
+    "Barrio":"SAN ROQUE",
+    "DiaVisita":null,
+    "Latitud":8.945366,
+    "Longitud":-75.438818,
+    "NOMBRE_NORM":"PANADERIA SAN ROQUE"
+  },
+  {
+    "Cliente":"TIENDA DA",
+    "Barrio":"SAN ROQUE",
+    "DiaVisita":null,
+    "Latitud":8.9452461,
+    "Longitud":-75.4384398,
+    "NOMBRE_NORM":"TIENDA DA"
+  },
+  {
+    "Cliente":"FARMA AZUL",
+    "Barrio":"SAN ROQUE",
+    "DiaVisita":null,
+    "Latitud":8.9447731,
+    "Longitud":-75.4375074,
+    "NOMBRE_NORM":"FARMA AZUL"
+  },
+  {
+    "Cliente":"TIENDA LETICIA",
+    "Barrio":"SAN ROQUE",
+    "DiaVisita":null,
+    "Latitud":8.9447731,
+    "Longitud":-75.4375074,
+    "NOMBRE_NORM":"TIENDA LETICIA"
+  },
+  {
+    "Cliente":"PAN ARTE",
+    "Barrio":"SAN ROQUE",
+    "DiaVisita":null,
+    "Latitud":8.9447731,
+    "Longitud":-75.4375074,
+    "NOMBRE_NORM":"PAN ARTE"
+  },
+  {
+    "Cliente":"TIENDA PROVINCIANA",
+    "Barrio":"MIRAMAR",
+    "DiaVisita":null,
+    "Latitud":8.9461708,
+    "Longitud":-75.4367326,
+    "NOMBRE_NORM":"TIENDA PROVINCIANA"
+  },
+  {
+    "Cliente":"TIENDA MIRAMAR",
+    "Barrio":"MIRAMAR",
+    "DiaVisita":null,
+    "Latitud":8.9453693,
+    "Longitud":-75.4365002,
+    "NOMBRE_NORM":"TIENDA MIRAMAR"
+  },
+  {
+    "Cliente":"PANADERIA DULCE PAN",
+    "Barrio":"MIRAMAR",
+    "DiaVisita":null,
+    "Latitud":8.9447701,
+    "Longitud":-75.4365438,
+    "NOMBRE_NORM":"PANADERIA DULCE PAN"
+  },
+  {
+    "Cliente":"TIENDA LA AMISTAD",
+    "Barrio":"MIRAMAR",
+    "DiaVisita":null,
+    "Latitud":8.9447774,
+    "Longitud":-75.4361804,
+    "NOMBRE_NORM":"TIENDA LA AMISTAD"
+  },
+  {
+    "Cliente":"TIENDA SANTI",
+    "Barrio":"ANDRES RODRIGUEZ",
+    "DiaVisita":null,
+    "Latitud":8.9461148,
+    "Longitud":-75.4320498,
+    "NOMBRE_NORM":"TIENDA SANTI"
+  },
+  {
+    "Cliente":"TIENDA MARCATODO",
+    "Barrio":"ANDRES RODRIGUEZ",
+    "DiaVisita":null,
+    "Latitud":8.9457048,
+    "Longitud":-75.4318728,
+    "NOMBRE_NORM":"TIENDA MARCATODO"
+  },
+  {
+    "Cliente":"PUNTO ROJO",
+    "Barrio":"ANDRES RODRIGUEZ",
+    "DiaVisita":null,
+    "Latitud":8.9447099,
+    "Longitud":-75.4319127,
+    "NOMBRE_NORM":"PUNTO ROJO"
+  },
+  {
+    "Cliente":"EL DESCANSO",
+    "Barrio":"ANDRES RODRIGUEZ",
+    "DiaVisita":null,
+    "Latitud":8.9446652,
+    "Longitud":-75.4321936,
+    "NOMBRE_NORM":"EL DESCANSO"
+  },
+  {
+    "Cliente":"TIENDA LAS MELLAS",
+    "Barrio":"IRLANDA",
+    "DiaVisita":null,
+    "Latitud":8.9436434,
+    "Longitud":-75.4319438,
+    "NOMBRE_NORM":"TIENDA LAS MELLAS"
+  },
+  {
+    "Cliente":"TIENDA DIOS TE BENDIGA",
+    "Barrio":"IRLANDA",
+    "DiaVisita":null,
+    "Latitud":8.9435285,
+    "Longitud":-75.4309792,
+    "NOMBRE_NORM":"TIENDA DIOS TE BENDIGA"
+  },
+  {
+    "Cliente":"TIENDA SOBRE LA ROCA",
+    "Barrio":"IRLANDA",
+    "DiaVisita":null,
+    "Latitud":8.9423123,
+    "Longitud":-75.4303885,
+    "NOMBRE_NORM":"TIENDA SOBRE LA ROCA"
+  },
+  {
+    "Cliente":"TIENDA C y M",
+    "Barrio":"IRLANDA",
+    "DiaVisita":null,
+    "Latitud":8.9429164,
+    "Longitud":-75.4292915,
+    "NOMBRE_NORM":"TIENDA C Y M"
+  },
+  {
+    "Cliente":"TIENDA LAS DOS MARIAS",
+    "Barrio":"IRLANDA",
+    "DiaVisita":null,
+    "Latitud":8.9420311,
+    "Longitud":-75.428973,
+    "NOMBRE_NORM":"TIENDA LAS DOS MARIAS"
+  },
+  {
+    "Cliente":"TIENDA L y L",
+    "Barrio":"LAS ALPUJARRAS",
+    "DiaVisita":null,
+    "Latitud":8.9387648,
+    "Longitud":-75.4279109,
+    "NOMBRE_NORM":"TIENDA L Y L"
+  },
+  {
+    "Cliente":"TIENDA AMBAR",
+    "Barrio":"LAS ALPUJARRAS",
+    "DiaVisita":null,
+    "Latitud":8.9379901,
+    "Longitud":-75.426792,
+    "NOMBRE_NORM":"TIENDA AMBAR"
+  },
+  {
+    "Cliente":"TIENDA CAROLINA",
+    "Barrio":"LAS ALPUJARRAS",
+    "DiaVisita":null,
+    "Latitud":8.9370208,
+    "Longitud":-75.4260777,
+    "NOMBRE_NORM":"TIENDA CAROLINA"
+  },
+  {
+    "Cliente":"TIENDA RJ",
+    "Barrio":"LAS ALPUJARRAS",
+    "DiaVisita":null,
+    "Latitud":8.9370208,
+    "Longitud":-75.4260777,
+    "NOMBRE_NORM":"TIENDA RJ"
+  },
+  {
+    "Cliente":"MINI MERCADO LA BENDICION",
+    "Barrio":"LAS ALPUJARRAS",
+    "DiaVisita":null,
+    "Latitud":8.9363245,
+    "Longitud":-75.4257483,
+    "NOMBRE_NORM":"MINI MERCADO LA BENDICION"
+  },
+  {
+    "Cliente":"CASA AZUL",
+    "Barrio":"LAS ALPUJARRAS",
+    "DiaVisita":null,
+    "Latitud":8.9384146,
+    "Longitud":-75.4278974,
+    "NOMBRE_NORM":"CASA AZUL"
+  },
+  {
+    "Cliente":"TIENDA URB MIRAMAR",
+    "Barrio":"MIRAMAR",
+    "DiaVisita":null,
+    "Latitud":8.9433705,
+    "Longitud":-75.4367638,
+    "NOMBRE_NORM":"TIENDA URB MIRAMAR"
+  },
+  {
+    "Cliente":"TIENDA EL JORDAN",
+    "Barrio":"SAN ROQUE",
+    "DiaVisita":null,
+    "Latitud":8.9446579,
+    "Longitud":-75.4395352,
+    "NOMBRE_NORM":"TIENDA EL JORDAN"
+  },
+  {
+    "Cliente":"TIENDA AVI",
+    "Barrio":"SAN ROQUE",
+    "DiaVisita":null,
+    "Latitud":8.9438623,
+    "Longitud":-75.4393987,
+    "NOMBRE_NORM":"TIENDA AVI"
+  },
+  {
+    "Cliente":"TIENDA LA MUÑE",
+    "Barrio":"EL PRADO",
+    "DiaVisita":null,
+    "Latitud":8.9437034,
+    "Longitud":-75.4403341,
+    "NOMBRE_NORM":"TIENDA LA MUÑE"
+  },
+  {
+    "Cliente":"TIENDA EL REDENTOR",
+    "Barrio":"EL PRADO",
+    "DiaVisita":null,
+    "Latitud":8.9436812,
+    "Longitud":-75.4403589,
+    "NOMBRE_NORM":"TIENDA EL REDENTOR"
+  },
+  {
+    "Cliente":"TIENDA DANIELA",
+    "Barrio":"EL PRADO",
+    "DiaVisita":null,
+    "Latitud":8.9440183,
+    "Longitud":-75.4409886,
+    "NOMBRE_NORM":"TIENDA DANIELA"
+  },
+  {
+    "Cliente":"TIENDA LA AVENIDA",
+    "Barrio":"AVENIDA",
+    "DiaVisita":null,
+    "Latitud":8.9567329,
+    "Longitud":-75.4513614,
+    "NOMBRE_NORM":"TIENDA LA AVENIDA"
+  },
+  {
+    "Cliente":"ABARROTES LOS PAISITAS",
+    "Barrio":"AVENIDA",
+    "DiaVisita":null,
+    "Latitud":8.9571114,
+    "Longitud":-75.4518552,
+    "NOMBRE_NORM":"ABARROTES LOS PAISITAS"
+  },
+  {
+    "Cliente":"DEPOSITO ANTIOQUIA #2",
+    "Barrio":"AVENIDA",
+    "DiaVisita":null,
+    "Latitud":8.957734,
+    "Longitud":-75.4530803,
+    "NOMBRE_NORM":"DEPOSITO ANTIOQUIA #2"
+  },
+  {
+    "Cliente":"TIENDA LA VIRGEN",
+    "Barrio":"GALILLO LARGO",
+    "DiaVisita":null,
+    "Latitud":8.9668349,
+    "Longitud":-75.4518354,
+    "NOMBRE_NORM":"TIENDA LA VIRGEN"
+  },
+  {
+    "Cliente":"TIENDA EL MANGO",
+    "Barrio":"GALILLO LARGO",
+    "DiaVisita":null,
+    "Latitud":8.9653936,
+    "Longitud":-75.4518726,
+    "NOMBRE_NORM":"TIENDA EL MANGO"
+  },
+  {
+    "Cliente":"TIENDA DAVICOL",
+    "Barrio":"GALILLO LARGO",
+    "DiaVisita":null,
+    "Latitud":8.9641126,
+    "Longitud":-75.4517774,
+    "NOMBRE_NORM":"TIENDA DAVICOL"
+  },
+  {
+    "Cliente":"TERMOCEL",
+    "Barrio":"NUEVA ESPERANZA",
+    "DiaVisita":null,
+    "Latitud":8.9621944,
+    "Longitud":-75.4514271,
+    "NOMBRE_NORM":"TERMOCEL"
+  },
+  {
+    "Cliente":"TIENDA LOS LAURELES",
+    "Barrio":"NUEVA ESPERANZA",
+    "DiaVisita":null,
+    "Latitud":8.9612906,
+    "Longitud":-75.4503528,
+    "NOMBRE_NORM":"TIENDA LOS LAURELES"
+  },
+  {
+    "Cliente":"TIENDA SATELITE",
+    "Barrio":"NUEVA ESPERANZA",
+    "DiaVisita":null,
+    "Latitud":8.9579457,
+    "Longitud":-75.4504454,
+    "NOMBRE_NORM":"TIENDA SATELITE"
+  },
+  {
+    "Cliente":"PUNTO FIJO",
+    "Barrio":"NUEVA ESPERANZA",
+    "DiaVisita":null,
+    "Latitud":8.9587567,
+    "Longitud":-75.450152,
+    "NOMBRE_NORM":"PUNTO FIJO"
+  },
+  {
+    "Cliente":"LA AMISTAD",
+    "Barrio":"NUEVA ESPERANZA",
+    "DiaVisita":null,
+    "Latitud":8.9582944,
+    "Longitud":-75.4490449,
+    "NOMBRE_NORM":"LA AMISTAD"
+  },
+  {
+    "Cliente":"MEJOR ESQUINA",
+    "Barrio":"NUEVA ESPERANZA",
+    "DiaVisita":null,
+    "Latitud":8.9582712,
+    "Longitud":-75.4490744,
+    "NOMBRE_NORM":"MEJOR ESQUINA"
+  },
+  {
+    "Cliente":"TIENDA EL PARAISO",
+    "Barrio":"NUEVA ESPERANZA",
+    "DiaVisita":null,
+    "Latitud":8.9590863,
+    "Longitud":-75.4470386,
+    "NOMBRE_NORM":"TIENDA EL PARAISO"
+  },
+  {
+    "Cliente":"TIENDA EL GANGAZO #4",
+    "Barrio":"NUEVA ESPERANZA",
+    "DiaVisita":null,
+    "Latitud":8.9591912,
+    "Longitud":-75.4470628,
+    "NOMBRE_NORM":"TIENDA EL GANGAZO #4"
+  },
+  {
+    "Cliente":"TIENDA MILET",
+    "Barrio":"NUEVA ESPERANZA",
+    "DiaVisita":null,
+    "Latitud":8.9591919,
+    "Longitud":-75.4479006,
+    "NOMBRE_NORM":"TIENDA MILET"
+  },
+  {
+    "Cliente":"VARIEDADES MARCE",
+    "Barrio":"ALTOS DEL POBLADO",
+    "DiaVisita":null,
+    "Latitud":8.9629631,
+    "Longitud":-75.4444946,
+    "NOMBRE_NORM":"VARIEDADES MARCE"
+  },
+  {
+    "Cliente":"TIENDA MARIO",
+    "Barrio":"SIMON BOLIVAR",
+    "DiaVisita":null,
+    "Latitud":8.9591548,
+    "Longitud":-75.4463527,
+    "NOMBRE_NORM":"TIENDA MARIO"
+  },
+  {
+    "Cliente":"SAN MARTIN",
+    "Barrio":"SIMON BOLIVAR",
+    "DiaVisita":null,
+    "Latitud":8.9587809,
+    "Longitud":-75.4455369,
+    "NOMBRE_NORM":"SAN MARTIN"
+  },
+  {
+    "Cliente":"TIENDA ANDRE",
+    "Barrio":"SIMON BOLIVAR",
+    "DiaVisita":null,
+    "Latitud":8.9585266,
+    "Longitud":-75.4456653,
+    "NOMBRE_NORM":"TIENDA ANDRE"
+  },
+  {
+    "Cliente":"TIENDA LA VOLUNTAD",
+    "Barrio":"SIMON BOLIVAR",
+    "DiaVisita":null,
+    "Latitud":8.958564,
+    "Longitud":-75.4458719,
+    "NOMBRE_NORM":"TIENDA LA VOLUNTAD"
+  },
+  {
+    "Cliente":"TIENDA EL GAME",
+    "Barrio":"SIMON BOLIVAR",
+    "DiaVisita":null,
+    "Latitud":8.9589753,
+    "Longitud":-75.4467221,
+    "NOMBRE_NORM":"TIENDA EL GAME"
+  },
+  {
+    "Cliente":"TIENDA LA 26",
+    "Barrio":"SIMON BOLIVAR",
+    "DiaVisita":null,
+    "Latitud":8.9592492,
+    "Longitud":-75.4465625,
+    "NOMBRE_NORM":"TIENDA LA 26"
+  },
+  {
+    "Cliente":"TIENDA ADRIANA",
+    "Barrio":"SIMON BOLIVAR",
+    "DiaVisita":null,
+    "Latitud":8.9589965,
+    "Longitud":-75.4459979,
+    "NOMBRE_NORM":"TIENDA ADRIANA"
+  },
+  {
+    "Cliente":"TIENDA EL MENUDEO",
+    "Barrio":"SIMON BOLIVAR",
+    "DiaVisita":null,
+    "Latitud":8.9579818,
+    "Longitud":-75.4473863,
+    "NOMBRE_NORM":"TIENDA EL MENUDEO"
+  },
+  {
+    "Cliente":"TIENDA EL MANANTIAL",
+    "Barrio":"SIMON BOLIVAR",
+    "DiaVisita":null,
+    "Latitud":8.9572545,
+    "Longitud":-75.4486748,
+    "NOMBRE_NORM":"TIENDA EL MANANTIAL"
+  },
+  {
+    "Cliente":"TIENDA EL ESTUDIANTE",
+    "Barrio":"SIMON BOLIVAR",
+    "DiaVisita":null,
+    "Latitud":8.9568912,
+    "Longitud":-75.447503,
+    "NOMBRE_NORM":"TIENDA EL ESTUDIANTE"
+  },
+  {
+    "Cliente":"TIENDA SAN JOSE",
+    "Barrio":"SAN JOSE",
+    "DiaVisita":null,
+    "Latitud":8.9567246,
+    "Longitud":-75.4476133,
+    "NOMBRE_NORM":"TIENDA SAN JOSE"
+  },
+  {
+    "Cliente":"TIENDA ESTHER",
+    "Barrio":"SAN JOSE",
+    "DiaVisita":null,
+    "Latitud":8.9563705,
+    "Longitud":-75.4480233,
+    "NOMBRE_NORM":"TIENDA ESTHER"
+  },
+  {
+    "Cliente":"TIENDA MONTE SINAI",
+    "Barrio":"SAN JOSE",
+    "DiaVisita":null,
+    "Latitud":8.9557562,
+    "Longitud":-75.4486459,
+    "NOMBRE_NORM":"TIENDA MONTE SINAI"
+  },
+  {
+    "Cliente":"TIENDA SANDRA",
+    "Barrio":"SAN JOSE",
+    "DiaVisita":null,
+    "Latitud":8.9554445,
+    "Longitud":-75.446404,
+    "NOMBRE_NORM":"TIENDA SANDRA"
+  },
+  {
+    "Cliente":"TIENDA J y L",
+    "Barrio":"SAN JOSE",
+    "DiaVisita":null,
+    "Latitud":8.9571932,
+    "Longitud":-75.4463285,
+    "NOMBRE_NORM":"TIENDA J Y L"
+  },
+  {
+    "Cliente":"TIENDA EL NEGRO",
+    "Barrio":"SAN JOSE",
+    "DiaVisita":null,
+    "Latitud":8.9569653,
+    "Longitud":-75.4454793,
+    "NOMBRE_NORM":"TIENDA EL NEGRO"
+  },
+  {
+    "Cliente":"TIENDA EL CHATO",
+    "Barrio":"SAN JOSE",
+    "DiaVisita":null,
+    "Latitud":8.9544463,
+    "Longitud":-75.4475643,
+    "NOMBRE_NORM":"TIENDA EL CHATO"
+  },
+  {
+    "Cliente":"CIELO AZUL",
+    "Barrio":"SAN JOSE",
+    "DiaVisita":null,
+    "Latitud":8.9535355,
+    "Longitud":-75.4472914,
+    "NOMBRE_NORM":"CIELO AZUL"
+  },
+  {
+    "Cliente":"ABASTOS EL PAISA",
+    "Barrio":"AVENIDA",
+    "DiaVisita":null,
+    "Latitud":8.9521313,
+    "Longitud":-75.4467329,
+    "NOMBRE_NORM":"ABASTOS EL PAISA"
+  },
+  {
+    "Cliente":"TIENDA 5 ESQUINAS",
+    "Barrio":"SAN ISIDRO",
+    "DiaVisita":null,
+    "Latitud":8.9528347,
+    "Longitud":-75.4454052,
+    "NOMBRE_NORM":"TIENDA 5 ESQUINAS"
+  },
+  {
+    "Cliente":"EL CHESPI",
+    "Barrio":"SAN ISIDRO",
+    "DiaVisita":null,
+    "Latitud":8.9528424,
+    "Longitud":-75.4451312,
+    "NOMBRE_NORM":"EL CHESPI"
+  },
+  {
+    "Cliente":"TIENDA SARA",
+    "Barrio":"SAN ISIDRO",
+    "DiaVisita":null,
+    "Latitud":8.9543943,
+    "Longitud":-75.4446421,
+    "NOMBRE_NORM":"TIENDA SARA"
+  },
+  {
+    "Cliente":"TIENDA LUDY",
+    "Barrio":"SAN ISIDRO",
+    "DiaVisita":null,
+    "Latitud":8.9544407,
+    "Longitud":-75.4452825,
+    "NOMBRE_NORM":"TIENDA LUDY"
+  },
+  {
+    "Cliente":"TIENDA LA ECONOMIA #2",
+    "Barrio":"BERNARDO DUQUE",
+    "DiaVisita":null,
+    "Latitud":8.9595161,
+    "Longitud":-75.4430864,
+    "NOMBRE_NORM":"TIENDA LA ECONOMIA #2"
+  },
+  {
+    "Cliente":"TIENDA EL POZO",
+    "Barrio":"BERNARDO DUQUE",
+    "DiaVisita":null,
+    "Latitud":8.9603732,
+    "Longitud":-75.4427826,
+    "NOMBRE_NORM":"TIENDA EL POZO"
+  },
+  {
+    "Cliente":"TIENDA CASA BLANCA",
+    "Barrio":"BERNARDO DUQUE",
+    "DiaVisita":null,
+    "Latitud":8.9594959,
+    "Longitud":-75.4425402,
+    "NOMBRE_NORM":"TIENDA CASA BLANCA"
+  },
+  {
+    "Cliente":"TIENDA ARCOIRIS",
+    "Barrio":"BERNARDO DUQUE",
+    "DiaVisita":null,
+    "Latitud":8.9579112,
+    "Longitud":-75.4423062,
+    "NOMBRE_NORM":"TIENDA ARCOIRIS"
+  },
+  {
+    "Cliente":"TIENDA BERACA",
+    "Barrio":"BERNARDO DUQUE",
+    "DiaVisita":null,
+    "Latitud":8.9581768,
+    "Longitud":-75.4428272,
+    "NOMBRE_NORM":"TIENDA BERACA"
+  },
+  {
+    "Cliente":"TIENDA EL GALLITO",
+    "Barrio":"SAN ISIDRO",
+    "DiaVisita":null,
+    "Latitud":8.9526625,
+    "Longitud":-75.4436302,
+    "NOMBRE_NORM":"TIENDA EL GALLITO"
+  },
+  {
+    "Cliente":"TIENDA LA TRONCAL JS",
+    "Barrio":"EL BOSQUE",
+    "DiaVisita":null,
+    "Latitud":8.9413992,
+    "Longitud":-75.4474141,
+    "NOMBRE_NORM":"TIENDA LA TRONCAL JS"
+  },
+  {
+    "Cliente":"TIENDA LA POCHITO",
+    "Barrio":"EL BOSQUE",
+    "DiaVisita":null,
+    "Latitud":8.9415012,
+    "Longitud":-75.4481695,
+    "NOMBRE_NORM":"TIENDA LA POCHITO"
+  },
+  {
+    "Cliente":"TIENDA PUNTO BLANCO",
+    "Barrio":"EL BOSQUE",
+    "DiaVisita":null,
+    "Latitud":8.9405659,
+    "Longitud":-75.4491941,
+    "NOMBRE_NORM":"TIENDA PUNTO BLANCO"
+  },
+  {
+    "Cliente":"TIENDA CENTRAL 18",
+    "Barrio":"EL BOSQUE",
+    "DiaVisita":null,
+    "Latitud":8.9409789,
+    "Longitud":-75.4480609,
+    "NOMBRE_NORM":"TIENDA CENTRAL 18"
+  },
+  {
+    "Cliente":"TIENDA EL AMIGO",
+    "Barrio":"EL BOSQUE",
+    "DiaVisita":null,
+    "Latitud":8.9404026,
+    "Longitud":-75.4473122,
+    "NOMBRE_NORM":"TIENDA EL AMIGO"
+  },
+  {
+    "Cliente":"TIENDA EL PAISAJE",
+    "Barrio":"EL BOSQUE",
+    "DiaVisita":null,
+    "Latitud":8.9391639,
+    "Longitud":-75.447682,
+    "NOMBRE_NORM":"TIENDA EL PAISAJE"
+  },
+  {
+    "Cliente":"TIENDA MILENIO HS",
+    "Barrio":"EL BOSQUE",
+    "DiaVisita":null,
+    "Latitud":8.9398154,
+    "Longitud":-75.4489252,
+    "NOMBRE_NORM":"TIENDA MILENIO HS"
+  },
+  {
+    "Cliente":"PUNTO AGUA SANTANA",
+    "Barrio":"COSTA NORTE",
+    "DiaVisita":null,
+    "Latitud":8.9383859,
+    "Longitud":-75.4486775,
+    "NOMBRE_NORM":"PUNTO AGUA SANTANA"
+  },
+  {
+    "Cliente":"COOPERATIVA LA NUEVA",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.9380411,
+    "Longitud":-75.4485903,
+    "NOMBRE_NORM":"COOPERATIVA LA NUEVA"
+  },
+  {
+    "Cliente":"TIENDA TAMALANDIA",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.9359797,
+    "Longitud":-75.4468036,
+    "NOMBRE_NORM":"TIENDA TAMALANDIA"
+  },
+  {
+    "Cliente":"TIENDA M y A",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.9355998,
+    "Longitud":-75.4470279,
+    "NOMBRE_NORM":"TIENDA M Y A"
+  },
+  {
+    "Cliente":"TIENDA PUNTO VERDE",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.934471,
+    "Longitud":-75.4479757,
+    "NOMBRE_NORM":"TIENDA PUNTO VERDE"
+  },
+  {
+    "Cliente":"TIENDA LA COSTEÑA",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.9338636,
+    "Longitud":-75.4487204,
+    "NOMBRE_NORM":"TIENDA LA COSTEÑA"
+  },
+  {
+    "Cliente":"TODO LO PUEDO EN CRISTO",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.9336987,
+    "Longitud":-75.4476156,
+    "NOMBRE_NORM":"TODO LO PUEDO EN CRISTO"
+  },
+  {
+    "Cliente":"TIENDA ROSADA",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.9351321,
+    "Longitud":-75.4462447,
+    "NOMBRE_NORM":"TIENDA ROSADA"
+  },
+  {
+    "Cliente":"TIENDA EL PALMA",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.9345717,
+    "Longitud":-75.4465511,
+    "NOMBRE_NORM":"TIENDA EL PALMA"
+  },
+  {
+    "Cliente":"TIENDA LA NUEVA",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.9343054,
+    "Longitud":-75.4468475,
+    "NOMBRE_NORM":"TIENDA LA NUEVA"
+  },
+  {
+    "Cliente":"TIENDA HNS ARGUMEDO",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.9343525,
+    "Longitud":-75.4468348,
+    "NOMBRE_NORM":"TIENDA HNS ARGUMEDO"
+  },
+  {
+    "Cliente":"TIENDA Y CARNICERIA A y E",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.9338285,
+    "Longitud":-75.4443826,
+    "NOMBRE_NORM":"TIENDA Y CARNICERIA A Y E"
+  },
+  {
+    "Cliente":"TIENDA VENECIA",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.9338259,
+    "Longitud":-75.4444677,
+    "NOMBRE_NORM":"TIENDA VENECIA"
+  },
+  {
+    "Cliente":"TIENDA LIGIA",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.9332572,
+    "Longitud":-75.4439853,
+    "NOMBRE_NORM":"TIENDA LIGIA"
+  },
+  {
+    "Cliente":"DROGUERIA JACK",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.9332572,
+    "Longitud":-75.4439853,
+    "NOMBRE_NORM":"DROGUERIA JACK"
+  },
+  {
+    "Cliente":"EL BUEN PASTOR",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.9330604,
+    "Longitud":-75.4454648,
+    "NOMBRE_NORM":"EL BUEN PASTOR"
+  },
+  {
+    "Cliente":"KIOSKO ROJO",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.933694,
+    "Longitud":-75.4463859,
+    "NOMBRE_NORM":"KIOSKO ROJO"
+  },
+  {
+    "Cliente":"LOS RECUERDOS DE ELLA",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.9332976,
+    "Longitud":-75.4468402,
+    "NOMBRE_NORM":"LOS RECUERDOS DE ELLA"
+  },
+  {
+    "Cliente":"MESON DE AMY",
+    "Barrio":"VENECIA",
+    "DiaVisita":null,
+    "Latitud":8.9314716,
+    "Longitud":-75.4437995,
+    "NOMBRE_NORM":"MESON DE AMY"
+  },
+  {
+    "Cliente":"DONDE CALIXO",
+    "Barrio":"SAN RAFAEL",
+    "DiaVisita":null,
+    "Latitud":8.93489,
+    "Longitud":-75.4404682,
+    "NOMBRE_NORM":"DONDE CALIXO"
+  },
+  {
+    "Cliente":"TIENDA EL JOE",
+    "Barrio":"SAN RAFAEL",
+    "DiaVisita":null,
+    "Latitud":8.9366375,
+    "Longitud":-75.4415012,
+    "NOMBRE_NORM":"TIENDA EL JOE"
+  },
+  {
+    "Cliente":"TIENDA MERCA YA",
+    "Barrio":"SAN RAFAEL",
+    "DiaVisita":null,
+    "Latitud":8.9358095,
+    "Longitud":-75.4425547,
+    "NOMBRE_NORM":"TIENDA MERCA YA"
+  },
+  {
+    "Cliente":"EL ESQUINAZO",
+    "Barrio":"SAN RAFAEL",
+    "DiaVisita":null,
+    "Latitud":8.93692,
+    "Longitud":-75.4425121,
+    "NOMBRE_NORM":"EL ESQUINAZO"
+  },
+  {
+    "Cliente":"PANADERIA DELI TORTAS",
+    "Barrio":"SAN RAFAEL",
+    "DiaVisita":null,
+    "Latitud":8.9372654,
+    "Longitud":-75.4417654,
+    "NOMBRE_NORM":"PANADERIA DELI TORTAS"
+  },
+  {
+    "Cliente":"TIENDA DONDE REMBE",
+    "Barrio":"SAN RAFAEL",
+    "DiaVisita":null,
+    "Latitud":8.9376543,
+    "Longitud":-75.4425526,
+    "NOMBRE_NORM":"TIENDA DONDE REMBE"
+  },
+  {
+    "Cliente":"TIENDA AL",
+    "Barrio":"SAN RAFAEL",
+    "DiaVisita":null,
+    "Latitud":8.9379974,
+    "Longitud":-75.4417456,
+    "NOMBRE_NORM":"TIENDA AL"
+  },
+  {
+    "Cliente":"TIENDA MATI",
+    "Barrio":"SAN RAFAEL",
+    "DiaVisita":null,
+    "Latitud":8.9388112,
+    "Longitud":-75.4408719,
+    "NOMBRE_NORM":"TIENDA MATI"
+  },
+  {
+    "Cliente":"TIENDA YADY",
+    "Barrio":"SAN RAFAEL",
+    "DiaVisita":null,
+    "Latitud":8.9382279,
+    "Longitud":-75.4406241,
+    "NOMBRE_NORM":"TIENDA YADY"
+  },
+  {
+    "Cliente":"TIENDA ACUARELA",
+    "Barrio":"SAN RAFAEL",
+    "DiaVisita":null,
+    "Latitud":8.9387575,
+    "Longitud":-75.4403697,
+    "NOMBRE_NORM":"TIENDA ACUARELA"
+  },
+  {
+    "Cliente":"TIENDA LUIS ANGEL",
+    "Barrio":"SAN RAFAEL",
+    "DiaVisita":null,
+    "Latitud":8.9383041,
+    "Longitud":-75.4398094,
+    "NOMBRE_NORM":"TIENDA LUIS ANGEL"
+  },
+  {
+    "Cliente":"TIENDA AV",
+    "Barrio":"SAN RAFAEL",
+    "DiaVisita":null,
+    "Latitud":8.9380785,
+    "Longitud":-75.4379272,
+    "NOMBRE_NORM":"TIENDA AV"
+  },
+  {
+    "Cliente":"TIENDA SAN RAFAEL",
+    "Barrio":"SAN RAFAEL",
+    "DiaVisita":null,
+    "Latitud":8.9397193,
+    "Longitud":-75.4402208,
+    "NOMBRE_NORM":"TIENDA SAN RAFAEL"
+  },
+  {
+    "Cliente":"TIENDA LA 18",
+    "Barrio":"SAN RAFAEL",
+    "DiaVisita":null,
+    "Latitud":8.9404443,
+    "Longitud":-75.4408618,
+    "NOMBRE_NORM":"TIENDA LA 18"
+  },
+  {
+    "Cliente":"LA ESCARLATA",
+    "Barrio":"EL PRADO",
+    "DiaVisita":null,
+    "Latitud":8.9418195,
+    "Longitud":-75.4401547,
+    "NOMBRE_NORM":"LA ESCARLATA"
+  },
+  {
+    "Cliente":"TIENDA RANDY",
+    "Barrio":"EL PRADO",
+    "DiaVisita":null,
+    "Latitud":8.9419821,
+    "Longitud":-75.4409514,
+    "NOMBRE_NORM":"TIENDA RANDY"
+  },
+  {
+    "Cliente":"TIENDA LOZANO",
+    "Barrio":"EL PRADO",
+    "DiaVisita":null,
+    "Latitud":8.9420414,
+    "Longitud":-75.4411726,
+    "NOMBRE_NORM":"TIENDA LOZANO"
+  },
+  {
+    "Cliente":"GRANITO DE MOSTAZA",
+    "Barrio":"EL PRADO",
+    "DiaVisita":null,
+    "Latitud":8.942107,
+    "Longitud":-75.4417782,
+    "NOMBRE_NORM":"GRANITO DE MOSTAZA"
+  },
+  {
+    "Cliente":"EL MOLINO",
+    "Barrio":"EL PRADO",
+    "DiaVisita":null,
+    "Latitud":8.9430413,
+    "Longitud":-75.4410989,
+    "NOMBRE_NORM":"EL MOLINO"
+  },
+  {
+    "Cliente":"TIENDA EL INNOVADOR",
+    "Barrio":"EL PRADO",
+    "DiaVisita":null,
+    "Latitud":8.943455,
+    "Longitud":-75.4437818,
+    "NOMBRE_NORM":"TIENDA EL INNOVADOR"
+  },
+  {
+    "Cliente":"ESCARCHA",
+    "Barrio":"CENTRO",
+    "DiaVisita":null,
+    "Latitud":8.9427873,
+    "Longitud":-75.4446179,
+    "NOMBRE_NORM":"ESCARCHA"
+  },
+  {
+    "Cliente":"TIENDA DONDE NELSON",
+    "Barrio":"EL PRADO",
+    "DiaVisita":null,
+    "Latitud":8.942276,
+    "Longitud":-75.4430244,
+    "NOMBRE_NORM":"TIENDA DONDE NELSON"
+  },
+  {
+    "Cliente":"DOÑA EMY",
+    "Barrio":"LA CRUZ",
+    "DiaVisita":null,
+    "Latitud":8.940082,
+    "Longitud":-75.4422858,
+    "NOMBRE_NORM":"DOÑA EMY"
+  },
+  {
+    "Cliente":"TIENDA LA CRUZ",
+    "Barrio":"LA CRUZ",
+    "DiaVisita":null,
+    "Latitud":8.9399555,
+    "Longitud":-75.4436772,
+    "NOMBRE_NORM":"TIENDA LA CRUZ"
+  },
+  {
+    "Cliente":"PANADERIA PAISAPAN",
+    "Barrio":"LA CRUZ",
+    "DiaVisita":null,
+    "Latitud":8.9390794,
+    "Longitud":-75.4438713,
+    "NOMBRE_NORM":"PANADERIA PAISAPAN"
+  },
+  {
+    "Cliente":"LA BENDICION",
+    "Barrio":"EL PRADO",
+    "DiaVisita":null,
+    "Latitud":8.9413671,
+    "Longitud":-75.4422428,
+    "NOMBRE_NORM":"LA BENDICION"
+  },
+  {
+    "Cliente":"TIENDA BELEN",
+    "Barrio":"LA CRUZ",
+    "DiaVisita":null,
+    "Latitud":8.9399667,
+    "Longitud":-75.442958,
+    "NOMBRE_NORM":"TIENDA BELEN"
+  },
+  {
+    "Cliente":"KIOSKO AZUL",
+    "Barrio":"LA TRONCAL",
+    "DiaVisita":null,
+    "Latitud":8.9280449,
+    "Longitud":-75.4436865,
+    "NOMBRE_NORM":"KIOSKO AZUL"
+  },
+  {
+    "Cliente":"TIENDA LA SIERRA",
+    "Barrio":"EL TRIUNFO",
+    "DiaVisita":null,
+    "Latitud":8.9266982,
+    "Longitud":-75.4448473,
+    "NOMBRE_NORM":"TIENDA LA SIERRA"
+  },
+  {
+    "Cliente":"TIENDA DIOS ES AMOR",
+    "Barrio":"EL TRIUNFO",
+    "DiaVisita":null,
+    "Latitud":8.9264604,
+    "Longitud":-75.4473038,
+    "NOMBRE_NORM":"TIENDA DIOS ES AMOR"
+  },
+  {
+    "Cliente":"TIENDA EL FLACO",
+    "Barrio":"EL TRIUNFO",
+    "DiaVisita":null,
+    "Latitud":8.9273692,
+    "Longitud":-75.4472341,
+    "NOMBRE_NORM":"TIENDA EL FLACO"
+  },
+  {
+    "Cliente":"TIENDA ROSARIO",
+    "Barrio":"EL TRIUNFO",
+    "DiaVisita":null,
+    "Latitud":8.9272483,
+    "Longitud":-75.4467828,
+    "NOMBRE_NORM":"TIENDA ROSARIO"
+  },
+  {
+    "Cliente":"TIENDA AMERICANA",
+    "Barrio":"EL TRIUNFO",
+    "DiaVisita":null,
+    "Latitud":8.9284486,
+    "Longitud":-75.4470279,
+    "NOMBRE_NORM":"TIENDA AMERICANA"
+  },
+  {
+    "Cliente":"SUPER TIENDA LA BENDICION",
+    "Barrio":"RANCHERIA",
+    "DiaVisita":null,
+    "Latitud":8.9043183,
+    "Longitud":-75.4525455,
+    "NOMBRE_NORM":"SUPER TIENDA LA BENDICION"
+  },
+  {
+    "Cliente":"VARIEDADES MARTA",
+    "Barrio":"RANCHERIA",
+    "DiaVisita":null,
+    "Latitud":8.9039857,
+    "Longitud":-75.4519407,
+    "NOMBRE_NORM":"VARIEDADES MARTA"
+  },
+  {
+    "Cliente":"TIENDA LOS VECINOS",
+    "Barrio":"RANCHERIA",
+    "DiaVisita":null,
+    "Latitud":8.9038251,
+    "Longitud":-75.4521506,
+    "NOMBRE_NORM":"TIENDA LOS VECINOS"
+  },
+  {
+    "Cliente":"TIENDA J ALEJANDRO",
+    "Barrio":"RANCHERIA",
+    "DiaVisita":null,
+    "Latitud":8.9058569,
+    "Longitud":-75.4513912,
+    "NOMBRE_NORM":"TIENDA J ALEJANDRO"
+  },
+  {
+    "Cliente":"TIENDA LOS TOTUMOS",
+    "Barrio":"RANCHERIA",
+    "DiaVisita":null,
+    "Latitud":8.9067055,
+    "Longitud":-75.4503609,
+    "NOMBRE_NORM":"TIENDA LOS TOTUMOS"
+  },
+  {
+    "Cliente":"MERCAECONOMIA #2",
+    "Barrio":"RANCHERIA",
+    "DiaVisita":null,
+    "Latitud":8.9071341,
+    "Longitud":-75.4481635,
+    "NOMBRE_NORM":"MERCAECONOMIA #2"
+  },
+  {
+    "Cliente":"SAI BLANCA",
+    "Barrio":"RANCHERIA",
+    "DiaVisita":null,
+    "Latitud":8.9070278,
+    "Longitud":-75.4480284,
+    "NOMBRE_NORM":"SAI BLANCA"
+  },
+  {
+    "Cliente":"LA PANTERA",
+    "Barrio":"BRISAS",
+    "DiaVisita":null,
+    "Latitud":8.9064706,
+    "Longitud":-75.4465874,
+    "NOMBRE_NORM":"LA PANTERA"
+  },
+  {
+    "Cliente":"MERCAECONOMIA",
+    "Barrio":"BRISAS",
+    "DiaVisita":null,
+    "Latitud":8.90494,
+    "Longitud":-75.4469307,
+    "NOMBRE_NORM":"MERCAECONOMIA"
+  },
+  {
+    "Cliente":"TIENDA RODRIGO",
+    "Barrio":"BRISAS",
+    "DiaVisita":null,
+    "Latitud":8.9100589,
+    "Longitud":-75.4450934,
+    "NOMBRE_NORM":"TIENDA RODRIGO"
+  },
+  {
+    "Cliente":"CAFÉ TACUBA",
+    "Barrio":"BRISAS",
+    "DiaVisita":null,
+    "Latitud":8.9099804,
+    "Longitud":-75.4459785,
+    "NOMBRE_NORM":"CAFÉ TACUBA"
+  },
+  {
+    "Cliente":"TIENDA LA ESPERANZA",
+    "Barrio":"BRISAS",
+    "DiaVisita":null,
+    "Latitud":8.9104736,
+    "Longitud":-75.4461679,
+    "NOMBRE_NORM":"TIENDA LA ESPERANZA"
+  },
+  {
+    "Cliente":"TIENDA BRISAS",
+    "Barrio":"BRISAS",
+    "DiaVisita":null,
+    "Latitud":8.9170146,
+    "Longitud":-75.4454484,
+    "NOMBRE_NORM":"TIENDA BRISAS"
+  },
+  {
+    "Cliente":"TIENDA DON FIDEL",
+    "Barrio":"BRISAS",
+    "DiaVisita":null,
+    "Latitud":8.9167106,
+    "Longitud":-75.4439591,
+    "NOMBRE_NORM":"TIENDA DON FIDEL"
+  },
+  {
+    "Cliente":"TIENDA K y E",
+    "Barrio":"BRISAS",
+    "DiaVisita":null,
+    "Latitud":8.9179659,
+    "Longitud":-75.4439528,
+    "NOMBRE_NORM":"TIENDA K Y E"
+  },
+  {
+    "Cliente":"TIENDA M y P",
+    "Barrio":"BRISAS",
+    "DiaVisita":null,
+    "Latitud":8.9197144,
+    "Longitud":-75.4436218,
+    "NOMBRE_NORM":"TIENDA M Y P"
+  },
+  {
+    "Cliente":"DONDE FREDY",
+    "Barrio":"BRISAS",
+    "DiaVisita":null,
+    "Latitud":8.9216243,
+    "Longitud":-75.443073,
+    "NOMBRE_NORM":"DONDE FREDY"
+  },
+  {
+    "Cliente":"ESTANCO LA OFICINA",
+    "Barrio":"LA TRONCAL",
+    "DiaVisita":null,
+    "Latitud":8.9242502,
+    "Longitud":-75.4437855,
+    "NOMBRE_NORM":"ESTANCO LA OFICINA"
+  },
+  {
+    "Cliente":"DONDE JOSE",
+    "Barrio":"LA TRONCAL",
+    "DiaVisita":null,
+    "Latitud":8.926831,
+    "Longitud":-75.4438096,
+    "NOMBRE_NORM":"DONDE JOSE"
+  },
+  {
+    "Cliente":"DONDE JESU",
+    "Barrio":"LA TRONCAL",
+    "DiaVisita":null,
+    "Latitud":8.9263491,
+    "Longitud":-75.4438904,
+    "NOMBRE_NORM":"DONDE JESU"
+  },
+  {
+    "Cliente":"SANTA LUCIA #2",
+    "Barrio":"SANTA LUCIA",
+    "DiaVisita":null,
+    "Latitud":8.9283529,
+    "Longitud":-75.443479,
+    "NOMBRE_NORM":"SANTA LUCIA #2"
+  },
+  {
+    "Cliente":"TIENDA EL TAURO",
+    "Barrio":"SANTA LUCIA",
+    "DiaVisita":null,
+    "Latitud":8.9289647,
+    "Longitud":-75.442612,
+    "NOMBRE_NORM":"TIENDA EL TAURO"
+  },
+  {
+    "Cliente":"TIENDA ERIKA MARCELA",
+    "Barrio":"SANTA LUCIA",
+    "DiaVisita":null,
+    "Latitud":8.9287891,
+    "Longitud":-75.4423008,
+    "NOMBRE_NORM":"TIENDA ERIKA MARCELA"
+  },
+  {
+    "Cliente":"DONDE MIRIAM",
+    "Barrio":"SANTA LUCIA",
+    "DiaVisita":null,
+    "Latitud":8.9285063,
+    "Longitud":-75.4418432,
+    "NOMBRE_NORM":"DONDE MIRIAM"
+  },
+  {
+    "Cliente":"TIENDA NO HAY COMO DIOS",
+    "Barrio":"SANTA LUCIA",
+    "DiaVisita":null,
+    "Latitud":8.9290498,
+    "Longitud":-75.44216,
+    "NOMBRE_NORM":"TIENDA NO HAY COMO DIOS"
+  },
+  {
+    "Cliente":"DONDE KATY",
+    "Barrio":"SANTA LUCIA",
+    "DiaVisita":null,
+    "Latitud":8.9304571,
+    "Longitud":-75.4416125,
+    "NOMBRE_NORM":"DONDE KATY"
+  },
+  {
+    "Cliente":"TIENDA DAVO",
+    "Barrio":"SANTA LUCIA",
+    "DiaVisita":null,
+    "Latitud":8.9304932,
+    "Longitud":-75.4426526,
+    "NOMBRE_NORM":"TIENDA DAVO"
+  },
+  {
+    "Cliente":"TIENDA ÉXITO",
+    "Barrio":"SANTA LUCIA",
+    "DiaVisita":null,
+    "Latitud":8.9317541,
+    "Longitud":-75.4423354,
+    "NOMBRE_NORM":"TIENDA ÉXITO"
+  }
+]

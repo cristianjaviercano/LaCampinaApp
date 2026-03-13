@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# Streamlit
+.streamlit/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (Optional: keeping maestros/datos for the app functionality if they are Small)
+# If you want to exclude them, uncomment below:
+# datos_maestros/

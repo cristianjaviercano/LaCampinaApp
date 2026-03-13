@@ -1,0 +1,478 @@
+{
+  "JOSE PEREZ_2026-01-31": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-31",
+    "Visitas": 30,
+    "DistanciaReal": 130.55005001024412,
+    "DistanciaOptima": 23.585047972898042
+  },
+  "JOSE PEREZ_2026-02-02": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-02",
+    "Visitas": 56,
+    "DistanciaReal": 262.1897743941676,
+    "DistanciaOptima": 27.274614039247737
+  },
+  "JOSE PEREZ_2026-02-03": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-03",
+    "Visitas": 43,
+    "DistanciaReal": 195.36920697201236,
+    "DistanciaOptima": 15.555947231006332
+  },
+  "JOSE PEREZ_2026-02-04": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-04",
+    "Visitas": 39,
+    "DistanciaReal": 174.17487453765054,
+    "DistanciaOptima": 25.01504526842978
+  },
+  "JOSE PEREZ_2026-02-05": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-05",
+    "Visitas": 42,
+    "DistanciaReal": 228.55380581566246,
+    "DistanciaOptima": 22.29985995322552
+  },
+  "JOSE PEREZ_2026-02-06": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-06",
+    "Visitas": 32,
+    "DistanciaReal": 126.88123925781206,
+    "DistanciaOptima": 20.382935046774833
+  },
+  "JOSE PEREZ_2026-02-07": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-07",
+    "Visitas": 29,
+    "DistanciaReal": 135.99480089015165,
+    "DistanciaOptima": 24.232934297302805
+  },
+  "JOSE PEREZ_2026-02-09": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-09",
+    "Visitas": 61,
+    "DistanciaReal": 319.0874133945905,
+    "DistanciaOptima": 19.21998782422944
+  },
+  "JOSE PEREZ_2026-02-10": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-10",
+    "Visitas": 43,
+    "DistanciaReal": 187.8274631641407,
+    "DistanciaOptima": 20.81337646946303
+  },
+  "JOSE PEREZ_2026-02-11": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-11",
+    "Visitas": 40,
+    "DistanciaReal": 194.48762246556112,
+    "DistanciaOptima": 25.0304531842706
+  },
+  "JOSE PEREZ_2026-02-12": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-12",
+    "Visitas": 44,
+    "DistanciaReal": 222.69696103244405,
+    "DistanciaOptima": 18.899242186124177
+  },
+  "JOSE PEREZ_2026-02-13": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-13",
+    "Visitas": 43,
+    "DistanciaReal": 187.87352628861112,
+    "DistanciaOptima": 24.35811285959239
+  },
+  "JOSE PEREZ_2026-02-14": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-14",
+    "Visitas": 35,
+    "DistanciaReal": 175.30214355433336,
+    "DistanciaOptima": 30.027126702069182
+  },
+  "JOSE PEREZ_2026-02-16": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-16",
+    "Visitas": 55,
+    "DistanciaReal": 239.0844207025978,
+    "DistanciaOptima": 19.543975286297144
+  },
+  "JOSE PEREZ_2026-02-17": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-17",
+    "Visitas": 36,
+    "DistanciaReal": 150.13324757278437,
+    "DistanciaOptima": 20.298875108663747
+  },
+  "JOSE PEREZ_2026-02-18": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-18",
+    "Visitas": 42,
+    "DistanciaReal": 180.8307801006974,
+    "DistanciaOptima": 21.963534713559916
+  },
+  "JOSE PEREZ_2026-02-19": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-19",
+    "Visitas": 47,
+    "DistanciaReal": 236.383311107897,
+    "DistanciaOptima": 24.289357517876063
+  },
+  "JOSE PEREZ_2026-02-20": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-20",
+    "Visitas": 38,
+    "DistanciaReal": 166.12016661049873,
+    "DistanciaOptima": 18.759631453478704
+  },
+  "JOSE PEREZ_2026-02-21": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-21",
+    "Visitas": 27,
+    "DistanciaReal": 113.79895801368943,
+    "DistanciaOptima": 21.84955744065109
+  },
+  "JOSE PEREZ_2026-02-23": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-23",
+    "Visitas": 58,
+    "DistanciaReal": 293.07709640637654,
+    "DistanciaOptima": 22.81897115506674
+  },
+  "JOSE PEREZ_2026-02-24": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-24",
+    "Visitas": 36,
+    "DistanciaReal": 181.4379034335179,
+    "DistanciaOptima": 17.8766257326327
+  },
+  "JOSE PEREZ_2026-02-25": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-25",
+    "Visitas": 40,
+    "DistanciaReal": 152.27877584799845,
+    "DistanciaOptima": 27.392106875732118
+  },
+  "JOSE PEREZ_2026-02-26": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-26",
+    "Visitas": 46,
+    "DistanciaReal": 223.03411682680968,
+    "DistanciaOptima": 21.485449139540396
+  },
+  "JOSE PEREZ_2026-02-27": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-27",
+    "Visitas": 43,
+    "DistanciaReal": 162.54685487761807,
+    "DistanciaOptima": 23.662077350354238
+  },
+  "JOSE PEREZ_2026-02-28": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-28",
+    "Visitas": 31,
+    "DistanciaReal": 165.20914016293577,
+    "DistanciaOptima": 23.796473969750576
+  },
+  "JOSE PEREZ_2026-01-03": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-03",
+    "Visitas": 41,
+    "DistanciaReal": 196.69269349490804,
+    "DistanciaOptima": 26.90678366758655
+  },
+  "JOSE PEREZ_2026-01-05": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-05",
+    "Visitas": 54,
+    "DistanciaReal": 228.0616032637045,
+    "DistanciaOptima": 19.832174941688248
+  },
+  "JOSE PEREZ_2026-01-06": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-06",
+    "Visitas": 40,
+    "DistanciaReal": 173.52479958698086,
+    "DistanciaOptima": 21.415139236327423
+  },
+  "JOSE PEREZ_2026-01-07": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-07",
+    "Visitas": 46,
+    "DistanciaReal": 176.45218619456443,
+    "DistanciaOptima": 22.27001586664925
+  },
+  "JOSE PEREZ_2026-01-08": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-08",
+    "Visitas": 49,
+    "DistanciaReal": 217.42590233726492,
+    "DistanciaOptima": 24.15292270031766
+  },
+  "JOSE PEREZ_2026-01-09": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-09",
+    "Visitas": 44,
+    "DistanciaReal": 175.76672415346385,
+    "DistanciaOptima": 25.227106801293267
+  },
+  "JOSE PEREZ_2026-01-10": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-10",
+    "Visitas": 36,
+    "DistanciaReal": 165.7048266978462,
+    "DistanciaOptima": 26.325711657278216
+  },
+  "JOSE PEREZ_2026-01-12": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-12",
+    "Visitas": 62,
+    "DistanciaReal": 293.40569457072024,
+    "DistanciaOptima": 23.50829146734425
+  },
+  "JOSE PEREZ_2026-01-13": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-13",
+    "Visitas": 43,
+    "DistanciaReal": 169.53627282486397,
+    "DistanciaOptima": 20.58612321388316
+  },
+  "JOSE PEREZ_2026-01-14": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-14",
+    "Visitas": 47,
+    "DistanciaReal": 191.25599863481807,
+    "DistanciaOptima": 21.567161547096788
+  },
+  "JOSE PEREZ_2026-01-15": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-15",
+    "Visitas": 48,
+    "DistanciaReal": 218.59318493718882,
+    "DistanciaOptima": 23.95415037464358
+  },
+  "JOSE PEREZ_2026-01-16": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-16",
+    "Visitas": 42,
+    "DistanciaReal": 164.04061083916727,
+    "DistanciaOptima": 23.25269339899955
+  },
+  "JOSE PEREZ_2026-01-17": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-17",
+    "Visitas": 36,
+    "DistanciaReal": 184.96316275064268,
+    "DistanciaOptima": 23.71944317684
+  },
+  "JOSE PEREZ_2026-01-19": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-19",
+    "Visitas": 62,
+    "DistanciaReal": 279.95420396119863,
+    "DistanciaOptima": 24.46703613802445
+  },
+  "JOSE PEREZ_2026-01-20": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-20",
+    "Visitas": 41,
+    "DistanciaReal": 151.21524327716386,
+    "DistanciaOptima": 18.119485259789997
+  },
+  "JOSE PEREZ_2026-01-21": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-21",
+    "Visitas": 41,
+    "DistanciaReal": 176.67220684196383,
+    "DistanciaOptima": 20.79631519044625
+  },
+  "JOSE PEREZ_2026-01-22": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-22",
+    "Visitas": 54,
+    "DistanciaReal": 237.5570129375909,
+    "DistanciaOptima": 25.9302663950754
+  },
+  "JOSE PEREZ_2026-01-23": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-23",
+    "Visitas": 51,
+    "DistanciaReal": 210.30011404344017,
+    "DistanciaOptima": 24.293876330357467
+  },
+  "JOSE PEREZ_2026-01-24": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-24",
+    "Visitas": 28,
+    "DistanciaReal": 128.74486214855912,
+    "DistanciaOptima": 21.635159476499055
+  },
+  "JOSE PEREZ_2026-01-26": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-26",
+    "Visitas": 64,
+    "DistanciaReal": 322.6482655784423,
+    "DistanciaOptima": 22.0321688203862
+  },
+  "JOSE PEREZ_2026-01-27": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-27",
+    "Visitas": 39,
+    "DistanciaReal": 160.10947455248032,
+    "DistanciaOptima": 17.30294701815702
+  },
+  "JOSE PEREZ_2026-01-28": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-28",
+    "Visitas": 42,
+    "DistanciaReal": 196.4815499603265,
+    "DistanciaOptima": 26.78054444026811
+  },
+  "JOSE PEREZ_2026-01-29": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-29",
+    "Visitas": 54,
+    "DistanciaReal": 235.6127720053202,
+    "DistanciaOptima": 25.092039909791897
+  },
+  "JOSE PEREZ_2026-01-30": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-30",
+    "Visitas": 42,
+    "DistanciaReal": 173.01591683378774,
+    "DistanciaOptima": 25.661488915373802
+  },
+  "DAIFER GENEY_2026-01-05": {
+    "Vendedor": "DAIFER GENEY",
+    "Fecha": "2026-01-05",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "DAIFER GENEY_2026-01-09": {
+    "Vendedor": "DAIFER GENEY",
+    "Fecha": "2026-01-09",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "DAIFER GENEY_2026-01-12": {
+    "Vendedor": "DAIFER GENEY",
+    "Fecha": "2026-01-12",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "DAIFER GENEY_2026-01-13": {
+    "Vendedor": "DAIFER GENEY",
+    "Fecha": "2026-01-13",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "DAIFER GENEY_2026-01-16": {
+    "Vendedor": "DAIFER GENEY",
+    "Fecha": "2026-01-16",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "DAIFER GENEY_2026-01-27": {
+    "Vendedor": "DAIFER GENEY",
+    "Fecha": "2026-01-27",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "DAIFER GENEY_2026-01-30": {
+    "Vendedor": "DAIFER GENEY",
+    "Fecha": "2026-01-30",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "DAIFER GENEY_2026-02-06": {
+    "Vendedor": "DAIFER GENEY",
+    "Fecha": "2026-02-06",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "DAIFER GENEY_2026-02-10": {
+    "Vendedor": "DAIFER GENEY",
+    "Fecha": "2026-02-10",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "DAIFER GENEY_2026-02-13": {
+    "Vendedor": "DAIFER GENEY",
+    "Fecha": "2026-02-13",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "DAIFER GENEY_2026-02-16": {
+    "Vendedor": "DAIFER GENEY",
+    "Fecha": "2026-02-16",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "DAIFER GENEY_2026-02-20": {
+    "Vendedor": "DAIFER GENEY",
+    "Fecha": "2026-02-20",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "DAIFER GENEY_2026-02-24": {
+    "Vendedor": "DAIFER GENEY",
+    "Fecha": "2026-02-24",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "DAIFER GENEY_2026-02-27": {
+    "Vendedor": "DAIFER GENEY",
+    "Fecha": "2026-02-27",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "JUNIOR MARQUEZ_2026-01-10": {
+    "Vendedor": "JUNIOR MARQUEZ",
+    "Fecha": "2026-01-10",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "JUNIOR MARQUEZ_2026-01-17": {
+    "Vendedor": "JUNIOR MARQUEZ",
+    "Fecha": "2026-01-17",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "JUNIOR MARQUEZ_2026-02-07": {
+    "Vendedor": "JUNIOR MARQUEZ",
+    "Fecha": "2026-02-07",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "JUNIOR MARQUEZ_2026-02-21": {
+    "Vendedor": "JUNIOR MARQUEZ",
+    "Fecha": "2026-02-21",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  },
+  "JUNIOR MARQUEZ_2026-02-28": {
+    "Vendedor": "JUNIOR MARQUEZ",
+    "Fecha": "2026-02-28",
+    "Visitas": 1,
+    "DistanciaReal": 0,
+    "DistanciaOptima": 0
+  }
+}
