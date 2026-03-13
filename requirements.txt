@@ -16,3 +16,7 @@ Pillow
 requests
 jinja2
 gitpython
+networkx
+osmnx
+branca
+haversine
