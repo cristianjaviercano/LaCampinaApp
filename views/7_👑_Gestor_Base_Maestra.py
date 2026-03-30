@@ -90,7 +90,7 @@ with tab_ubi:
     # Upload masivo
     with st.expander("⬆️ Actualizar masivamente desde Excel o CSV", expanded=False):
         st.markdown(
-            "Acepta archivos con columnas `Nombre`/`NOMBRE`, `Barrio`, `DiaVisita`/`DIA_RUTA`, "
+            "Acepta archivos con columnas `Nombre`/`NOMBRE`, `Barrio`, `DiaVisita`/`DIA_RUTA`, `Ruta`, "
             "`Latitud`, `Longitud`. También acepta columna `COORDENADAS` en formato `lat, lon`."
         )
         f_ubi = st.file_uploader("Subir Archivo de Ubicaciones", type=["xlsx","xls","csv"], key="ubi_upload")
@@ -109,10 +109,10 @@ with tab_ubi:
                     if "Cliente" not in df_new.columns and "Nombre" in df_new.columns:
                         df_new.rename(columns={"Nombre":"Cliente"}, inplace=True)
                     df_new["NOMBRE_NORM"] = df_new["Cliente"].astype(str).str.strip().str.upper()
-                    for col in ["Cliente","Barrio","DiaVisita","Latitud","Longitud","NOMBRE_NORM"]:
+                    for col in ["Cliente","Barrio","DiaVisita","Ruta","Latitud","Longitud","NOMBRE_NORM"]:
                         if col not in df_new.columns:
                             df_new[col] = None
-                    save_json(df_new[["Cliente","Barrio","DiaVisita","Latitud","Longitud","NOMBRE_NORM"]], "ubicaciones")
+                    save_json(df_new[["Cliente","Barrio","DiaVisita","Ruta","Latitud","Longitud","NOMBRE_NORM"]], "ubicaciones")
                     st.cache_data.clear()
                     st.success(f"✅ ubicaciones.json actualizado — {len(df_new)} tiendas")
                     st.rerun()

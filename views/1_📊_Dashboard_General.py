@@ -71,6 +71,10 @@ if df_det.empty:
 df_det['Fecha'] = pd.to_datetime(df_det['Fecha'], errors='coerce')
 df_det = df_det.dropna(subset=['Fecha'])
 
+# Aislar las "Visitas Fallidas" del escaneo DSD para no dañar reportes de dinero o producto
+if 'Estado' in df_det.columns:
+    df_det = df_det[df_det['Estado'] != 'VISITA_FALLIDA']
+
 # ─────────────────────────────────────────────────────────────────────────────
 # PANEL DE FILTROS (sidebar)
 # ─────────────────────────────────────────────────────────────────────────────

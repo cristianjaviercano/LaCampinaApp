@@ -88,13 +88,39 @@ if nombre_col and lat_col and lon_col:
     coords_cli = coords_cli[coords_cli['Longitud'] < 0]
 
 # Merge: ubicaciones primero, luego clientes
-df_raw = pd.merge(df_raw, coords_ubi, on='ClienteNORMA', how='left')
+df_raw['Latitud'] = pd.to_numeric(df_raw['Latitud'], errors='coerce') if 'Latitud' in df_raw.columns else np.nan
+df_raw['Longitud'] = pd.to_numeric(df_raw['Longitud'], errors='coerce') if 'Longitud' in df_raw.columns else np.nan
+
+df_raw['ClienteCodigo_str'] = df_raw.get('ClienteCodigo', pd.Series(dtype=str)).astype(str).str.strip()
+
+mapa_lat_cod = pd.Series(dtype=float)
+mapa_lon_cod = pd.Series(dtype=float)
+if not coords_cli.empty and 'Codigo' in df_clientes.columns:
+    df_clientes['Codigo_str'] = df_clientes['Codigo'].astype(str).str.strip()
+    df_cli_uniq = df_clientes.drop_duplicates('Codigo_str')
+    mapa_lat_cod = df_cli_uniq.set_index('Codigo_str')['Latitud']
+    mapa_lon_cod = df_cli_uniq.set_index('Codigo_str')['Longitud']
+
+# 1. Asignar por Código (más preciso)
+sin_coord = df_raw['Latitud'].isna()
+if sin_coord.any():
+    df_raw.loc[sin_coord, 'Latitud'] = df_raw.loc[sin_coord, 'ClienteCodigo_str'].map(mapa_lat_cod)
+    df_raw.loc[sin_coord, 'Longitud'] = df_raw.loc[sin_coord, 'ClienteCodigo_str'].map(mapa_lon_cod)
+
+# 2. Asignar por Nombre exacto
+sin_coord = df_raw['Latitud'].isna()
+if sin_coord.any() and not coords_ubi.empty:
+    mapa_lat_u = coords_ubi.set_index('ClienteNORMA')['Latitud']
+    mapa_lon_u = coords_ubi.set_index('ClienteNORMA')['Longitud']
+    df_raw.loc[sin_coord, 'Latitud']  = df_raw.loc[sin_coord,'ClienteNORMA'].map(mapa_lat_u)
+    df_raw.loc[sin_coord, 'Longitud'] = df_raw.loc[sin_coord,'ClienteNORMA'].map(mapa_lon_u)
+
 sin_coord = df_raw['Latitud'].isna()
 if sin_coord.any() and not coords_cli.empty:
-    mapa_lat = coords_cli.set_index('ClienteNORMA')['Latitud']
-    mapa_lon = coords_cli.set_index('ClienteNORMA')['Longitud']
-    df_raw.loc[sin_coord, 'Latitud']  = df_raw.loc[sin_coord,'ClienteNORMA'].map(mapa_lat)
-    df_raw.loc[sin_coord, 'Longitud'] = df_raw.loc[sin_coord,'ClienteNORMA'].map(mapa_lon)
+    mapa_lat_c = coords_cli.set_index('ClienteNORMA')['Latitud']
+    mapa_lon_c = coords_cli.set_index('ClienteNORMA')['Longitud']
+    df_raw.loc[sin_coord, 'Latitud']  = df_raw.loc[sin_coord,'ClienteNORMA'].map(mapa_lat_c)
+    df_raw.loc[sin_coord, 'Longitud'] = df_raw.loc[sin_coord,'ClienteNORMA'].map(mapa_lon_c)
 
 # ─── Filtrar Sahagún ──────────────────────────────────────────────────────────
 b = SAHAGUN_BBOX

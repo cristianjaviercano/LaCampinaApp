@@ -54,6 +54,8 @@ df_det['ClienteCodigo'] = df_det['ClienteCodigo'].astype(str)
 # Pre-cruzar datos para tener coordenadas en las transacciones
 df_full = pd.merge(df_det, df_cli[['Codigo', 'Nombre', 'Latitud', 'Longitud', 'Barrio']], 
                    left_on='ClienteCodigo', right_on='Codigo', how='inner')
+df_full['Latitud'] = pd.to_numeric(df_full['Latitud'], errors='coerce')
+df_full['Longitud'] = pd.to_numeric(df_full['Longitud'], errors='coerce')
 df_full = df_full.dropna(subset=['Latitud', 'Longitud'])
 
 tab_preventa, tab_reparto, tab_pareto = st.tabs([
@@ -153,13 +155,25 @@ with tab_preventa:
                         orden = nearest_neighbor_tsp(visitas[['Latitud', 'Longitud']], use_streets=True)
                         pts_opt = [pts[i] for i in orden]
                         d_opt = route_distance_km(pts_opt, use_streets=True)
+                        
+                    # Calcular el tiempo diferencial de tomas de pedido (Punto 4)
+                    tiempo_promedio = 0
+                    if 'Hora' in df_jornada.columns or 'Fecha' in df_jornada.columns:
+                        temp_col = 'Hora' if 'Hora' in df_jornada.columns else 'Fecha'
+                        temp = df_jornada.dropna(subset=[temp_col]).sort_values(temp_col)
+                        diffs = pd.to_datetime(temp[temp_col], errors='coerce').diff().dt.total_seconds() / 60
+                        diffs = diffs[diffs > 0] # solo diferencias validas (evitar pedidos simultaneos)
+                        if not diffs.empty:
+                            tiempo_promedio = diffs.mean()
+
                     
                     resultado = {
                         'Vendedor': vendedor,
                         'Fecha': fecha_str,  # Guardar como string para el JSON
                         'Visitas': len(visitas),
                         'DistanciaReal': d_emp,
-                        'DistanciaOptima': d_opt
+                        'DistanciaOptima': d_opt,
+                        'TiempoPromedioPedido': tiempo_promedio
                     }
                     resultados_diarios.append(resultado)
                     cache_rutas[cache_key] = resultado
@@ -192,12 +206,17 @@ with tab_preventa:
                     total_d_opt  = df_res['DistanciaOptima'].sum()
                     total_perd   = df_res['KmPerdidos'].sum()
                     total_tiempo = df_res['MinutosPerdidos'].sum()
+                    
+                    if 'TiempoPromedioPedido' not in df_res.columns:
+                        df_res['TiempoPromedioPedido'] = 0.0
+                        
+                    promedio_diff = df_res['TiempoPromedioPedido'].mean()
                     eficiencia_global = (total_d_opt / total_d_real * 100) if total_d_real > 0 else 100
                     
                     st.markdown("---")
                     st.markdown("#### 📊 Consolidado de Eficiencia Logística")
                     
-                    c_k1, c_k2, c_k3, c_k4 = st.columns(4)
+                    c_k1, c_k2, c_k3, c_k4, c_k5 = st.columns(5)
                     c_k1.markdown(f"""
                     <div class="kpi-box">
                         <div class="kpi-title">Distancia Real Acumulada</div>
@@ -228,6 +247,14 @@ with tab_preventa:
                         <div class="kpi-title">Horas Hombre Perdidas</div>
                         <div class="kpi-val" style="color:#bf360c;">{(total_tiempo/60):.1f} hr</div>
                         <div class="kpi-sub">Tiempo improductivo en traslados.</div>
+                    </div>
+                    """, unsafe_allow_html=True)
+                    
+                    c_k5.markdown(f"""
+                    <div class="kpi-box" style="border-color: #1565c0;">
+                        <div class="kpi-title">Márgen entre compras</div>
+                        <div class="kpi-val" style="color:#1565c0;">{promedio_diff:.1f} min</div>
+                        <div class="kpi-sub">Tiempo promedio entre tomas de pedido.</div>
                     </div>
                     """, unsafe_allow_html=True)
                     

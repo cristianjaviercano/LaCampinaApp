@@ -2,12 +2,12 @@ USERS = {
     "admin": {
         "password": "admin",
         "role": "ADMINISTRADOR",
-        "access": ["Dashboard", "Inventario", "Clientes", "Rutas", "Reporte_Compras"]
+        "access": ["Dashboard", "Inventario", "Clientes", "Rutas", "Reporte_Compras", "Preventista"]
     },
     "dueño": {
         "password": "dueno123",
         "role": "DUEÑO",
-        "access": ["Dashboard", "Inventario", "Clientes", "Rutas", "Reporte_Compras"]
+        "access": ["Dashboard", "Inventario", "Clientes", "Rutas", "Reporte_Compras", "Preventista"]
     },
     "propietario": {
         "password": "prop123",
@@ -21,8 +21,21 @@ USERS = {
     },
     "vendedor1": {
         "password": "vend123",
-        "role": "VENDEDOR",
-        "access": ["Dashboard", "Rutas", "Clientes"]
+        "role": "PREVENTISTA",
+        "name": "DAIFER GENEY",
+        "access": ["Preventista"]
+    },
+    "vendedor2": {
+        "password": "vend234",
+        "role": "PREVENTISTA",
+        "name": "JUNIOR MARQUEZ",
+        "access": ["Preventista"]
+    },
+    "vendedor3": {
+        "password": "vend345",
+        "role": "PREVENTISTA",
+        "name": "JOSE PEREZ",
+        "access": ["Preventista"]
     },
     "contador": {
         "password": "conta123",

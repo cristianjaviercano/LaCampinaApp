@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent
 
 st.set_page_config(
     page_title="La Campiña - Sistema de Gestión",
-    page_icon="🌾",
+    page_icon=":material/eco:",
     layout="wide",
     initial_sidebar_state="auto", # Responsive behavior for mobiles/tablets
 )
@@ -17,16 +17,68 @@ st.set_page_config(
 # Custom CSS
 st.markdown("""
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    
+    html, body, [class*="css"] {
+        font-family: -apple-system, BlinkMacSystemFont, 'Inter', "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+        -webkit-font-smoothing: antialiased;
+    }
+    
+    /* Elegant Title */
     h1 {
-        background: -webkit-linear-gradient(45deg, #2e7d32, #81c784);
+        background: -webkit-linear-gradient(45deg, #0A1B7F, #41D5FF);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: 800;
-        margin-bottom: 20px;
+        letter-spacing: -0.015em;
+        margin-bottom: 24px;
+    }
+
+    /* Subtle Glassmorphism Buttons based on Corporate Colors */
+    .stButton>button {
+        background-color: #0A1B7F;
+        color: #ffffff;
+        border: 1px solid #132488;
+        border-radius: 12px;
+        font-weight: 500;
+        transition: all 0.2s ease;
+    }
+    .stButton>button:hover {
+        background-color: #132488;
+        color: #ffffff;
+        border-color: #41D5FF;
+    }
+    .stButton>button:active {
+        transform: scale(0.97);
+    }
+    
+    /* Metric Cards (KPI) inspired by Corporate Layout */
+    div[data-testid="stMetric"] {
+        background-color: #0A1B7F;
+        color: #ffffff !important;
+        border-radius: 18px;
+        padding: 16px 20px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        border: 1px solid #132488;
+    }
+    div[data-testid="stMetric"] label, 
+    div[data-testid="stMetric"] div {
+        color: #ffffff !important;
+    }
+    
+    /* Clean Sidebar */
+    [data-testid="stSidebar"] {
+        background-color: #ffffff;
+        border-right: 1px solid #e5e5ea;
     }
     div[data-testid="stSidebarNav"] {
-        padding-top: 0px;
+        padding-top: 15px;
     }
+    
+    /* Hide some generic Streamlit decorations */
+    header { visibility: hidden; }
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
 </style>
 """, unsafe_allow_html=True)
 
@@ -50,7 +102,7 @@ def login_page():
             with img_c2:
                 st.image(str(BASE_DIR / "Logo1.png"), use_container_width=True)
                 
-            st.markdown("<h3 style='text-align: center; color: #2e7d32; margin-top: 5px; margin-bottom: 20px;'>Acceso al Sistema</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='text-align: center; color: #1d1d1f; font-weight: 600; margin-top: 5px; margin-bottom: 20px;'>Acceso al Sistema</h3>", unsafe_allow_html=True)
             
             username = st.text_input("👤 Usuario", placeholder="Ingresa tu ID...")
             password = st.text_input("🔑 Contraseña", type="password", placeholder="Ingresa tu clave...")
@@ -81,12 +133,15 @@ else:
         st.image(str(BASE_DIR / "Logo1.png"), use_container_width=True)
         
         # Role Badge styling
-        badge_color = "#2e7d32" if role in ["ADMINISTRADOR", "DUEÑO"] else "#1565c0"
+        # Role Badge styling Corporate La Campiña Colors
+        badge_bg = "#0A1B7F"
+        badge_text = "#ffffff"
+        user_real_name = st.session_state.user_info.get('name', username_display)
         st.markdown(f"""
-        <div style="background-color: {badge_color}15; padding: 12px; border-radius: 8px; border-left: 5px solid {badge_color}; margin-top: -10px; margin-bottom: 20px;">
-            <div style="font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.5px;">Usuario Activo</div>
-            <div style="font-size: 1.1rem; font-weight: 800; color: #1a1a1a; margin-top: 2px;">@{username_display.upper()}</div>
-            <div style="font-size: 0.85rem; font-weight: 600; color: {badge_color}; margin-top: 4px;">🛡️ Nivel: {role}</div>
+        <div style="background-color: {badge_bg}; padding: 14px; border-radius: 16px; border: 1px solid #132488; margin-top: -10px; margin-bottom: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <div style="font-size: 0.75rem; color: #a1a1aa; text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;">Usuario Activo</div>
+            <div style="font-size: 1.15rem; font-weight: 700; color: {badge_text}; margin-top: 2px; letter-spacing: -0.5px;">@{user_real_name.upper()}</div>
+            <div style="font-size: 0.8rem; font-weight: 500; color: #41D5FF; margin-top: 4px;">Nivel: {role}</div>
         </div>
         """, unsafe_allow_html=True)
         
@@ -119,21 +174,23 @@ else:
     pages = []
     
     if "Dashboard" in user_access:
-        pages.append(st.Page("views/1_📊_Dashboard_General.py", title="Dashboard General", icon="📊"))
+        pages.append(st.Page("views/1_📊_Dashboard_General.py", title="Dashboard", icon=":material/bar_chart:"))
     if "Inventario" in user_access:
-        pages.append(st.Page("views/2_📦_Inventario.py", title="Inventario", icon="📦"))
+        pages.append(st.Page("views/2_📦_Inventario.py", title="Inventario", icon=":material/inventory_2:"))
     if "Clientes" in user_access:
-        pages.append(st.Page("views/3_👥_Clientes.py", title="Clientes", icon="👥"))
+        pages.append(st.Page("views/3_👥_Clientes.py", title="Clientes", icon=":material/groups:"))
     if "Rutas" in user_access:
         pass # Fusionado con Preventa
     if "Reporte_Compras" in user_access:
-        pages.append(st.Page("views/6_🛒_Reporte_Compras.py", title="Preventa y Entregas", icon="🛒"))
+        pages.append(st.Page("views/6_🛒_Reporte_Compras.py", title="Preventa y Entregas", icon=":material/storefront:"))
+    if "Preventista" in user_access:
+        pages.append(st.Page("views/10_📱_Preventista.py", title="Módulo Preventista", icon=":material/smartphone:"))
     if role in ["ADMINISTRADOR", "DUEÑO"]:
-        pages.append(st.Page("views/5_📂_Carga_Datos.py", title="Carga de Datos", icon="📂"))
-        pages.append(st.Page("views/7_👑_Gestor_Base_Maestra.py", title="Gestor Base Maestra", icon="👑"))
+        pages.append(st.Page("views/5_📂_Carga_Datos.py", title="Carga de Datos", icon=":material/cloud_upload:"))
+        pages.append(st.Page("views/7_👑_Gestor_Base_Maestra.py", title="Gestor Base Maestra", icon=":material/database:"))
         # El panel análitico gerencial
-        pages.append(st.Page("views/8_📈_Analitica_Historica.py", title="Analítica Histórica", icon="📈"))
-        pages.append(st.Page("views/9_🧠_Optimizacion_Rutas.py", title="Ingeniería y Rutas", icon="🧠"))
+        pages.append(st.Page("views/8_📈_Analitica_Historica.py", title="Analítica Histórica", icon=":material/trending_up:"))
+        pages.append(st.Page("views/9_🧠_Optimizacion_Rutas.py", title="Ingeniería y Rutas", icon=":material/route:"))
         
     if not pages:
         st.warning("Su rol no tiene acceso a ningún módulo.")

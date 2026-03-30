@@ -175,7 +175,7 @@ def _build_distance_matrix(lats, lons, use_streets=True) -> np.ndarray:
 
     for i in range(n):
         for j in range(i + 1, n):
-            if graph_ok and node_ids[i] and node_ids[j]:
+            if graph_ok and node_ids[i] is not None and node_ids[j] is not None:
                 try:
                     if node_ids[i] == node_ids[j]:
                         d = 0.0
