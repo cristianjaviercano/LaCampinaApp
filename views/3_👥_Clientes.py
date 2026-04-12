@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import re
 from utils.data_loader import load_data
 
 st.set_page_config(page_title="Clientes", page_icon="👥", layout="wide")
@@ -78,10 +79,9 @@ kpi_html = f"""
     </div>
 </div>
 """
-st.markdown(kpi_html, unsafe_allow_html=True)
+st.markdown(re.sub(r'^[ \t]+', '', kpi_html, flags=re.MULTILINE), unsafe_allow_html=True)
 
-# ── Tabla All Customers ───────────────────────────────────────────────────────
-st.markdown("""
+table_header_html = """
 <div style="background-color: #FFFFFF; padding: 30px; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
     <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #EEEEEE; padding-bottom: 20px; margin-bottom: 20px;">
         <div>
@@ -89,7 +89,8 @@ st.markdown("""
             <span style="color: #16C098; font-size: 0.85rem;">Active Members</span>
         </div>
     </div>
-""", unsafe_allow_html=True)
+"""
+st.markdown(re.sub(r'^[ \t]+', '', table_header_html, flags=re.MULTILINE), unsafe_allow_html=True)
 
 # Generar filas de la tabla
 if not df_clientes.empty:
@@ -157,7 +158,7 @@ if not df_clientes.empty:
     </div>
     """
     
-    st.markdown(table_html, unsafe_allow_html=True)
+    st.markdown(re.sub(r'^[ \t]+', '', table_html, flags=re.MULTILINE), unsafe_allow_html=True)
 else:
     st.info("No hay clientes registrados.")
 

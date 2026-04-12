@@ -151,19 +151,13 @@ else:
     # Global Sidebar controls
     with st.sidebar:
         # Tighter layout for sidebar
-        st.image(str(BASE_DIR / "Logo1.png"), width="stretch")
+        col_logo1, col_logo2, col_logo3 = st.columns([1, 4, 1])
+        with col_logo2:
+            st.image(str(BASE_DIR / "Logo1.png"), width=140)
         
         # Role Badge styling
         user_real_name = st.session_state.user_info.get('name', username_display)
         st.markdown(f"""
-        <div style="background: linear-gradient(180deg, #EAABF0 0%, #4623E9 100%); padding: 24px 20px; border-radius: 20px; margin-top: 20px; margin-bottom: 20px; text-align: center; box-shadow: 0 10px 20px rgba(70,35,233,0.2);">
-            <div style="font-size: 0.9rem; font-weight: 600; color: #FFFFFF; line-height: 1.4; margin-bottom: 16px;">
-                Upgrade to PRO to get<br>access all Features!
-            </div>
-            <div style="background-color: #FFFFFF; color: #5932EA; padding: 10px; border-radius: 20px; font-weight: 600; font-size: 0.85rem; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-                Get Pro Now!
-            </div>
-        </div>
         <div style="display: flex; align-items: center; gap: 12px; padding: 10px 0; margin-top: 10px;">
             <div style="width: 42px; height: 42px; border-radius: 50%; background-color: #F8F9FF; display: flex; align-items: center; justify-content: center; font-weight: 600; color: #5932EA; border: 1px solid #EEEEEE;">
                 {user_real_name[0].upper() if user_real_name else 'U'}

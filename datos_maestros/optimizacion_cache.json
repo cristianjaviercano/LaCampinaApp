@@ -1,478 +1,752 @@
 {
-  "JOSE PEREZ_2026-01-31": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-01-31",
-    "Visitas": 30,
-    "DistanciaReal": 130.55005001024412,
-    "DistanciaOptima": 23.585047972898042
-  },
-  "JOSE PEREZ_2026-02-02": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-02",
-    "Visitas": 56,
-    "DistanciaReal": 262.1897743941676,
-    "DistanciaOptima": 27.274614039247737
-  },
-  "JOSE PEREZ_2026-02-03": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-03",
-    "Visitas": 43,
-    "DistanciaReal": 195.36920697201236,
-    "DistanciaOptima": 15.555947231006332
-  },
-  "JOSE PEREZ_2026-02-04": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-04",
-    "Visitas": 39,
-    "DistanciaReal": 174.17487453765054,
-    "DistanciaOptima": 25.01504526842978
-  },
-  "JOSE PEREZ_2026-02-05": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-05",
-    "Visitas": 42,
-    "DistanciaReal": 228.55380581566246,
-    "DistanciaOptima": 22.29985995322552
-  },
-  "JOSE PEREZ_2026-02-06": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-06",
-    "Visitas": 32,
-    "DistanciaReal": 126.88123925781206,
-    "DistanciaOptima": 20.382935046774833
-  },
-  "JOSE PEREZ_2026-02-07": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-07",
-    "Visitas": 29,
-    "DistanciaReal": 135.99480089015165,
-    "DistanciaOptima": 24.232934297302805
-  },
-  "JOSE PEREZ_2026-02-09": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-09",
-    "Visitas": 61,
-    "DistanciaReal": 319.0874133945905,
-    "DistanciaOptima": 19.21998782422944
-  },
-  "JOSE PEREZ_2026-02-10": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-10",
-    "Visitas": 43,
-    "DistanciaReal": 187.8274631641407,
-    "DistanciaOptima": 20.81337646946303
-  },
-  "JOSE PEREZ_2026-02-11": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-11",
-    "Visitas": 40,
-    "DistanciaReal": 194.48762246556112,
-    "DistanciaOptima": 25.0304531842706
-  },
-  "JOSE PEREZ_2026-02-12": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-12",
-    "Visitas": 44,
-    "DistanciaReal": 222.69696103244405,
-    "DistanciaOptima": 18.899242186124177
-  },
-  "JOSE PEREZ_2026-02-13": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-13",
-    "Visitas": 43,
-    "DistanciaReal": 187.87352628861112,
-    "DistanciaOptima": 24.35811285959239
-  },
-  "JOSE PEREZ_2026-02-14": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-14",
-    "Visitas": 35,
-    "DistanciaReal": 175.30214355433336,
-    "DistanciaOptima": 30.027126702069182
-  },
-  "JOSE PEREZ_2026-02-16": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-16",
-    "Visitas": 55,
-    "DistanciaReal": 239.0844207025978,
-    "DistanciaOptima": 19.543975286297144
-  },
-  "JOSE PEREZ_2026-02-17": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-17",
-    "Visitas": 36,
-    "DistanciaReal": 150.13324757278437,
-    "DistanciaOptima": 20.298875108663747
-  },
-  "JOSE PEREZ_2026-02-18": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-18",
-    "Visitas": 42,
-    "DistanciaReal": 180.8307801006974,
-    "DistanciaOptima": 21.963534713559916
-  },
-  "JOSE PEREZ_2026-02-19": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-19",
-    "Visitas": 47,
-    "DistanciaReal": 236.383311107897,
-    "DistanciaOptima": 24.289357517876063
-  },
-  "JOSE PEREZ_2026-02-20": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-20",
-    "Visitas": 38,
-    "DistanciaReal": 166.12016661049873,
-    "DistanciaOptima": 18.759631453478704
-  },
-  "JOSE PEREZ_2026-02-21": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-21",
-    "Visitas": 27,
-    "DistanciaReal": 113.79895801368943,
-    "DistanciaOptima": 21.84955744065109
-  },
-  "JOSE PEREZ_2026-02-23": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-23",
-    "Visitas": 58,
-    "DistanciaReal": 293.07709640637654,
-    "DistanciaOptima": 22.81897115506674
-  },
-  "JOSE PEREZ_2026-02-24": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-24",
-    "Visitas": 36,
-    "DistanciaReal": 181.4379034335179,
-    "DistanciaOptima": 17.8766257326327
-  },
-  "JOSE PEREZ_2026-02-25": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-25",
-    "Visitas": 40,
-    "DistanciaReal": 152.27877584799845,
-    "DistanciaOptima": 27.392106875732118
-  },
-  "JOSE PEREZ_2026-02-26": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-26",
-    "Visitas": 46,
-    "DistanciaReal": 223.03411682680968,
-    "DistanciaOptima": 21.485449139540396
-  },
-  "JOSE PEREZ_2026-02-27": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-27",
-    "Visitas": 43,
-    "DistanciaReal": 162.54685487761807,
-    "DistanciaOptima": 23.662077350354238
-  },
-  "JOSE PEREZ_2026-02-28": {
-    "Vendedor": "JOSE PEREZ",
-    "Fecha": "2026-02-28",
-    "Visitas": 31,
-    "DistanciaReal": 165.20914016293577,
-    "DistanciaOptima": 23.796473969750576
-  },
   "JOSE PEREZ_2026-01-03": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-03",
-    "Visitas": 41,
-    "DistanciaReal": 196.69269349490804,
-    "DistanciaOptima": 26.90678366758655
+    "Visitas": 36,
+    "JornadaHoras": 4.155555555555556,
+    "TiempoPromedioPedido": 6.233333333333333,
+    "TiempoPromedioCliente": 6.9259259259259265,
+    "TicketPromedio": 106905.83611111113,
+    "Cobertura": 72.0
   },
   "JOSE PEREZ_2026-01-05": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-05",
-    "Visitas": 54,
-    "DistanciaReal": 228.0616032637045,
-    "DistanciaOptima": 19.832174941688248
+    "Visitas": 37,
+    "JornadaHoras": 5.128055555555555,
+    "TiempoPromedioPedido": 7.889316239316238,
+    "TiempoPromedioCliente": 8.315765765765764,
+    "TicketPromedio": 102029.76644864865,
+    "Cobertura": 74.0
   },
   "JOSE PEREZ_2026-01-06": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-06",
-    "Visitas": 40,
-    "DistanciaReal": 173.52479958698086,
-    "DistanciaOptima": 21.415139236327423
+    "Visitas": 33,
+    "JornadaHoras": 5.641388888888889,
+    "TiempoPromedioPedido": 8.67905982905983,
+    "TiempoPromedioCliente": 10.257070707070708,
+    "TicketPromedio": 343556.07870303025,
+    "Cobertura": 66.0
   },
   "JOSE PEREZ_2026-01-07": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-07",
-    "Visitas": 46,
-    "DistanciaReal": 176.45218619456443,
-    "DistanciaOptima": 22.27001586664925
+    "Visitas": 38,
+    "JornadaHoras": 4.518611111111111,
+    "TiempoPromedioPedido": 7.134649122807017,
+    "TiempoPromedioCliente": 7.1346491228070175,
+    "TicketPromedio": 108139.79394736842,
+    "Cobertura": 76.0
   },
   "JOSE PEREZ_2026-01-08": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-08",
-    "Visitas": 49,
-    "DistanciaReal": 217.42590233726492,
-    "DistanciaOptima": 24.15292270031766
+    "Visitas": 48,
+    "JornadaHoras": 5.296666666666667,
+    "TiempoPromedioPedido": 6.761702127659573,
+    "TiempoPromedioCliente": 6.620833333333334,
+    "TicketPromedio": 91767.48145833332,
+    "Cobertura": 96.0
   },
   "JOSE PEREZ_2026-01-09": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-09",
-    "Visitas": 44,
-    "DistanciaReal": 175.76672415346385,
-    "DistanciaOptima": 25.227106801293267
+    "Visitas": 42,
+    "JornadaHoras": 5.480277777777777,
+    "TiempoPromedioPedido": 7.6468992248062015,
+    "TiempoPromedioCliente": 7.828968253968254,
+    "TicketPromedio": 121454.57809523812,
+    "Cobertura": 84.0
   },
   "JOSE PEREZ_2026-01-10": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-10",
-    "Visitas": 36,
-    "DistanciaReal": 165.7048266978462,
-    "DistanciaOptima": 26.325711657278216
+    "Visitas": 34,
+    "JornadaHoras": 3.8116666666666665,
+    "TiempoPromedioPedido": 6.01842105263158,
+    "TiempoPromedioCliente": 6.726470588235294,
+    "TicketPromedio": 148851.73830588238,
+    "Cobertura": 68.0
   },
   "JOSE PEREZ_2026-01-12": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-12",
-    "Visitas": 62,
-    "DistanciaReal": 293.40569457072024,
-    "DistanciaOptima": 23.50829146734425
+    "Visitas": 42,
+    "JornadaHoras": 5.479444444444445,
+    "TiempoPromedioPedido": 6.8493055555555555,
+    "TiempoPromedioCliente": 7.827777777777778,
+    "TicketPromedio": 130829.96142857142,
+    "Cobertura": 84.0
   },
   "JOSE PEREZ_2026-01-13": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-13",
-    "Visitas": 43,
-    "DistanciaReal": 169.53627282486397,
-    "DistanciaOptima": 20.58612321388316
+    "Visitas": 34,
+    "JornadaHoras": 6.103055555555556,
+    "TiempoPromedioPedido": 10.171759259259257,
+    "TiempoPromedioCliente": 10.770098039215686,
+    "TicketPromedio": 388979.5250176471,
+    "Cobertura": 68.0
   },
   "JOSE PEREZ_2026-01-14": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-14",
-    "Visitas": 47,
-    "DistanciaReal": 191.25599863481807,
-    "DistanciaOptima": 21.567161547096788
+    "Visitas": 42,
+    "JornadaHoras": 5.133055555555556,
+    "TiempoPromedioPedido": 7.699583333333332,
+    "TiempoPromedioCliente": 7.332936507936508,
+    "TicketPromedio": 138813.48761904764,
+    "Cobertura": 84.0
   },
   "JOSE PEREZ_2026-01-15": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-15",
     "Visitas": 48,
-    "DistanciaReal": 218.59318493718882,
-    "DistanciaOptima": 23.95415037464358
+    "JornadaHoras": 5.638888888888889,
+    "TiempoPromedioPedido": 7.198581560283689,
+    "TiempoPromedioCliente": 7.048611111111112,
+    "TicketPromedio": 114462.15479166666,
+    "Cobertura": 96.0
   },
   "JOSE PEREZ_2026-01-16": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-16",
-    "Visitas": 42,
-    "DistanciaReal": 164.04061083916727,
-    "DistanciaOptima": 23.25269339899955
+    "Visitas": 38,
+    "JornadaHoras": 4.806111111111111,
+    "TiempoPromedioPedido": 6.706201550387596,
+    "TiempoPromedioCliente": 7.588596491228071,
+    "TicketPromedio": 107141.4352631579,
+    "Cobertura": 76.0
   },
   "JOSE PEREZ_2026-01-17": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-17",
-    "Visitas": 36,
-    "DistanciaReal": 184.96316275064268,
-    "DistanciaOptima": 23.71944317684
+    "Visitas": 32,
+    "JornadaHoras": 4.081666666666667,
+    "TiempoPromedioPedido": 7.421212121212122,
+    "TiempoPromedioCliente": 7.653125000000001,
+    "TicketPromedio": 97287.15437500001,
+    "Cobertura": 64.0
   },
   "JOSE PEREZ_2026-01-19": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-19",
-    "Visitas": 62,
-    "DistanciaReal": 279.95420396119863,
-    "DistanciaOptima": 24.46703613802445
+    "Visitas": 41,
+    "JornadaHoras": 5.470833333333333,
+    "TiempoPromedioPedido": 7.1358695652173925,
+    "TiempoPromedioCliente": 8.00609756097561,
+    "TicketPromedio": 160549.45219512196,
+    "Cobertura": 82.0
   },
   "JOSE PEREZ_2026-01-20": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-20",
-    "Visitas": 41,
-    "DistanciaReal": 151.21524327716386,
-    "DistanciaOptima": 18.119485259789997
+    "Visitas": 34,
+    "JornadaHoras": 5.1675,
+    "TiempoPromedioPedido": 8.159210526315789,
+    "TiempoPromedioCliente": 9.119117647058824,
+    "TicketPromedio": 334125.03902352933,
+    "Cobertura": 68.0
   },
   "JOSE PEREZ_2026-01-21": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-21",
-    "Visitas": 41,
-    "DistanciaReal": 176.67220684196383,
-    "DistanciaOptima": 20.79631519044625
+    "Visitas": 34,
+    "JornadaHoras": 5.8405555555555555,
+    "TiempoPromedioPedido": 10.61919191919192,
+    "TiempoPromedioCliente": 10.306862745098039,
+    "TicketPromedio": 125271.36617647056,
+    "Cobertura": 68.0
   },
   "JOSE PEREZ_2026-01-22": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-22",
-    "Visitas": 54,
-    "DistanciaReal": 237.5570129375909,
-    "DistanciaOptima": 25.9302663950754
+    "Visitas": 47,
+    "JornadaHoras": 5.474444444444444,
+    "TiempoPromedioPedido": 6.843055555555555,
+    "TiempoPromedioCliente": 6.988652482269503,
+    "TicketPromedio": 86623.79212765956,
+    "Cobertura": 94.0
   },
   "JOSE PEREZ_2026-01-23": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-23",
-    "Visitas": 51,
-    "DistanciaReal": 210.30011404344017,
-    "DistanciaOptima": 24.293876330357467
+    "Visitas": 45,
+    "JornadaHoras": 5.226944444444444,
+    "TiempoPromedioPedido": 6.817753623188408,
+    "TiempoPromedioCliente": 6.9692592592592595,
+    "TicketPromedio": 118398.55333333334,
+    "Cobertura": 90.0
   },
   "JOSE PEREZ_2026-01-24": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-24",
     "Visitas": 28,
-    "DistanciaReal": 128.74486214855912,
-    "DistanciaOptima": 21.635159476499055
+    "JornadaHoras": 5.479444444444445,
+    "TiempoPromedioPedido": 11.336781609195402,
+    "TiempoPromedioCliente": 11.741666666666669,
+    "TicketPromedio": 76792.04928571428,
+    "Cobertura": 56.00000000000001
   },
   "JOSE PEREZ_2026-01-26": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-26",
-    "Visitas": 64,
-    "DistanciaReal": 322.6482655784423,
-    "DistanciaOptima": 22.0321688203862
+    "Visitas": 44,
+    "JornadaHoras": 5.636388888888889,
+    "TiempoPromedioPedido": 6.503525641025642,
+    "TiempoPromedioCliente": 7.685984848484849,
+    "TicketPromedio": 106245.00772727272,
+    "Cobertura": 88.0
   },
   "JOSE PEREZ_2026-01-27": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-27",
-    "Visitas": 39,
-    "DistanciaReal": 160.10947455248032,
-    "DistanciaOptima": 17.30294701815702
+    "Visitas": 30,
+    "JornadaHoras": 6.222222222222222,
+    "TiempoPromedioPedido": 10.666666666666668,
+    "TiempoPromedioCliente": 12.444444444444445,
+    "TicketPromedio": 448621.93333333335,
+    "Cobertura": 60.0
   },
   "JOSE PEREZ_2026-01-28": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-28",
-    "Visitas": 42,
-    "DistanciaReal": 196.4815499603265,
-    "DistanciaOptima": 26.78054444026811
+    "Visitas": 35,
+    "JornadaHoras": 5.0675,
+    "TiempoPromedioPedido": 8.687142857142858,
+    "TiempoPromedioCliente": 8.687142857142858,
+    "TicketPromedio": 142564.34285714285,
+    "Cobertura": 70.0
   },
   "JOSE PEREZ_2026-01-29": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-29",
-    "Visitas": 54,
-    "DistanciaReal": 235.6127720053202,
-    "DistanciaOptima": 25.092039909791897
+    "Visitas": 50,
+    "JornadaHoras": 5.514722222222222,
+    "TiempoPromedioPedido": 7.193115942028984,
+    "TiempoPromedioCliente": 6.617666666666667,
+    "TicketPromedio": 74195.32,
+    "Cobertura": 100.0
   },
   "JOSE PEREZ_2026-01-30": {
     "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-01-30",
-    "Visitas": 42,
-    "DistanciaReal": 173.01591683378774,
-    "DistanciaOptima": 25.661488915373802
+    "Visitas": 39,
+    "JornadaHoras": 5.6322222222222225,
+    "TiempoPromedioPedido": 7.509629629629629,
+    "TiempoPromedioCliente": 8.664957264957264,
+    "TicketPromedio": 93271.05128205128,
+    "Cobertura": 78.0
   },
-  "DAIFER GENEY_2026-01-05": {
-    "Vendedor": "DAIFER GENEY",
-    "Fecha": "2026-01-05",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
+  "JOSE PEREZ_2026-01-31": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-01-31",
+    "Visitas": 30,
+    "JornadaHoras": 4.6525,
+    "TiempoPromedioPedido": 9.004838709677419,
+    "TiempoPromedioCliente": 9.305,
+    "TicketPromedio": 87199.83333333333,
+    "Cobertura": 60.0
   },
-  "DAIFER GENEY_2026-01-09": {
-    "Vendedor": "DAIFER GENEY",
-    "Fecha": "2026-01-09",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
+  "JOSE PEREZ_2026-02-02": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-02",
+    "Visitas": 39,
+    "JornadaHoras": 5.887222222222222,
+    "TiempoPromedioPedido": 7.84962962962963,
+    "TiempoPromedioCliente": 9.057264957264957,
+    "TicketPromedio": 104537.48717948717,
+    "Cobertura": 78.0
   },
-  "DAIFER GENEY_2026-01-12": {
-    "Vendedor": "DAIFER GENEY",
-    "Fecha": "2026-01-12",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
+  "JOSE PEREZ_2026-02-03": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-03",
+    "Visitas": 36,
+    "JornadaHoras": 5.291666666666667,
+    "TiempoPromedioPedido": 8.355263157894736,
+    "TiempoPromedioCliente": 8.819444444444445,
+    "TicketPromedio": 455446.1111111111,
+    "Cobertura": 72.0
   },
-  "DAIFER GENEY_2026-01-13": {
-    "Vendedor": "DAIFER GENEY",
-    "Fecha": "2026-01-13",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
+  "JOSE PEREZ_2026-02-04": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-04",
+    "Visitas": 33,
+    "JornadaHoras": 5.237222222222222,
+    "TiempoPromedioPedido": 9.522222222222222,
+    "TiempoPromedioCliente": 9.522222222222222,
+    "TicketPromedio": 96597.60606060606,
+    "Cobertura": 66.0
   },
-  "DAIFER GENEY_2026-01-16": {
-    "Vendedor": "DAIFER GENEY",
-    "Fecha": "2026-01-16",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
+  "JOSE PEREZ_2026-02-05": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-05",
+    "Visitas": 35,
+    "JornadaHoras": 4.848611111111111,
+    "TiempoPromedioPedido": 7.8626126126126135,
+    "TiempoPromedioCliente": 8.311904761904762,
+    "TicketPromedio": 41727.97142857143,
+    "Cobertura": 70.0
   },
-  "DAIFER GENEY_2026-01-27": {
-    "Vendedor": "DAIFER GENEY",
-    "Fecha": "2026-01-27",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
-  },
-  "DAIFER GENEY_2026-01-30": {
-    "Vendedor": "DAIFER GENEY",
-    "Fecha": "2026-01-30",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
-  },
-  "DAIFER GENEY_2026-02-06": {
-    "Vendedor": "DAIFER GENEY",
+  "JOSE PEREZ_2026-02-06": {
+    "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-02-06",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
+    "Visitas": 26,
+    "JornadaHoras": 4.465833333333333,
+    "TiempoPromedioPedido": 9.569642857142856,
+    "TiempoPromedioCliente": 10.305769230769231,
+    "TicketPromedio": 42575.653846153844,
+    "Cobertura": 52.0
   },
-  "DAIFER GENEY_2026-02-10": {
-    "Vendedor": "DAIFER GENEY",
-    "Fecha": "2026-02-10",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
-  },
-  "DAIFER GENEY_2026-02-13": {
-    "Vendedor": "DAIFER GENEY",
-    "Fecha": "2026-02-13",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
-  },
-  "DAIFER GENEY_2026-02-16": {
-    "Vendedor": "DAIFER GENEY",
-    "Fecha": "2026-02-16",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
-  },
-  "DAIFER GENEY_2026-02-20": {
-    "Vendedor": "DAIFER GENEY",
-    "Fecha": "2026-02-20",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
-  },
-  "DAIFER GENEY_2026-02-24": {
-    "Vendedor": "DAIFER GENEY",
-    "Fecha": "2026-02-24",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
-  },
-  "DAIFER GENEY_2026-02-27": {
-    "Vendedor": "DAIFER GENEY",
-    "Fecha": "2026-02-27",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
-  },
-  "JUNIOR MARQUEZ_2026-01-10": {
-    "Vendedor": "JUNIOR MARQUEZ",
-    "Fecha": "2026-01-10",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
-  },
-  "JUNIOR MARQUEZ_2026-01-17": {
-    "Vendedor": "JUNIOR MARQUEZ",
-    "Fecha": "2026-01-17",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
-  },
-  "JUNIOR MARQUEZ_2026-02-07": {
-    "Vendedor": "JUNIOR MARQUEZ",
+  "JOSE PEREZ_2026-02-07": {
+    "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-02-07",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
+    "Visitas": 26,
+    "JornadaHoras": 5.518888888888889,
+    "TiempoPromedioPedido": 10.681720430107527,
+    "TiempoPromedioCliente": 12.735897435897435,
+    "TicketPromedio": 41140.192307692305,
+    "Cobertura": 52.0
   },
-  "JUNIOR MARQUEZ_2026-02-21": {
-    "Vendedor": "JUNIOR MARQUEZ",
+  "JOSE PEREZ_2026-02-09": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-09",
+    "Visitas": 39,
+    "JornadaHoras": 5.7811111111111115,
+    "TiempoPromedioPedido": 8.066666666666666,
+    "TiempoPromedioCliente": 8.894017094017094,
+    "TicketPromedio": 52944.38461538462,
+    "Cobertura": 78.0
+  },
+  "JOSE PEREZ_2026-02-10": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-10",
+    "Visitas": 35,
+    "JornadaHoras": 6.2619444444444445,
+    "TiempoPromedioPedido": 9.163821138211382,
+    "TiempoPromedioCliente": 10.734761904761905,
+    "TicketPromedio": 194180.11428571428,
+    "Cobertura": 70.0
+  },
+  "JOSE PEREZ_2026-02-11": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-11",
+    "Visitas": 30,
+    "JornadaHoras": 4.643611111111111,
+    "TiempoPromedioPedido": 8.442929292929291,
+    "TiempoPromedioCliente": 9.287222222222223,
+    "TicketPromedio": 67997.6,
+    "Cobertura": 60.0
+  },
+  "JOSE PEREZ_2026-02-12": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-12",
+    "Visitas": 36,
+    "JornadaHoras": 4.983055555555556,
+    "TiempoPromedioPedido": 6.953100775193799,
+    "TiempoPromedioCliente": 8.305092592592594,
+    "TicketPromedio": 43848.63888888889,
+    "Cobertura": 72.0
+  },
+  "JOSE PEREZ_2026-02-13": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-13",
+    "Visitas": 37,
+    "JornadaHoras": 5.454166666666667,
+    "TiempoPromedioPedido": 7.9817073170731705,
+    "TiempoPromedioCliente": 8.844594594594595,
+    "TicketPromedio": 63563.64864864865,
+    "Cobertura": 74.0
+  },
+  "JOSE PEREZ_2026-02-14": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-14",
+    "Visitas": 30,
+    "JornadaHoras": 4.491666666666666,
+    "TiempoPromedioPedido": 7.699999999999998,
+    "TiempoPromedioCliente": 8.983333333333333,
+    "TicketPromedio": 53822.4,
+    "Cobertura": 60.0
+  },
+  "JOSE PEREZ_2026-02-16": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-16",
+    "Visitas": 34,
+    "JornadaHoras": 5.736666666666666,
+    "TiempoPromedioPedido": 8.605,
+    "TiempoPromedioCliente": 10.123529411764705,
+    "TicketPromedio": 60265.82352941176,
+    "Cobertura": 68.0
+  },
+  "JOSE PEREZ_2026-02-17": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-17",
+    "Visitas": 29,
+    "JornadaHoras": 6.207222222222223,
+    "TiempoPromedioPedido": 10.95392156862745,
+    "TiempoPromedioCliente": 12.842528735632184,
+    "TicketPromedio": 199684.89655172414,
+    "Cobertura": 57.99999999999999
+  },
+  "JOSE PEREZ_2026-02-18": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-18",
+    "Visitas": 31,
+    "JornadaHoras": 4.878611111111111,
+    "TiempoPromedioPedido": 9.44247311827957,
+    "TiempoPromedioCliente": 9.442473118279569,
+    "TicketPromedio": 78246.2258064516,
+    "Cobertura": 62.0
+  },
+  "JOSE PEREZ_2026-02-19": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-19",
+    "Visitas": 38,
+    "JornadaHoras": 5.348611111111111,
+    "TiempoPromedioPedido": 6.292483660130718,
+    "TiempoPromedioCliente": 8.445175438596491,
+    "TicketPromedio": 57688.10526315789,
+    "Cobertura": 76.0
+  },
+  "JOSE PEREZ_2026-02-20": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-20",
+    "Visitas": 30,
+    "JornadaHoras": 5.573333333333333,
+    "TiempoPromedioPedido": 10.133333333333333,
+    "TiempoPromedioCliente": 11.146666666666667,
+    "TicketPromedio": 56969.7,
+    "Cobertura": 60.0
+  },
+  "JOSE PEREZ_2026-02-21": {
+    "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-02-21",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
+    "Visitas": 26,
+    "JornadaHoras": 4.258055555555556,
+    "TiempoPromedioPedido": 8.241397849462363,
+    "TiempoPromedioCliente": 9.826282051282051,
+    "TicketPromedio": 45816.653846153844,
+    "Cobertura": 52.0
   },
-  "JUNIOR MARQUEZ_2026-02-28": {
-    "Vendedor": "JUNIOR MARQUEZ",
+  "JOSE PEREZ_2026-02-23": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-23",
+    "Visitas": 39,
+    "JornadaHoras": 6.634444444444444,
+    "TiempoPromedioPedido": 9.951666666666666,
+    "TiempoPromedioCliente": 10.206837606837606,
+    "TicketPromedio": 49836.153846153844,
+    "Cobertura": 78.0
+  },
+  "JOSE PEREZ_2026-02-24": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-24",
+    "Visitas": 29,
+    "JornadaHoras": 5.3225,
+    "TiempoPromedioPedido": 8.63108108108108,
+    "TiempoPromedioCliente": 11.01206896551724,
+    "TicketPromedio": 189005.72413793104,
+    "Cobertura": 57.99999999999999
+  },
+  "JOSE PEREZ_2026-02-25": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-25",
+    "Visitas": 28,
+    "JornadaHoras": 5.668888888888889,
+    "TiempoPromedioPedido": 10.97204301075269,
+    "TiempoPromedioCliente": 12.147619047619047,
+    "TicketPromedio": 68773.46428571429,
+    "Cobertura": 56.00000000000001
+  },
+  "JOSE PEREZ_2026-02-26": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-26",
+    "Visitas": 37,
+    "JornadaHoras": 6.064444444444445,
+    "TiempoPromedioPedido": 8.87479674796748,
+    "TiempoPromedioCliente": 9.834234234234234,
+    "TicketPromedio": 40026.86486486487,
+    "Cobertura": 74.0
+  },
+  "JOSE PEREZ_2026-02-27": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-02-27",
+    "Visitas": 37,
+    "JornadaHoras": 4.631944444444445,
+    "TiempoPromedioPedido": 6.778455284552846,
+    "TiempoPromedioCliente": 7.511261261261262,
+    "TicketPromedio": 50165.27027027027,
+    "Cobertura": 74.0
+  },
+  "JOSE PEREZ_2026-02-28": {
+    "Vendedor": "JOSE PEREZ",
     "Fecha": "2026-02-28",
-    "Visitas": 1,
-    "DistanciaReal": 0,
-    "DistanciaOptima": 0
+    "Visitas": 26,
+    "JornadaHoras": 4.119722222222222,
+    "TiempoPromedioPedido": 8.239444444444443,
+    "TiempoPromedioCliente": 9.507051282051282,
+    "TicketPromedio": 47736.11538461538,
+    "Cobertura": 52.0
+  },
+  "JOSE PEREZ_2026-03-02": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-02",
+    "Visitas": 41,
+    "JornadaHoras": 5.660555555555556,
+    "TiempoPromedioPedido": 7.226241134751774,
+    "TiempoPromedioCliente": 8.283739837398373,
+    "TicketPromedio": 106639.9268292683,
+    "Cobertura": 82.0
+  },
+  "JOSE PEREZ_2026-03-03": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-03",
+    "Visitas": 31,
+    "JornadaHoras": 4.796944444444445,
+    "TiempoPromedioPedido": 8.465196078431372,
+    "TiempoPromedioCliente": 9.284408602150538,
+    "TicketPromedio": 195814.67741935485,
+    "Cobertura": 62.0
+  },
+  "JOSE PEREZ_2026-03-04": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-04",
+    "Visitas": 35,
+    "JornadaHoras": 6.2875,
+    "TiempoPromedioPedido": 9.43125,
+    "TiempoPromedioCliente": 10.778571428571428,
+    "TicketPromedio": 62643.857142857145,
+    "Cobertura": 70.0
+  },
+  "JOSE PEREZ_2026-03-05": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-05",
+    "Visitas": 41,
+    "JornadaHoras": 5.420555555555556,
+    "TiempoPromedioPedido": 6.637414965986395,
+    "TiempoPromedioCliente": 7.932520325203252,
+    "TicketPromedio": 52060.829268292684,
+    "Cobertura": 82.0
+  },
+  "JOSE PEREZ_2026-03-06": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-06",
+    "Visitas": 40,
+    "JornadaHoras": 8.5,
+    "TiempoPromedioPedido": 12.142857142857142,
+    "TiempoPromedioCliente": 12.75,
+    "TicketPromedio": 71472.35,
+    "Cobertura": 80.0
+  },
+  "JOSE PEREZ_2026-03-07": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-07",
+    "Visitas": 26,
+    "JornadaHoras": 1.0455555555555556,
+    "TiempoPromedioPedido": 1.9604166666666667,
+    "TiempoPromedioCliente": 2.4128205128205127,
+    "TicketPromedio": 44909.0,
+    "Cobertura": 52.0
+  },
+  "JOSE PEREZ_2026-03-09": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-09",
+    "Visitas": 42,
+    "JornadaHoras": 6.373055555555555,
+    "TiempoPromedioPedido": 7.353525641025643,
+    "TiempoPromedioCliente": 9.10436507936508,
+    "TicketPromedio": 65479.30952380953,
+    "Cobertura": 84.0
+  },
+  "JOSE PEREZ_2026-03-10": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-10",
+    "Visitas": 26,
+    "JornadaHoras": 6.291666666666667,
+    "TiempoPromedioPedido": 13.98148148148148,
+    "TiempoPromedioCliente": 14.51923076923077,
+    "TicketPromedio": 157580.76923076922,
+    "Cobertura": 52.0
+  },
+  "JOSE PEREZ_2026-03-11": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-11",
+    "Visitas": 32,
+    "JornadaHoras": 6.826944444444444,
+    "TiempoPromedioPedido": 10.240416666666667,
+    "TiempoPromedioCliente": 12.800520833333332,
+    "TicketPromedio": 74994.8125,
+    "Cobertura": 64.0
+  },
+  "JOSE PEREZ_2026-03-12": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-12",
+    "Visitas": 34,
+    "JornadaHoras": 4.8925,
+    "TiempoPromedioPedido": 7.159756097560976,
+    "TiempoPromedioCliente": 8.633823529411766,
+    "TicketPromedio": 39213.0,
+    "Cobertura": 68.0
+  },
+  "JOSE PEREZ_2026-03-13": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-13",
+    "Visitas": 38,
+    "JornadaHoras": 5.953611111111111,
+    "TiempoPromedioPedido": 8.505158730158731,
+    "TiempoPromedioCliente": 9.400438596491227,
+    "TicketPromedio": 115814.31578947368,
+    "Cobertura": 76.0
+  },
+  "JOSE PEREZ_2026-03-14": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-14",
+    "Visitas": 26,
+    "JornadaHoras": 5.898611111111111,
+    "TiempoPromedioPedido": 10.724747474747474,
+    "TiempoPromedioCliente": 13.612179487179487,
+    "TicketPromedio": 73447.23076923077,
+    "Cobertura": 52.0
+  },
+  "JOSE PEREZ_2026-03-16": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-16",
+    "Visitas": 40,
+    "JornadaHoras": 6.458611111111111,
+    "TiempoPromedioPedido": 8.24503546099291,
+    "TiempoPromedioCliente": 9.687916666666666,
+    "TicketPromedio": 59984.95,
+    "Cobertura": 80.0
+  },
+  "JOSE PEREZ_2026-03-17": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-17",
+    "Visitas": 32,
+    "JornadaHoras": 5.132777777777778,
+    "TiempoPromedioPedido": 7.332539682539682,
+    "TiempoPromedioCliente": 9.623958333333334,
+    "TicketPromedio": 229780.125,
+    "Cobertura": 64.0
+  },
+  "JOSE PEREZ_2026-03-18": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-18",
+    "Visitas": 35,
+    "JornadaHoras": 6.085555555555556,
+    "TiempoPromedioPedido": 8.905691056910568,
+    "TiempoPromedioCliente": 10.432380952380953,
+    "TicketPromedio": 61172.22857142857,
+    "Cobertura": 70.0
+  },
+  "JOSE PEREZ_2026-03-19": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-19",
+    "Visitas": 42,
+    "JornadaHoras": 4.9558333333333335,
+    "TiempoPromedioPedido": 6.194791666666667,
+    "TiempoPromedioCliente": 7.079761904761905,
+    "TicketPromedio": 41655.880952380954,
+    "Cobertura": 84.0
+  },
+  "JOSE PEREZ_2026-03-20": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-20",
+    "Visitas": 36,
+    "JornadaHoras": 6.201666666666667,
+    "TiempoPromedioPedido": 8.85952380952381,
+    "TiempoPromedioCliente": 10.336111111111112,
+    "TicketPromedio": 78803.91666666667,
+    "Cobertura": 72.0
+  },
+  "JOSE PEREZ_2026-03-21": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-21",
+    "Visitas": 25,
+    "JornadaHoras": 3.897222222222222,
+    "TiempoPromedioPedido": 7.307291666666666,
+    "TiempoPromedioCliente": 9.353333333333332,
+    "TicketPromedio": 66794.0,
+    "Cobertura": 50.0
+  },
+  "JOSE PEREZ_2026-03-23": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-23",
+    "Visitas": 33,
+    "JornadaHoras": 4.875277777777778,
+    "TiempoPromedioPedido": 8.357619047619046,
+    "TiempoPromedioCliente": 8.864141414141415,
+    "TicketPromedio": 58388.93939393939,
+    "Cobertura": 66.0
+  },
+  "JOSE PEREZ_2026-03-24": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-24",
+    "Visitas": 31,
+    "JornadaHoras": 6.596111111111111,
+    "TiempoPromedioPedido": 10.696396396396398,
+    "TiempoPromedioCliente": 12.766666666666666,
+    "TicketPromedio": 184149.96774193548,
+    "Cobertura": 62.0
+  },
+  "JOSE PEREZ_2026-03-25": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-25",
+    "Visitas": 29,
+    "JornadaHoras": 4.548333333333333,
+    "TiempoPromedioPedido": 8.026470588235293,
+    "TiempoPromedioCliente": 9.410344827586206,
+    "TicketPromedio": 77865.89655172414,
+    "Cobertura": 57.99999999999999
+  },
+  "JOSE PEREZ_2026-03-26": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-26",
+    "Visitas": 40,
+    "JornadaHoras": 5.49,
+    "TiempoPromedioPedido": 7.160869565217392,
+    "TiempoPromedioCliente": 8.235000000000001,
+    "TicketPromedio": 52248.025,
+    "Cobertura": 80.0
+  },
+  "JOSE PEREZ_2026-03-27": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-27",
+    "Visitas": 33,
+    "JornadaHoras": 6.091666666666667,
+    "TiempoPromedioPedido": 9.618421052631579,
+    "TiempoPromedioCliente": 11.075757575757576,
+    "TicketPromedio": 71247.24242424243,
+    "Cobertura": 66.0
+  },
+  "JOSE PEREZ_2026-03-28": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-28",
+    "Visitas": 34,
+    "JornadaHoras": 6.073333333333333,
+    "TiempoPromedioPedido": 8.676190476190474,
+    "TiempoPromedioCliente": 10.717647058823529,
+    "TicketPromedio": 53007.23529411765,
+    "Cobertura": 68.0
+  },
+  "JOSE PEREZ_2026-03-30": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-30",
+    "Visitas": 27,
+    "JornadaHoras": 5.336944444444445,
+    "TiempoPromedioPedido": 11.436309523809525,
+    "TiempoPromedioCliente": 11.859876543209877,
+    "TicketPromedio": 204390.11111111112,
+    "Cobertura": 54.0
+  },
+  "JOSE PEREZ_2026-03-31": {
+    "Vendedor": "JOSE PEREZ",
+    "Fecha": "2026-03-31",
+    "Visitas": 29,
+    "JornadaHoras": 6.206388888888889,
+    "TiempoPromedioPedido": 11.636979166666666,
+    "TiempoPromedioCliente": 12.84080459770115,
+    "TicketPromedio": 52567.31034482759,
+    "Cobertura": 57.99999999999999
   }
 }

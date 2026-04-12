@@ -53,10 +53,10 @@ df_det['ClienteCodigo'] = df_det['ClienteCodigo'].astype(str)
 
 # Pre-cruzar datos para tener coordenadas en las transacciones
 df_full = pd.merge(df_det, df_cli[['Codigo', 'Nombre', 'Latitud', 'Longitud', 'Barrio']], 
-                   left_on='ClienteCodigo', right_on='Codigo', how='inner')
+                   left_on='ClienteCodigo', right_on='Codigo', how='left')
 df_full['Latitud'] = pd.to_numeric(df_full['Latitud'], errors='coerce')
 df_full['Longitud'] = pd.to_numeric(df_full['Longitud'], errors='coerce')
-df_full = df_full.dropna(subset=['Latitud', 'Longitud'])
+# Permitimos conservar clientes sin Lat/Lon para graficar su tiempo de trabajo real
 
 tab_preventa, tab_reparto, tab_pareto = st.tabs([
     "1. Eficiencia de Preventistas (TSP)", 
@@ -68,10 +68,10 @@ tab_preventa, tab_reparto, tab_pareto = st.tabs([
 # TAB 1: PREVENTISTAS (Eficiencia Operativa TSP)
 # ────────────────────────────────────────────────────────────────────────────
 with tab_preventa:
-    st.markdown("### 🏃‍♂️ Indicadores Logísticos de Preventa")
-    st.markdown("Analiza el rendimiento geométrico de tus vendedores en un rango de fechas. Compara su distancia recorrida vs el ideal matemático.")
+    st.markdown("### ⏱️ Indicadores Operativos de Tiempo y Cobertura")
+    st.markdown("Analiza la gestión temporal de tus vendedores en un rango de fechas. Compara su cobertura de visitas vs. los tiempos de facturación y estadía por cliente.")
     
-    col_f1, col_f2, col_f3 = st.columns([1.5, 2, 1])
+    col_f1, col_f2, col_f3 = st.columns([1.5, 2, 2.5])
     vendedores_lista = ["Todos"] + sorted(df_full['Vendedor'].dropna().unique().tolist())
     
     with col_f1:
@@ -85,9 +85,18 @@ with tab_preventa:
         rango_fechas = st.slider("Rango de Auditoría:", min_value=min_d, max_value=max_d, value=(min_d, max_d))
         
     with col_f3:
-        st.markdown("<br>", unsafe_allow_html=True)
-        btn_generar = st.button("🚀 Generar Análisis", type="primary", use_container_width=True)
-        btn_imprimir = st.button("🖨️ Imprimir (PDF)", type="secondary", use_container_width=True)
+        # Controles Gerenciales Maestros OEE
+        st.markdown("**Metas OEE Comercial**")
+        c_m1, c_m2, c_m3 = st.columns(3)
+        meta_diaria = c_m1.number_input("Clientes/Día", min_value=1, value=50, help="Visitas meta para Cobertura (Rendimiento)")
+        meta_horas = c_m2.number_input("Horas/Día", min_value=1.0, value=8.0, step=0.5, help="Jornada esperada (Disponibilidad)")
+        meta_ticket = c_m3.number_input("Ticket ($)", min_value=1000, value=20000, step=1000, help="Venta meta por cliente (Calidad)")
+        
+    cc1, cc2, cc3 = st.columns([2,1,1])
+    with cc2:
+        btn_generar = st.button("🚀 Calcular OEE", type="primary", use_container_width=True)
+    with cc3:
+        btn_imprimir = st.button("🖨️ PDF", type="secondary", use_container_width=True)
         if btn_imprimir:
             st.components.v1.html("<script>window.print()</script>", height=0)
 
@@ -139,41 +148,35 @@ with tab_preventa:
                         df_jornada = df_jornada.sort_values('Hora')
                     
                     visitas = df_jornada.drop_duplicates(subset=['ClienteCodigo']).copy().reset_index(drop=True)
-                    if len(visitas) == 0: 
+                    num_visitas = len(visitas)
+                    if num_visitas == 0: 
                         continue 
                         
-                    lats = visitas['Latitud'].tolist()
-                    lons = visitas['Longitud'].tolist()
-                    pts = list(zip(lats, lons))
-                    
-                    if len(visitas) < 3:
-                        # Para 1 o 2 visitas no hay problema del viajante, la ruta es trivial.
-                        d_emp = route_distance_km(pts, use_streets=True) if len(visitas) > 1 else 0
-                        d_opt = d_emp  # Óptimo es igual a la real, no hay pérdida
-                    else:
-                        d_emp = route_distance_km(pts, use_streets=True)
-                        orden = nearest_neighbor_tsp(visitas[['Latitud', 'Longitud']], use_streets=True)
-                        pts_opt = [pts[i] for i in orden]
-                        d_opt = route_distance_km(pts_opt, use_streets=True)
-                        
-                    # Calcular el tiempo diferencial de tomas de pedido (Punto 4)
                     tiempo_promedio = 0
+                    jornada_horas = 0
+                    ticket_promedio = df_jornada['Total'].sum() / num_visitas if num_visitas > 0 else 0
+                    
                     if 'Hora' in df_jornada.columns or 'Fecha' in df_jornada.columns:
                         temp_col = 'Hora' if 'Hora' in df_jornada.columns else 'Fecha'
                         temp = df_jornada.dropna(subset=[temp_col]).sort_values(temp_col)
-                        diffs = pd.to_datetime(temp[temp_col], errors='coerce').diff().dt.total_seconds() / 60
-                        diffs = diffs[diffs > 0] # solo diferencias validas (evitar pedidos simultaneos)
-                        if not diffs.empty:
-                            tiempo_promedio = diffs.mean()
+                        
+                        if not temp.empty:
+                            time_series = pd.to_datetime(temp[temp_col], errors='coerce')
+                            delta = time_series.max() - time_series.min()
+                            jornada_horas = delta.total_seconds() / 3600.0
+                            
+                            diffs = time_series.diff().dt.total_seconds() / 60
+                            diffs = diffs[diffs > 0]
+                            if not diffs.empty:
+                                tiempo_promedio = diffs.mean()
 
-                    
                     resultado = {
                         'Vendedor': vendedor,
                         'Fecha': fecha_str,  # Guardar como string para el JSON
-                        'Visitas': len(visitas),
-                        'DistanciaReal': d_emp,
-                        'DistanciaOptima': d_opt,
-                        'TiempoPromedioPedido': tiempo_promedio
+                        'Visitas': num_visitas,
+                        'JornadaHoras': jornada_horas,
+                        'TiempoPromedioPedido': tiempo_promedio,
+                        'TicketPromedio': ticket_promedio
                     }
                     resultados_diarios.append(resultado)
                     cache_rutas[cache_key] = resultado
@@ -192,110 +195,159 @@ with tab_preventa:
                     r['Fecha'] = pd.to_datetime(r['Fecha']).date()
                     
                 if not resultados_diarios:
-                    st.info("No hay jornadas registradas en este rango para analizar el ruteo.")
+                    st.info("No hay jornadas registradas en este rango para analizar.")
                 else:
                     df_res = pd.DataFrame(resultados_diarios)
-                    df_res['KmPerdidos'] = df_res['DistanciaReal'] - df_res['DistanciaOptima']
-                    # Limpiar anomalías de punto flotante
-                    df_res['KmPerdidos'] = df_res['KmPerdidos'].apply(lambda x: max(0, x))
-                    # Velocidad promedio urbana 15 km/h
-                    df_res['MinutosPerdidos'] = (df_res['KmPerdidos'] / 15.0) * 60
+                    
+                    # --- CÁLCULO DINÁMICO OEE COMERCIAL ---
+                    # Evitar NaN si hay cero visitas
+                    df_res['Visitas'] = df_res['Visitas'].replace(0, 1)
+                    
+                    df_res['Cobertura'] = (df_res['Visitas'] / meta_diaria) * 100
+                    df_res['TiempoPromedioCliente'] = (df_res['JornadaHoras'] * 60) / df_res['Visitas']
+                    
+                    df_res['Ind_Rendimiento'] = (df_res['Visitas'] / meta_diaria).clip(upper=1.2)
+                    df_res['Ind_Disponibilidad'] = (df_res['JornadaHoras'] / meta_horas).clip(upper=1.2)
+                    df_res['Ind_Calidad'] = (df_res['TicketPromedio'] / meta_ticket).clip(upper=1.2)
+                    df_res['OEE'] = (df_res['Ind_Rendimiento'] * df_res['Ind_Disponibilidad'] * df_res['Ind_Calidad']) * 100
+                    df_res.fillna(0, inplace=True)
                     
                     # Acumulados
-                    total_d_real = df_res['DistanciaReal'].sum()
-                    total_d_opt  = df_res['DistanciaOptima'].sum()
-                    total_perd   = df_res['KmPerdidos'].sum()
-                    total_tiempo = df_res['MinutosPerdidos'].sum()
-                    
-                    if 'TiempoPromedioPedido' not in df_res.columns:
-                        df_res['TiempoPromedioPedido'] = 0.0
-                        
-                    promedio_diff = df_res['TiempoPromedioPedido'].mean()
-                    eficiencia_global = (total_d_opt / total_d_real * 100) if total_d_real > 0 else 100
+                    total_jornadas = df_res['JornadaHoras'].sum()
+                    promedio_cobertura = df_res['Cobertura'].mean()
+                    total_visitas = df_res['Visitas'].sum()
+                    promedio_pedido = df_res['TiempoPromedioPedido'].mean()
+                    promedio_ticket = df_res['TicketPromedio'].mean()
+                    promedio_oee = df_res['OEE'].mean()
                     
                     st.markdown("---")
-                    st.markdown("#### 📊 Consolidado de Eficiencia Logística")
+                    st.markdown(f"#### 🏆 OEE Comercial Consolidado: **{promedio_oee:.1f}%**")
                     
                     c_k1, c_k2, c_k3, c_k4, c_k5 = st.columns(5)
                     c_k1.markdown(f"""
                     <div class="kpi-box">
-                        <div class="kpi-title">Distancia Real Acumulada</div>
-                        <div class="kpi-val">{total_d_real:.1f} km</div>
-                        <div class="kpi-sub">Total rodado en el periodo.</div>
+                        <div class="kpi-title">Visitas Totales</div>
+                        <div class="kpi-val">{total_visitas:,}</div>
+                        <div class="kpi-sub">Total de impactos.</div>
                     </div>
                     """, unsafe_allow_html=True)
                     
-                    color_ef = "#2e7d32" if eficiencia_global >= 85 else ("#e65100" if eficiencia_global >= 60 else "#c62828")
+                    color_ef = "#2e7d32" if promedio_cobertura >= 90 else ("#e65100" if promedio_cobertura >= 70 else "#c62828")
                     c_k2.markdown(f"""
                     <div class="kpi-box" style="border-color: {color_ef};">
-                        <div class="kpi-title">Eficiencia Promedio</div>
-                        <div class="kpi-val" style="color:{color_ef};">{eficiencia_global:.1f}%</div>
-                        <div class="kpi-sub">Cercanía a la ruta algorítmica.</div>
+                        <div class="kpi-title">Cobertura Media</div>
+                        <div class="kpi-val" style="color:{color_ef};">{promedio_cobertura:.1f}%</div>
+                        <div class="kpi-sub">De la meta diaria asignada.</div>
                     </div>
                     """, unsafe_allow_html=True)
                     
                     c_k3.markdown(f"""
-                    <div class="kpi-box" style="border-color: #c62828;">
-                        <div class="kpi-title">Kilómetros Perdidos</div>
-                        <div class="kpi-val" style="color:#c62828;">{total_perd:.1f} km</div>
-                        <div class="kpi-sub">Desperdicio por desórdenes.</div>
+                    <div class="kpi-box" style="border-color: #1565c0;">
+                        <div class="kpi-title">Jornada Operativa</div>
+                        <div class="kpi-val" style="color:#1565c0;">{df_res['JornadaHoras'].mean():.1f} hr/día</div>
+                        <div class="kpi-sub">Tiempo medio encendido.</div>
                     </div>
                     """, unsafe_allow_html=True)
                     
                     c_k4.markdown(f"""
                     <div class="kpi-box" style="border-color: #bf360c;">
-                        <div class="kpi-title">Horas Hombre Perdidas</div>
-                        <div class="kpi-val" style="color:#bf360c;">{(total_tiempo/60):.1f} hr</div>
-                        <div class="kpi-sub">Tiempo improductivo en traslados.</div>
+                        <div class="kpi-title">Ritmo de Facturación</div>
+                        <div class="kpi-val" style="color:#bf360c;">{promedio_pedido:.1f} min</div>
+                        <div class="kpi-sub">Márgen entre compras.</div>
                     </div>
                     """, unsafe_allow_html=True)
                     
                     c_k5.markdown(f"""
-                    <div class="kpi-box" style="border-color: #1565c0;">
-                        <div class="kpi-title">Márgen entre compras</div>
-                        <div class="kpi-val" style="color:#1565c0;">{promedio_diff:.1f} min</div>
-                        <div class="kpi-sub">Tiempo promedio entre tomas de pedido.</div>
+                    <div class="kpi-box" style="border-color: #2e7d32;">
+                        <div class="kpi-title">Ticket Promedio</div>
+                        <div class="kpi-val" style="color:#2e7d32;">${promedio_ticket:,.0f}</div>
+                        <div class="kpi-sub">Por cliente.</div>
                     </div>
                     """, unsafe_allow_html=True)
                     
-                    # Gráficos
+                    # Gráficos de Primera Fila (Tendencias y OEE)
                     g_c1, g_c2 = st.columns(2)
                     with g_c1:
-                        st.markdown("**Variación Diaria de Eficiencia**")
-                        # Gráfico de barras apiladas o agrupadas
-                        fig_bar = go.Figure()
-                        fig_bar.add_trace(go.Bar(x=df_res['Fecha'], y=df_res['DistanciaOptima'], name='Km Óptimos', marker_color='#2e7d32'))
-                        fig_bar.add_trace(go.Bar(x=df_res['Fecha'], y=df_res['KmPerdidos'], name='Km Perdidos', marker_color='#c62828'))
-                        fig_bar.update_layout(barmode='stack', template="plotly_white", margin=dict(l=0, r=0, t=30, b=0), legend=dict(orientation='h', y=1.1))
-                        st.plotly_chart(fig_bar, use_container_width=True)
+                        st.markdown("**Variación Diaria (Cobertura vs Tiempo por Cliente)**")
+                        from plotly.subplots import make_subplots
+                        fig_co = make_subplots(specs=[[{"secondary_y": True}]])
+                        
+                        fig_co.add_trace(go.Bar(x=df_res['Fecha'], y=df_res['Cobertura'], name='Cobertura (%)', marker_color='#1565c0'), secondary_y=False)
+                        fig_co.add_trace(go.Scatter(x=df_res['Fecha'], y=df_res['TiempoPromedioCliente'], name='Estadía x Cliente (min)', mode='lines+markers', line=dict(color='#e65100', width=2)), secondary_y=True)
+                        
+                        # --- Línea de Tendencia Mínimos Cuadrados (OLS) ---
+                        y_vals = df_res['TiempoPromedioCliente'].values
+                        valid_mask = (~np.isnan(y_vals)) & (y_vals > 0)
+                        if valid_mask.sum() > 1:
+                            x_nums = np.arange(len(df_res['Fecha']))[valid_mask]
+                            y_valid = y_vals[valid_mask]
+                            p = np.polyfit(x_nums, y_valid, 1)
+                            trend = np.polyval(p, np.arange(len(df_res['Fecha'])))
+                            
+                            ybar = np.mean(y_valid)
+                            ssreg = np.sum((np.polyval(p, x_nums) - ybar)**2)
+                            sstot = np.sum((y_valid - ybar)**2)
+                            r2 = (ssreg / sstot) if sstot != 0 else 0
+                            
+                            fig_co.add_trace(go.Scatter(x=df_res['Fecha'], y=trend, mode='lines', line=dict(dash='dash', color='red', width=1.5), name=f'Tendencia (R²={r2:.2f})'), secondary_y=True)
+                        
+                        fig_co.update_layout(template="plotly_white", margin=dict(l=0, r=0, t=30, b=0), legend=dict(orientation='h', y=1.1))
+                        st.plotly_chart(fig_co, use_container_width=True)
                     
                     with g_c2:
+                        st.markdown("**Desglose del OEE Comercial Diario**")
+                        fig_oee = go.Figure()
+                        fig_oee.add_trace(go.Scatter(x=df_res['Fecha'], y=df_res['Ind_Disponibilidad']*100, mode='lines', name='Disponibilidad', line=dict(color='#42a5f5', width=1.5)))
+                        fig_oee.add_trace(go.Scatter(x=df_res['Fecha'], y=df_res['Ind_Rendimiento']*100, mode='lines', name='Rendimiento', line=dict(color='#ffa726', width=1.5)))
+                        fig_oee.add_trace(go.Scatter(x=df_res['Fecha'], y=df_res['Ind_Calidad']*100, mode='lines', name='Calidad', line=dict(color='#ab47bc', width=1.5)))
+                        fig_oee.add_trace(go.Scatter(x=df_res['Fecha'], y=df_res['OEE'], mode='lines+markers', name='OEE Total', line=dict(color='#2e7d32', width=4)))
+                        fig_oee.update_layout(template="plotly_white", margin=dict(l=0, r=0, t=30, b=0), legend=dict(orientation='h', y=1.1))
+                        st.plotly_chart(fig_oee, use_container_width=True)
+
+                    # Gráficos de Segunda Fila (3D y Desempeño)
+                    g_c3, g_c4 = st.columns(2)
+                    with g_c3:
+                        st.markdown("**Matriz Multidimensional (Visitas vs Dinero vs Tiempo)**")
+                        fig_3d = px.scatter(df_res, x="Visitas", y="TicketPromedio", size="JornadaHoras", color="OEE",
+                                            hover_name="Fecha", size_max=25, color_continuous_scale="RdYlGn",
+                                            title="")
+                        # Líneas Meta
+                        fig_3d.add_hline(y=meta_ticket, line_dash="dash", line_color="gray", annotation_text="Meta Ticket")
+                        fig_3d.add_vline(x=meta_diaria, line_dash="dash", line_color="gray", annotation_text="Meta Clientes")
+                        
+                        fig_3d.update_layout(template="plotly_white", margin=dict(l=0, r=0, t=30, b=0))
+                        st.plotly_chart(fig_3d, use_container_width=True)
+                        
+                    with g_c4:
                         if sel_vend == "Todos":
-                            st.markdown("**Top Vendedores menos Eficientes (Desperdicio)**")
-                            df_vend = df_res.groupby('Vendedor')[['KmPerdidos', 'MinutosPerdidos']].sum().reset_index()
-                            df_vend = df_vend.sort_values('KmPerdidos', ascending=False).head(10)
+                            st.markdown("**Top Vendedores menos Eficientes (Mayor Tiempo x Cliente)**")
+                            df_vend = df_res.groupby('Vendedor')[['Visitas', 'JornadaHoras']].sum().reset_index()
+                            # Tiempo Promedio Global del Vendedor
+                            df_vend['TiempoXCliente'] = (df_vend['JornadaHoras'] * 60) / df_vend['Visitas']
+                            df_vend = df_vend.sort_values('TiempoXCliente', ascending=False).head(10)
                             
-                            fig_pie = px.bar(df_vend, y='Vendedor', x='KmPerdidos', orientation='h', 
-                                            text=df_vend['KmPerdidos'].apply(lambda x: f"{x:.1f} km"),
-                                            color='MinutosPerdidos', color_continuous_scale="Reds")
+                            fig_pie = px.bar(df_vend, y='Vendedor', x='TiempoXCliente', orientation='h', 
+                                            text=df_vend['TiempoXCliente'].apply(lambda x: f"{x:.1f} min"),
+                                            color='Visitas', color_continuous_scale="Reds")
                             fig_pie.update_layout(template="plotly_white", margin=dict(l=0, r=0, t=30, b=0), showlegend=False)
                             fig_pie.update_yaxes(categoryorder="total ascending", title="")
                             st.plotly_chart(fig_pie, use_container_width=True)
                         else:
-                            st.markdown("**Desempeño Individual del Vendedor**")
-                            promedio_cliente = df_res['DistanciaReal'].sum() / df_res['Visitas'].sum()
-                            st.info(f"**Distancia promedio por cliente:** {promedio_cliente*1000:.1f} metros.")
-                            st.info(f"**Promedio de clientes diarios:** {df_res['Visitas'].mean():.0f} clientes.")
-                            st.info(f"**Mejor día:** {df_res.loc[df_res['KmPerdidos'].idxmin(), 'Fecha']} ({df_res['KmPerdidos'].min():.1f} km perdidos)")
+                            st.markdown("**Desempeño Individual del Preventista**")
+                            max_visitas = df_res['Visitas'].max()
+                            st.info(f"**Pico máximo de clientes:** {max_visitas} el {df_res.loc[df_res['Visitas'].idxmax(), 'Fecha']}")
+                            st.info(f"**Jornada más agotadora:** {df_res['JornadaHoras'].max():.1f} horas el {df_res.loc[df_res['JornadaHoras'].idxmax(), 'Fecha']}.")
+                            st.info(f"**Día más rápido por cliente:** {df_res.loc[df_res['TiempoPromedioCliente'].idxmin(), 'Fecha']} ({df_res['TiempoPromedioCliente'].min():.1f} min/cliente)")
                     
-                    st.markdown("**📑 Detalle Diario de Jornadas**")
+                    st.markdown("**📑 Detalle Operativo de Jornadas**")
                     st.dataframe(
-                        df_res.style.format({
-                            'DistanciaReal': '{:.2f} km',
-                            'DistanciaOptima': '{:.2f} km',
-                            'KmPerdidos': '{:.2f} km',
-                            'MinutosPerdidos': '{:.0f} min'
-                        }).background_gradient(subset=['KmPerdidos'], cmap="Reds"),
+                        df_res[['Fecha', 'Vendedor', 'Visitas', 'JornadaHoras', 'TiempoPromedioCliente', 'TicketPromedio', 'Cobertura', 'OEE']].style.format({
+                            'JornadaHoras': '{:.1f} hrs',
+                            'Cobertura': '{:.1f}%',
+                            'OEE': '{:.1f}%',
+                            'TiempoPromedioCliente': '{:.1f} min',
+                            'TicketPromedio': '${:,.0f}'
+                        }).background_gradient(subset=['OEE'], cmap="RdYlGn"),
                         use_container_width=True, hide_index=True
                     )
 

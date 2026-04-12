@@ -148,9 +148,9 @@ with col_f1:
     ven_auditoria = st.selectbox("Preventista a Auditar", vendedores, key="ven_aud")
 with col_f2:
     if ven_auditoria != "Todos":
-        fechas_disp = sorted(df_det[df_det['Vendedor'] == ven_auditoria]['Fecha'].dt.date.unique())
+        fechas_disp = sorted(df_det[df_det['Vendedor'] == ven_auditoria]['Fecha'].dropna().dt.date.unique())
     else:
-        fechas_disp = sorted(df_det['Fecha'].dt.date.unique())
+        fechas_disp = sorted(df_det['Fecha'].dropna().dt.date.unique())
     dia_auditoria = st.selectbox("Día Específico", fechas_disp if fechas_disp else [max_date], key="dia_aud")
 
 if ven_auditoria != "Todos" and dia_auditoria:
