@@ -17,66 +17,87 @@ st.set_page_config(
 # Custom CSS
 st.markdown("""
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
     
-    html, body, [class*="css"] {
-        font-family: -apple-system, BlinkMacSystemFont, 'Inter', "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
-        -webkit-font-smoothing: antialiased;
+    html, body, [class*="css"], .stApp {
+        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        background-color: #FAFBFF !important;
+        color: #292D32 !important;
     }
     
-    /* Elegant Title */
+    /* Titles */
     h1 {
-        background: -webkit-linear-gradient(45deg, #0A1B7F, #41D5FF);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 800;
-        letter-spacing: -0.015em;
+        color: #000000 !important;
+        font-weight: 600;
         margin-bottom: 24px;
     }
 
-    /* Subtle Glassmorphism Buttons based on Corporate Colors */
+    /* Buttons */
     .stButton>button {
-        background-color: #0A1B7F;
+        background-color: #5932EA;
         color: #ffffff;
-        border: 1px solid #132488;
-        border-radius: 12px;
+        border: none;
+        border-radius: 8px;
         font-weight: 500;
         transition: all 0.2s ease;
     }
     .stButton>button:hover {
-        background-color: #132488;
+        background-color: #4A2BC4;
         color: #ffffff;
-        border-color: #41D5FF;
-    }
-    .stButton>button:active {
-        transform: scale(0.97);
-    }
-    
-    /* Metric Cards (KPI) inspired by Corporate Layout */
-    div[data-testid="stMetric"] {
-        background-color: #0A1B7F;
-        color: #ffffff !important;
-        border-radius: 18px;
-        padding: 16px 20px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-        border: 1px solid #132488;
-    }
-    div[data-testid="stMetric"] label, 
-    div[data-testid="stMetric"] div {
-        color: #ffffff !important;
+        box-shadow: 0 4px 12px rgba(89, 50, 234, 0.3);
     }
     
     /* Clean Sidebar */
     [data-testid="stSidebar"] {
-        background-color: #ffffff;
-        border-right: 1px solid #e5e5ea;
+        background-color: #FFFFFF !important;
+        border-right: none !important;
+        box-shadow: 4px 0px 24px rgba(0, 0, 0, 0.02) !important;
     }
     div[data-testid="stSidebarNav"] {
-        padding-top: 15px;
+        padding-top: 25px;
     }
     
-    /* Hide some generic Streamlit decorations */
-    header { visibility: hidden; }
+    /* Active Link in Sidebar */
+    [data-testid="stSidebarNav"] a[aria-current="page"] {
+        background-color: #5932EA !important;
+        border-radius: 8px !important;
+        margin-left: 16px !important;
+        margin-right: 16px !important;
+    }
+    [data-testid="stSidebarNav"] a[aria-current="page"] span {
+        color: #FFFFFF !important;
+        font-weight: 500 !important;
+    }
+    [data-testid="stSidebarNav"] a[aria-current="page"] svg {
+        fill: #FFFFFF !important;
+        stroke: #FFFFFF !important;
+        color: #FFFFFF !important;
+    }
+
+    /* Non-active links */
+    [data-testid="stSidebarNav"] a:not([aria-current="page"]) span {
+        color: #9197B3 !important;
+    }
+    [data-testid="stSidebarNav"] a:not([aria-current="page"]):hover {
+        background-color: #F8F9FF !important;
+        border-radius: 8px !important;
+        margin-left: 16px !important;
+        margin-right: 16px !important;
+    }
+    
+    /* Metric Cards Fix for other views (to reset old dark blue) */
+    div[data-testid="stMetric"] {
+        background-color: #FFFFFF !important;
+        color: #292D32 !important;
+        border-radius: 18px;
+        padding: 16px 20px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.03) !important;
+        border: none !important;
+    }
+    div[data-testid="stMetric"] label { color: #ACACAC !important; }
+    div[data-testid="stMetric"] div { color: #333 !important; }
+    
+    header { background-color: transparent !important; }
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
 </style>
@@ -100,7 +121,7 @@ def login_page():
         with st.container(border=True):
             img_c1, img_c2, img_c3 = st.columns([1, 2, 1])
             with img_c2:
-                st.image(str(BASE_DIR / "Logo1.png"), use_container_width=True)
+                st.image(str(BASE_DIR / "Logo1.png"), width="stretch")
                 
             st.markdown("<h3 style='text-align: center; color: #1d1d1f; font-weight: 600; margin-top: 5px; margin-bottom: 20px;'>Acceso al Sistema</h3>", unsafe_allow_html=True)
             
@@ -130,18 +151,27 @@ else:
     # Global Sidebar controls
     with st.sidebar:
         # Tighter layout for sidebar
-        st.image(str(BASE_DIR / "Logo1.png"), use_container_width=True)
+        st.image(str(BASE_DIR / "Logo1.png"), width="stretch")
         
         # Role Badge styling
-        # Role Badge styling Corporate La Campiña Colors
-        badge_bg = "#0A1B7F"
-        badge_text = "#ffffff"
         user_real_name = st.session_state.user_info.get('name', username_display)
         st.markdown(f"""
-        <div style="background-color: {badge_bg}; padding: 14px; border-radius: 16px; border: 1px solid #132488; margin-top: -10px; margin-bottom: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-            <div style="font-size: 0.75rem; color: #a1a1aa; text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;">Usuario Activo</div>
-            <div style="font-size: 1.15rem; font-weight: 700; color: {badge_text}; margin-top: 2px; letter-spacing: -0.5px;">@{user_real_name.upper()}</div>
-            <div style="font-size: 0.8rem; font-weight: 500; color: #41D5FF; margin-top: 4px;">Nivel: {role}</div>
+        <div style="background: linear-gradient(180deg, #EAABF0 0%, #4623E9 100%); padding: 24px 20px; border-radius: 20px; margin-top: 20px; margin-bottom: 20px; text-align: center; box-shadow: 0 10px 20px rgba(70,35,233,0.2);">
+            <div style="font-size: 0.9rem; font-weight: 600; color: #FFFFFF; line-height: 1.4; margin-bottom: 16px;">
+                Upgrade to PRO to get<br>access all Features!
+            </div>
+            <div style="background-color: #FFFFFF; color: #5932EA; padding: 10px; border-radius: 20px; font-weight: 600; font-size: 0.85rem; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                Get Pro Now!
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px; padding: 10px 0; margin-top: 10px;">
+            <div style="width: 42px; height: 42px; border-radius: 50%; background-color: #F8F9FF; display: flex; align-items: center; justify-content: center; font-weight: 600; color: #5932EA; border: 1px solid #EEEEEE;">
+                {user_real_name[0].upper() if user_real_name else 'U'}
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <span style="font-weight: 500; font-size: 0.9rem; color: #292D32; letter-spacing: -0.01em;">{user_real_name}</span>
+                <span style="font-size: 0.75rem; color: #757575;">{role}</span>
+            </div>
         </div>
         """, unsafe_allow_html=True)
         

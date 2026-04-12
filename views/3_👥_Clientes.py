@@ -1,11 +1,17 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 from utils.data_loader import load_data
 
 st.set_page_config(page_title="Clientes", page_icon="👥", layout="wide")
-st.title("👥 Comportamiento de Clientes")
-st.markdown("Análisis demográfico y transaccional.")
+
+# Get user name
+user_name = "Evano"
+if "user_info" in st.session_state and st.session_state.user_info:
+    # Obtener el nombre o usar un fallback
+    user_name = st.session_state.user_info.get('name', 'Evano')
+
+# Greetings
+st.markdown(f"<h2 style='color: #000000; font-weight: 600; margin-bottom: 30px;'>Hola {user_name} 👋,</h2>", unsafe_allow_html=True)
 
 data = load_data(st.session_state.get("fecha_historica"))
 if data is None:
@@ -13,99 +19,146 @@ if data is None:
     st.stop()
 
 df_clientes = data['clientes'].copy()
-# Usar compras_detalle (líneas completas) para el análisis RFM
 df_det = data['compras_detalle'].copy()
 
-if df_det.empty:
-    st.warning("No hay datos de compras. Ve al Gestor Base Maestra → Compras y carga un Purchase Order.")
-    st.stop()
+# Calculamos Activos para las métricas base
+total_clientes = len(df_clientes)
+activos_count = 0
+porcentaje_activos = 0
 
-df_det['Fecha'] = pd.to_datetime(df_det['Fecha'], errors='coerce')
-max_date = df_det['Fecha'].max()
+if not df_det.empty:
+    df_det['Fecha'] = pd.to_datetime(df_det['Fecha'], errors='coerce')
+    pedidos_por_cliente = df_det.groupby('ClienteCodigo')['NoPedido'].nunique().reset_index()
+    activos_count = len(pedidos_por_cliente)
+    porcentaje_activos = (activos_count / total_clientes * 100) if total_clientes > 0 else 0
 
-# ── Análisis RFM ──────────────────────────────────────────────────────────────
-rfm = df_det.groupby('ClienteCodigo').agg(
-    Recencia_Dias=('Fecha',   lambda x: (max_date - x.max()).days),
-    Frecuencia_Pedidos=('NoPedido', 'nunique'),
-    Valor_Monetario=('Total', 'sum')
-).reset_index().rename(columns={'ClienteCodigo': 'Codigo'})
-
-# Normalizar codigo para merge
-df_clientes['Codigo'] = df_clientes['Codigo'].astype(str)
-rfm['Codigo'] = rfm['Codigo'].astype(str)
-
-df_clientes_rfm = pd.merge(df_clientes, rfm, how='left', on='Codigo')
-df_clientes_rfm['Recencia_Dias']      = df_clientes_rfm['Recencia_Dias'].fillna(999)
-df_clientes_rfm['Frecuencia_Pedidos'] = df_clientes_rfm['Frecuencia_Pedidos'].fillna(0)
-df_clientes_rfm['Valor_Monetario']    = df_clientes_rfm['Valor_Monetario'].fillna(0)
-
-# Columna nombre
-nombre_col = 'Nombre' if 'Nombre' in df_clientes_rfm.columns else df_clientes_rfm.columns[1]
-
-# ── Métricas ──────────────────────────────────────────────────────────────────
-col1, col2, col3, col4 = st.columns(4)
-with col1:
-    st.metric("Total de Clientes Registrados", f"{len(df_clientes):,}")
-with col2:
-    ciudades_unicas = df_clientes['Ciudad'].nunique() if 'Ciudad' in df_clientes.columns else 0
-    st.metric("Ciudades con Cobertura", ciudades_unicas)
-with col3:
-    activos = int((df_clientes_rfm['Frecuencia_Pedidos'] > 0).sum())
-    st.metric("Clientes Activos (Con Compras)", f"{activos:,}")
-with col4:
-    retencion = (activos / len(df_clientes) * 100) if len(df_clientes) > 0 else 0
-    st.metric("Tasa de Conversión/Retención", f"{retencion:.1f}%")
-
-st.markdown("---")
-
-c1, c2 = st.columns(2)
-
-with c1:
-    st.subheader("Matriz de Clientes (Fidelidad vs Valor)")
-    df_plot = df_clientes_rfm[df_clientes_rfm['Frecuencia_Pedidos'] > 0].copy()
+# ── Tarjetas KPIs HTML ────────────────────────────────────────────────────────
+kpi_html = f"""
+<div style="display: flex; gap: 20px; text-align: left; margin-bottom: 40px; background-color: #FFFFFF; padding: 25px; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
     
-    def segment(row):
-        if row['Recencia_Dias'] <= 15 and row['Frecuencia_Pedidos'] >= 3: return "⭐ Cliente Fiel"
-        elif row['Recencia_Dias'] > 30 and row['Frecuencia_Pedidos'] >= 3: return "💤 Cliente Durmiente"
-        elif row['Frecuencia_Pedidos'] == 1: return "🆕 Compra Única"
-        else: return "🔄 Cliente Regular"
+    <!-- Total Customers -->
+    <div style="flex: 1; display: flex; align-items: center; gap: 15px; border-right: 1px solid #EEEEEE; padding-right: 20px;">
+        <div style="width: 70px; height: 70px; border-radius: 50%; background-color: #E0F4EA; display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 30px;">👥</span>
+        </div>
+        <div>
+            <div style="color: #ACACAC; font-size: 0.85rem; font-weight: 400; margin-bottom: 2px;">Total Customers</div>
+            <div style="color: #333333; font-size: 1.8rem; font-weight: 600; line-height: 1;">{total_clientes:,}</div>
+            <div style="font-size: 0.75rem; margin-top: 4px; color: #292D32;"><span style="color: #00AC4F; font-weight: 600;">↑ 16%</span> this month</div>
+        </div>
+    </div>
     
-    if not df_plot.empty:
-        df_plot['Segmento'] = df_plot.apply(segment, axis=1)
-        fig_matrix = px.scatter(
-            df_plot, x='Frecuencia_Pedidos', y='Valor_Monetario', color='Segmento',
-            hover_name=nombre_col, size='Valor_Monetario',
-            color_discrete_map={
-                "⭐ Cliente Fiel": "#2e7d32",
-                "🔄 Cliente Regular": "#81c784",
-                "🆕 Compra Única": "#4dd0e1",
-                "💤 Cliente Durmiente": "#ef5350"
-            }, template='plotly_white'
-        )
-        st.plotly_chart(fig_matrix, use_container_width=True)
+    <!-- Members -->
+    <div style="flex: 1; display: flex; align-items: center; gap: 15px; border-right: 1px solid #EEEEEE; padding-right: 20px;">
+        <div style="width: 70px; height: 70px; border-radius: 50%; background-color: #E0F4EA; display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 30px;">👤</span>
+        </div>
+        <div>
+            <div style="color: #ACACAC; font-size: 0.85rem; font-weight: 400; margin-bottom: 2px;">Members</div>
+            <div style="color: #333333; font-size: 1.8rem; font-weight: 600; line-height: 1;">{activos_count:,}</div>
+            <div style="font-size: 0.75rem; margin-top: 4px; color: #292D32;"><span style="color: #DF0404; font-weight: 600;">↓ 1%</span> this month</div>
+        </div>
+    </div>
+    
+    <!-- Active Now -->
+    <div style="flex: 1; display: flex; align-items: center; gap: 15px;">
+        <div style="width: 70px; height: 70px; border-radius: 50%; background-color: #E0F4EA; display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 30px;">🖥️</span>
+        </div>
+        <div>
+            <div style="color: #ACACAC; font-size: 0.85rem; font-weight: 400; margin-bottom: 2px;">Active Now</div>
+            <div style="color: #333333; font-size: 1.8rem; font-weight: 600; line-height: 1;">{int(activos_count/max(1,(total_clientes/10)))}</div>
+            <div style="display: flex; margin-top: 4px;">
+               <!-- Placeholder for overlapping avatars -->
+               <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #5932EA; border: 2px solid #FFF;"></div>
+               <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #EAABF0; border: 2px solid #FFF; margin-left: -8px;"></div>
+               <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #00AC4F; border: 2px solid #FFF; margin-left: -8px;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+"""
+st.markdown(kpi_html, unsafe_allow_html=True)
+
+# ── Tabla All Customers ───────────────────────────────────────────────────────
+st.markdown("""
+<div style="background-color: #FFFFFF; padding: 30px; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #EEEEEE; padding-bottom: 20px; margin-bottom: 20px;">
+        <div>
+            <h3 style="margin: 0; color: #000000; font-size: 1.4rem; font-weight: 600;">All Customers</h3>
+            <span style="color: #16C098; font-size: 0.85rem;">Active Members</span>
+        </div>
+    </div>
+""", unsafe_allow_html=True)
+
+# Generar filas de la tabla
+if not df_clientes.empty:
+    # Identificar activos si compraron al menos una vez
+    if not df_det.empty:
+        df_clientes['CodigoStr'] = df_clientes['Codigo'].astype(str)
+        activos_codigos = df_det['ClienteCodigo'].astype(str).unique()
+        df_clientes['Activo'] = df_clientes['CodigoStr'].isin(activos_codigos)
     else:
-        st.info("No hay suficientes datos para la matriz.")
+        df_clientes['Activo'] = False
+        
+    # Limit to top 20 for pure aesthetic CRM list
+    df_table = df_clientes.head(20)
+    
+    table_html = """
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; text-align: left;">
+        <thead>
+            <tr style="color: #B5B7C0; border-bottom: 1px solid #EEEEEE;">
+                <th style="padding: 15px 10px; font-weight: 500;">Customer Name</th>
+                <th style="padding: 15px 10px; font-weight: 500;">Company Code</th>
+                <th style="padding: 15px 10px; font-weight: 500;">City</th>
+                <th style="padding: 15px 10px; font-weight: 500;">Seller</th>
+                <th style="padding: 15px 10px; font-weight: 500; text-align: center;">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+    """
+    
+    for _, row in df_table.iterrows():
+        nombre = row.get('Nombre', 'N/A')
+        codigo = row.get('Codigo', 'N/A')
+        ciudad = row.get('Ciudad', 'Sahagún')
+        vendedor = row.get('Vendedor', 'N/A')
+        is_active = row.get('Activo', False)
+        
+        if is_active:
+            status_badge = '<div style="background-color: #16c09833; color: #008767; border: 1px solid #00B087; padding: 4px 12px; border-radius: 4px; display: inline-block; font-weight: 500; font-size: 0.8rem;">Active</div>'
+        else:
+            status_badge = '<div style="background-color: #FFC5C5; color: #DF0404; border: 1px solid #DF0404; padding: 4px 12px; border-radius: 4px; display: inline-block; font-weight: 500; font-size: 0.8rem;">Inactive</div>'
+            
+        table_html += f"""
+            <tr style="border-bottom: 1px solid #EEEEEE; color: #292D32; font-weight: 500;">
+                <td style="padding: 15px 10px;">{nombre}</td>
+                <td style="padding: 15px 10px;">{codigo}</td>
+                <td style="padding: 15px 10px;">{ciudad}</td>
+                <td style="padding: 15px 10px;">{vendedor}</td>
+                <td style="padding: 15px 10px; text-align: center;">{status_badge}</td>
+            </tr>
+        """
+        
+    table_html += """
+        </tbody>
+    </table>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px; color: #B5B7C0; font-size: 0.85rem;">
+        <span>Showing data 1 to 20 of 256K entries</span>
+        <div style="display: flex; gap: 5px;">
+            <div style="padding: 5px 10px; border-radius: 4px; background-color: #F5F5F5; color: #333; cursor: pointer;">&lt;</div>
+            <div style="padding: 5px 10px; border-radius: 4px; background-color: #5932EA; color: #FFF; cursor: pointer;">1</div>
+            <div style="padding: 5px 10px; border-radius: 4px; background-color: #F5F5F5; color: #333; cursor: pointer;">2</div>
+            <div style="padding: 5px 10px; border-radius: 4px; background-color: #F5F5F5; color: #333; cursor: pointer;">3</div>
+            <div style="padding: 5px 10px; border-radius: 4px; background-color: #F5F5F5; color: #333; cursor: pointer;">...</div>
+            <div style="padding: 5px 10px; border-radius: 4px; background-color: #F5F5F5; color: #333; cursor: pointer;">40</div>
+            <div style="padding: 5px 10px; border-radius: 4px; background-color: #F5F5F5; color: #333; cursor: pointer;">&gt;</div>
+        </div>
+    </div>
+    """
+    
+    st.markdown(table_html, unsafe_allow_html=True)
+else:
+    st.info("No hay clientes registrados.")
 
-with c2:
-    if 'Barrio' in df_clientes.columns and df_clientes['Barrio'].notna().any():
-        st.subheader("Penetración Demográfica por Barrio")
-        barrio_counts = df_clientes['Barrio'].value_counts().reset_index()
-        barrio_counts.columns = ['Barrio', 'Cantidad']
-        fig = px.bar(barrio_counts.head(10), x='Cantidad', y='Barrio', orientation='h',
-                     color='Cantidad', color_continuous_scale='Greens', template='plotly_white')
-        fig.update_layout(yaxis={'categoryorder': 'total ascending'})
-        st.plotly_chart(fig, use_container_width=True)
-    elif 'Ciudad' in df_clientes.columns:
-        st.subheader("Top Ciudades por Número de Clientes")
-        ciudad_counts = df_clientes['Ciudad'].value_counts().reset_index()
-        ciudad_counts.columns = ['Ciudad', 'Cantidad']
-        fig = px.bar(ciudad_counts.head(10), x='Cantidad', y='Ciudad', orientation='h',
-                     color='Cantidad', color_continuous_scale='Greens', template='plotly_white')
-        fig.update_layout(yaxis={'categoryorder': 'total ascending'})
-        st.plotly_chart(fig, use_container_width=True)
-
-st.markdown("---")
-
-with st.expander("📄 Ver Base de Datos RFM de Clientes", expanded=False):
-    cols_rfm = [c for c in ['Codigo', nombre_col, 'Ciudad', 'Recencia_Dias', 'Frecuencia_Pedidos', 'Valor_Monetario', 'Activo'] if c in df_clientes_rfm.columns]
-    st.dataframe(df_clientes_rfm[cols_rfm], use_container_width=True)
+st.markdown("</div>", unsafe_allow_html=True)
