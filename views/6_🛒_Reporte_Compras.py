@@ -47,14 +47,14 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("🛒 Preventa y Entregas")
+st.title("Preventa y Entregas")
 st.markdown(
     "El módulo central de La Campiña: **analiza rutas reales**, "
     "**optimiza recorridos** de vendedores y **planifica el despacho** con la flota disponible."
 )
 
 # ─── Carga de datos ───────────────────────────────────────────────────────────
-data = load_data(st.session_state.get("fecha_historica"))
+data = load_data()
 if data is None or data['compras_detalle'].empty:
     st.error("No hay datos de compras. Ve al **Gestor Base Maestra → Compras** y carga un Purchase Order.")
     st.stop()

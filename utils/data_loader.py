@@ -6,6 +6,9 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 MAESTROS_DIR = BASE_DIR / "datos_maestros"
 
+# Nombres de archivo que NO son lotes de datos transaccionales
+_JSON_EXCLUSIONS = {"optimizacion_cache.json"}
+
 # ─────────────────────────────────────────────────────────────────────────────
 # DATOS MAESTROS (permanentes, cambian solo via Gestor Base Maestra)
 # ─────────────────────────────────────────────────────────────────────────────
@@ -105,43 +108,50 @@ def load_compras(fecha_inicio=None, fecha_fin=None):
             st.error(f"Error cargando compras_maestras.json: {e}")
 
     # 2. Iterar y apilar todos los lotes de datos_historicos/
+    # Se carga CUALQUIER .json de cada carpeta (no solo compras_detalle.json),
+    # lo que permite importar archivos renombrados o con sufijos de mes.
     historicos_dir = BASE_DIR / "datos_historicos"
     if historicos_dir.exists():
-        for batch_dir in historicos_dir.iterdir():
-            if batch_dir.is_dir():
-                det_path = batch_dir / "compras_detalle.json"
-                if det_path.exists():
-                    try:
-                        df_det = pd.read_json(det_path)
-                        if not df_det.empty:
-                            # Mapear nombres del histórico al estándar de la aplicación
-                            df_det = df_det.rename(
-                                columns={
-                                    "PurchaseOrderID": "NoPedido",
-                                    "OrderDate": "Fecha",
-                                    "LineTotal": "Total",
-                                    "DiaRuta": "Ruta",
-                                    "ProductoNombre": "Producto",
-                                    "ProductoCodigo": "CodigoProducto",
-                                }
-                            )
-                            # Rellenar columnas faltantes para que el concat sea limpio
-                            if "ClienteNombre" not in df_det.columns:
-                                df_det["ClienteNombre"] = "Cliente " + df_det[
-                                    "ClienteCodigo"
-                                ].astype(str)
-                            if "CodigoVendedor" not in df_det.columns:
-                                df_det["CodigoVendedor"] = ""
-                            if "Estado" not in df_det.columns:
-                                df_det["Estado"] = "Finalizado"
-                            if "PctDescuento" not in df_det.columns:
-                                df_det["PctDescuento"] = 0
+        for batch_dir in sorted(historicos_dir.iterdir()):
+            if not batch_dir.is_dir():
+                continue
+            json_files = [
+                f for f in batch_dir.glob("*.json")
+                if f.name not in _JSON_EXCLUSIONS
+            ]
+            for det_path in json_files:
+                try:
+                    df_det = pd.read_json(det_path)
+                    if df_det.empty:
+                        continue
+                    # Mapear nombres del histórico al estándar de la aplicación
+                    df_det = df_det.rename(
+                        columns={
+                            "PurchaseOrderID": "NoPedido",
+                            "OrderDate": "Fecha",
+                            "LineTotal": "Total",
+                            "DiaRuta": "Ruta",
+                            "ProductoNombre": "Producto",
+                            "ProductoCodigo": "CodigoProducto",
+                        }
+                    )
+                    # Rellenar columnas faltantes para que el concat sea limpio
+                    if "ClienteNombre" not in df_det.columns:
+                        df_det["ClienteNombre"] = "Cliente " + df_det[
+                            "ClienteCodigo"
+                        ].astype(str)
+                    if "CodigoVendedor" not in df_det.columns:
+                        df_det["CodigoVendedor"] = ""
+                    if "Estado" not in df_det.columns:
+                        df_det["Estado"] = "Finalizado"
+                    if "PctDescuento" not in df_det.columns:
+                        df_det["PctDescuento"] = 0
 
-                            dfs.append(df_det)
-                    except Exception as e:
-                        st.warning(
-                            f"Error leyendo el lote histórico {batch_dir.name}: {e}"
-                        )
+                    dfs.append(df_det)
+                except Exception as e:
+                    st.warning(
+                        f"Error leyendo {det_path.name} en {batch_dir.name}: {e}"
+                    )
 
     if not dfs:
         st.warning(
@@ -220,12 +230,11 @@ def load_compras(fecha_inicio=None, fecha_fin=None):
 
 
 @st.cache_data(ttl=3600)
-def load_data(fecha_historica=None):
+def load_data():
     """
     Punto de entrada único para todos los dashboards.
     - Bases maestras: siempre desde datos_maestros/
-    - Compras: desde compras_maestras.json (filtrable en dashboards)
-    - fecha_historica se mantiene por compatibilidad pero ya no es la única fuente.
+    - Compras: acumula compras_maestras.json + todos los lotes de datos_historicos/
     """
     maestros = load_maestros()
     if maestros is None:

@@ -56,9 +56,9 @@ st.markdown(
 )
 
 # ─── Carga de datos ───────────────────────────────────────────────────────────
-st.title("📊 Dashboard General — La Campiña")
+st.title("Dashboard General")
 
-data = load_data(st.session_state.get("fecha_historica"))
+data = load_data()
 
 if data is None:
     st.error("No se pudieron cargar los datos.")
@@ -90,19 +90,39 @@ st.sidebar.markdown("### 🎛️ Filtros del Dashboard")
 min_date = df_det["Fecha"].min().date()
 max_date = df_det["Fecha"].max().date()
 
-# Streamlit slider falla si min == max, prevención básica:
 import datetime
 
 if min_date == max_date:
     max_date = min_date + datetime.timedelta(days=1)
 
+# Quick-filter buttons
+st.sidebar.markdown("**Acceso rápido:**")
+qf1, qf2, qf3 = st.sidebar.columns(3)
+if qf1.button("Hoy", use_container_width=True):
+    st.session_state["dash_range"] = (max_date, max_date)
+if qf2.button("7 días", use_container_width=True):
+    st.session_state["dash_range"] = (max(min_date, max_date - datetime.timedelta(days=6)), max_date)
+if qf3.button("Este mes", use_container_width=True):
+    start_mes = max(min_date, datetime.date(max_date.year, max_date.month, 1))
+    st.session_state["dash_range"] = (start_mes, max_date)
+
+_default_range = st.session_state.get("dash_range", (min_date, max_date))
+# Clamp saved range to current data bounds
+_default_range = (
+    max(min_date, _default_range[0]),
+    min(max_date, _default_range[1]),
+)
+if _default_range[0] > _default_range[1]:
+    _default_range = (min_date, max_date)
+
 date_range = st.sidebar.slider(
     "📅 Línea de Tiempo (Rango de Fechas)",
     min_value=min_date,
     max_value=max_date,
-    value=(min_date, max_date),
+    value=_default_range,
     format="YYYY-MM-DD",
 )
+st.session_state["dash_range"] = date_range
 
 # Vendedor
 vendedores_lista = ["Todos"] + sorted(df_det["Vendedor"].dropna().unique().tolist())

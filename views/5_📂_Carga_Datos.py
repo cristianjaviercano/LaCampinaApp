@@ -1,15 +1,12 @@
 import streamlit as st
 import pandas as pd
-import json
-import os
 import shutil
 from pathlib import Path
 from datetime import datetime
 import numpy as np
+from utils.file_utils import safe_write_json
 
-st.set_page_config(page_title="Carga de Datos", page_icon="📂", layout="wide")
-
-st.title("📂 Subida y Procesamiento de Datos Históricos")
+st.title("Carga de Datos")
 st.markdown("Sube los archivos Excel del sistema operativo (Ventas, Productos, Vendedores) para almacenarlos, indexarlos y habilitarlos en los Dashboards. *La base de clientes y ubicaciones se gestiona de forma centralizada en el Módulo 7.*")
 
 # Security check: only Admin or Dueño
@@ -83,7 +80,7 @@ if btn_procesar:
                         'LineTotal': 'sum',
                         'ClienteCodigo': 'first'
                     })
-                    df_compras_agg.to_json(dest_dir / 'compras.json', orient='records', force_ascii=False)
+                    safe_write_json(df_compras_agg, dest_dir / 'compras.json')
                     
                     # Para el detalle, el PurchaseOrdersReport(cabecera) NO tiene productos, pero rellenamos con genéricos
                     hora_col = 'Hora' if 'Hora' in df_compras.columns else 'Hora de creacion'
@@ -106,7 +103,7 @@ if btn_procesar:
                         'PrecioBase': df_compras.get('Precio base', df_compras.get('Subtotal', df_compras['Total'])),
                         'LineTotal': df_compras['Total']
                     })
-                    df_compras_detalle.to_json(dest_dir / 'compras_detalle.json', orient='records', force_ascii=False)
+                    safe_write_json(df_compras_detalle, dest_dir / 'compras_detalle.json')
 
                     # --- 🤖  ROBUST CLIENT MATRIX (Decoupled Module 10) ---
                     # 1. Extraer los clientes empíricos reales que aparecieron comprando (La verdad absoluta operativa)
@@ -178,7 +175,7 @@ if btn_procesar:
                     cols_to_keep = ['Codigo', 'Nombre', 'Ciudad', 'Categoria', 'Activo', 'Vendedor', 'Barrio', 'DiaVisita', 'Latitud', 'Longitud']
                     df_final_clientes = df_cruce[[c for c in cols_to_keep if c in df_cruce.columns]].drop_duplicates(subset=['Codigo'])
                     
-                    df_final_clientes.to_json(dest_dir / 'clientes.json', orient='records', force_ascii=False)
+                    safe_write_json(df_final_clientes, dest_dir / 'clientes.json')
                     procesados.append("Órdenes de Compra y Clientes Transaccionales")
                 
                 # --- REPORTE VENTAS PRODUCTOS ---
@@ -198,7 +195,7 @@ if btn_procesar:
                             'TotalIngresos': df_sold.get('Total base (sin impuestos)', df_sold.get('Total', 0)),
                             'ClientesDiferentes': df_sold.get('Clientes que compraron', 1)
                         })
-                        df_sold_clean.to_json(dest_dir / 'sold_products.json', orient='records', force_ascii=False)
+                        safe_write_json(df_sold_clean, dest_dir / 'sold_products.json')
                         procesados.append("Reporte Totalizado de Ventas por Producto")
                     except Exception as e:
                         st.error(f"Error procesando EL REPORTE DE VENTAS (SoldProducts): {e}")
@@ -217,7 +214,7 @@ if btn_procesar:
                         })
                         df_productos_clean['Categoria'] = df_productos_clean['Categoria'].fillna('Sin Categoria')
                         df_productos_clean['Stock'] = df_productos_clean['Stock'].fillna(0)
-                        df_productos_clean.to_json(dest_dir / 'productos.json', orient='records', force_ascii=False)
+                        safe_write_json(df_productos_clean, dest_dir / 'productos.json')
                         procesados.append("Productos")
                     except Exception as e:
                         st.error(f"Error procesando el archivo de PRODUCTOS. ¿Tiene las columnas esperadas?: {e}")
@@ -231,7 +228,7 @@ if btn_procesar:
                             'Codigo': df_vendedores['USUARIO (NUMÉRICO)'],
                             'Nombre': df_vendedores['NOMBRE']
                         })
-                        df_vendedores_clean.to_json(dest_dir / 'vendedores.json', orient='records', force_ascii=False)
+                        safe_write_json(df_vendedores_clean, dest_dir / 'vendedores.json')
                         procesados.append("Vendedores")
                     except Exception as e:
                         st.error(f"Error procesando el archivo de VENDEDORES: {e}")
@@ -245,7 +242,7 @@ if btn_procesar:
             st.error(f"El procesamiento se detuvo debido a un error de estructura en el archivo. Detalle técnico: {e}")
 
 st.markdown("---")
-st.subheader("🗑️ Gestión de Lotes Históricos")
+st.subheader("Lotes Históricos")
 st.markdown("Si subiste un mes equivocado o quieres limpiar la base de datos, selecciona un lote y bórralo permanentemente.")
 
 historicos_dir = Path(__file__).resolve().parent.parent / "datos_historicos"

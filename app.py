@@ -1,7 +1,5 @@
 import streamlit as st
-import pandas as pd
 from pathlib import Path
-from utils.data_loader import load_data
 from utils.auth import authenticate
 
 # Directorio base del proyecto (absoluto, independiente del CWD)
@@ -17,89 +15,213 @@ st.set_page_config(
 # Custom CSS
 st.markdown("""
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-    
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    /* ── Base ─────────────────────────────────────── */
     html, body, [class*="css"], .stApp {
-        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-        background-color: #FAFBFF !important;
-        color: #292D32 !important;
-    }
-    
-    /* Titles */
-    h1 {
-        color: #000000 !important;
-        font-weight: 600;
-        margin-bottom: 24px;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif !important;
+        background-color: #F4F6FB !important;
+        color: #111827 !important;
     }
 
-    /* Buttons */
-    .stButton>button {
-        background-color: #5932EA;
-        color: #ffffff;
-        border: none;
-        border-radius: 8px;
-        font-weight: 500;
-        transition: all 0.2s ease;
+    /* ── Page title — caja blanca ─────────────────── */
+    h1 {
+        background: #FFFFFF;
+        border-radius: 14px;
+        padding: 16px 22px !important;
+        font-size: 1.3rem !important;
+        font-weight: 600 !important;
+        color: #111827 !important;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+        margin-bottom: 4px !important;
     }
-    .stButton>button:hover {
-        background-color: #4A2BC4;
-        color: #ffffff;
-        box-shadow: 0 4px 12px rgba(89, 50, 234, 0.3);
-    }
-    
-    /* Clean Sidebar */
+
+    h2 { font-size: 1.05rem !important; font-weight: 600 !important; color: #1F2937 !important; }
+    h3 { font-size: 0.92rem !important; font-weight: 600 !important; color: #374151 !important; }
+
+    /* ── Sidebar ──────────────────────────────────── */
     [data-testid="stSidebar"] {
         background-color: #FFFFFF !important;
-        border-right: none !important;
-        box-shadow: 4px 0px 24px rgba(0, 0, 0, 0.02) !important;
+        border-right: 1px solid #EBEBF0 !important;
+        box-shadow: none !important;
     }
-    div[data-testid="stSidebarNav"] {
-        padding-top: 25px;
+    div[data-testid="stSidebarNav"] { padding-top: 16px; }
+
+    [data-testid="stSidebarNav"] a {
+        border-radius: 10px;
+        margin: 2px 10px;
     }
-    
-    /* Active Link in Sidebar */
     [data-testid="stSidebarNav"] a[aria-current="page"] {
-        background-color: #5932EA !important;
-        border-radius: 8px !important;
-        margin-left: 16px !important;
-        margin-right: 16px !important;
+        background-color: #EEF2FF !important;
+        border-radius: 10px !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
     }
     [data-testid="stSidebarNav"] a[aria-current="page"] span {
-        color: #FFFFFF !important;
-        font-weight: 500 !important;
+        color: #6366F1 !important;
+        font-weight: 600 !important;
     }
     [data-testid="stSidebarNav"] a[aria-current="page"] svg {
-        fill: #FFFFFF !important;
-        stroke: #FFFFFF !important;
-        color: #FFFFFF !important;
+        fill: #6366F1 !important;
+        stroke: #6366F1 !important;
+        color: #6366F1 !important;
     }
-
-    /* Non-active links */
     [data-testid="stSidebarNav"] a:not([aria-current="page"]) span {
-        color: #9197B3 !important;
+        color: #6B7280 !important;
+        font-weight: 400 !important;
     }
     [data-testid="stSidebarNav"] a:not([aria-current="page"]):hover {
-        background-color: #F8F9FF !important;
-        border-radius: 8px !important;
-        margin-left: 16px !important;
-        margin-right: 16px !important;
+        background-color: #F9FAFB !important;
+        border-radius: 10px !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
     }
-    
-    /* Metric Cards Fix for other views (to reset old dark blue) */
+
+    /* ── Botones ──────────────────────────────────── */
+    .stButton > button {
+        background-color: #6366F1 !important;
+        color: #FFFFFF !important;
+        border: none !important;
+        border-radius: 10px !important;
+        font-family: 'Inter', system-ui, sans-serif !important;
+        font-weight: 500 !important;
+        font-size: 0.875rem !important;
+        padding: 9px 18px !important;
+        transition: all 0.15s ease !important;
+        box-shadow: 0 1px 3px rgba(99,102,241,0.18) !important;
+    }
+    .stButton > button:hover {
+        background-color: #4F46E5 !important;
+        box-shadow: 0 4px 14px rgba(99,102,241,0.32) !important;
+        transform: translateY(-1px) !important;
+    }
+    .stButton > button:active { transform: translateY(0) !important; }
+
+    /* ── Métricas ─────────────────────────────────── */
     div[data-testid="stMetric"] {
         background-color: #FFFFFF !important;
-        color: #292D32 !important;
-        border-radius: 18px;
-        padding: 16px 20px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.03) !important;
+        border-radius: 16px !important;
+        padding: 20px 24px !important;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.05) !important;
         border: none !important;
     }
-    div[data-testid="stMetric"] label { color: #ACACAC !important; }
-    div[data-testid="stMetric"] div { color: #333 !important; }
-    
+    div[data-testid="stMetric"] label {
+        color: #9CA3AF !important;
+        font-size: 0.72rem !important;
+        font-weight: 500 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.07em !important;
+    }
+    div[data-testid="stMetric"] [data-testid="stMetricValue"] {
+        color: #111827 !important;
+        font-weight: 600 !important;
+    }
+
+    /* ── Tabs estilo píldora ──────────────────────── */
+    .stTabs [data-baseweb="tab-list"] {
+        background: #E8EAF0 !important;
+        border-radius: 12px !important;
+        padding: 4px !important;
+        gap: 2px !important;
+        border-bottom: none !important;
+    }
+    .stTabs [data-baseweb="tab"] {
+        border-radius: 9px !important;
+        color: #6B7280 !important;
+        font-weight: 500 !important;
+        font-size: 0.875rem !important;
+        padding: 7px 18px !important;
+        border: none !important;
+        background: transparent !important;
+    }
+    .stTabs [aria-selected="true"] {
+        background: #FFFFFF !important;
+        color: #111827 !important;
+        font-weight: 600 !important;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+    }
+    .stTabs [data-baseweb="tab-highlight"],
+    .stTabs [data-baseweb="tab-border"] { display: none !important; }
+
+    /* ── Inputs ───────────────────────────────────── */
+    .stTextInput > div > div > input,
+    .stNumberInput > div > div > input,
+    .stTextArea > div > div > textarea {
+        border: 1.5px solid #E5E7EB !important;
+        border-radius: 10px !important;
+        background: #FFFFFF !important;
+        color: #111827 !important;
+        font-family: 'Inter', system-ui, sans-serif !important;
+        transition: border-color 0.15s, box-shadow 0.15s !important;
+    }
+    .stTextInput > div > div > input:focus,
+    .stNumberInput > div > div > input:focus,
+    .stTextArea > div > div > textarea:focus {
+        border-color: #6366F1 !important;
+        box-shadow: 0 0 0 3px rgba(99,102,241,0.12) !important;
+    }
+    .stSelectbox > div > div > div {
+        border: 1.5px solid #E5E7EB !important;
+        border-radius: 10px !important;
+        background: #FFFFFF !important;
+    }
+
+    /* ── Progress bar ─────────────────────────────── */
+    .stProgress > div > div > div > div {
+        background: linear-gradient(90deg, #6366F1, #818CF8) !important;
+        border-radius: 8px !important;
+    }
+
+    /* ── Expanders ────────────────────────────────── */
+    details[data-testid="stExpander"] {
+        background: #FFFFFF !important;
+        border-radius: 12px !important;
+        border: 1px solid #EBEBF0 !important;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.04) !important;
+    }
+    details[data-testid="stExpander"] > summary {
+        border-radius: 12px !important;
+        padding: 13px 18px !important;
+        font-weight: 500 !important;
+    }
+
+    /* ── Formularios ──────────────────────────────── */
+    div[data-testid="stForm"] {
+        background: #FFFFFF !important;
+        border-radius: 16px !important;
+        border: 1px solid #EBEBF0 !important;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.04) !important;
+        padding: 20px 24px !important;
+    }
+
+    /* ── Dataframe ────────────────────────────────── */
+    .stDataFrame {
+        border-radius: 14px !important;
+        overflow: hidden !important;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.05) !important;
+    }
+
+    /* ── Alerts ───────────────────────────────────── */
+    div[data-testid="stAlert"] {
+        border-radius: 12px !important;
+        border-left-width: 4px !important;
+        border-left-style: solid !important;
+        border-top: none !important;
+        border-right: none !important;
+        border-bottom: none !important;
+    }
+
+    /* ── Separadores ──────────────────────────────── */
+    hr {
+        border: none !important;
+        border-top: 1px solid #EBEBF0 !important;
+        margin: 20px 0 !important;
+    }
+
+    /* ── Chrome de Streamlit ──────────────────────── */
     header { background-color: transparent !important; }
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
+    #MainMenu { visibility: hidden; }
+    footer { visibility: hidden; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -108,8 +230,6 @@ if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 if "user_info" not in st.session_state:
     st.session_state.user_info = None
-if "fecha_historica" not in st.session_state:
-    st.session_state.fecha_historica = None
 
 # ----------------- LOGIN PAGE -----------------
 def login_page():
@@ -203,18 +323,20 @@ else:
         pages.append(st.Page("views/2_📦_Inventario.py", title="Inventario", icon=":material/inventory_2:"))
     if "Clientes" in user_access:
         pages.append(st.Page("views/3_👥_Clientes.py", title="Clientes", icon=":material/groups:"))
+    if "Despacho" in user_access or role in ["ADMINISTRADOR", "DUEÑO"]:
+        pages.append(st.Page("views/4_🚚_Despacho.py", title="Despacho", icon=":material/local_shipping:"))
     if "Rutas" in user_access:
-        pass # Fusionado con Preventa
+        pass
     if "Reporte_Compras" in user_access:
-        pages.append(st.Page("views/6_🛒_Reporte_Compras.py", title="Preventa y Entregas", icon=":material/storefront:"))
+        pages.append(st.Page("views/6_🛒_Reporte_Compras.py", title="Preventa", icon=":material/storefront:"))
     if "Preventista" in user_access:
-        pages.append(st.Page("views/10_📱_Preventista.py", title="Módulo Preventista", icon=":material/smartphone:"))
+        pages.append(st.Page("views/10_📱_Preventista.py", title="Preventista", icon=":material/smartphone:"))
     if role in ["ADMINISTRADOR", "DUEÑO"]:
         pages.append(st.Page("views/5_📂_Carga_Datos.py", title="Carga de Datos", icon=":material/cloud_upload:"))
-        pages.append(st.Page("views/7_👑_Gestor_Base_Maestra.py", title="Gestor Base Maestra", icon=":material/database:"))
-        # El panel análitico gerencial
-        pages.append(st.Page("views/8_📈_Analitica_Historica.py", title="Analítica Histórica", icon=":material/trending_up:"))
-        pages.append(st.Page("views/9_🧠_Optimizacion_Rutas.py", title="Ingeniería y Rutas", icon=":material/route:"))
+        pages.append(st.Page("views/7_👑_Gestor_Base_Maestra.py", title="Base Maestra", icon=":material/database:"))
+        pages.append(st.Page("views/11_🎯_Promociones.py", title="Promociones", icon=":material/loyalty:"))
+        pages.append(st.Page("views/8_📈_Analitica_Historica.py", title="Analítica", icon=":material/trending_up:"))
+        pages.append(st.Page("views/9_🧠_Optimizacion_Rutas.py", title="Rutas", icon=":material/route:"))
         
     if not pages:
         st.warning("Su rol no tiene acceso a ningún módulo.")

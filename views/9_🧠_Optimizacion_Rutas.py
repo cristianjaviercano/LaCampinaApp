@@ -6,8 +6,6 @@ import plotly.graph_objects as go
 from utils.data_loader import load_data
 from utils.routing import nearest_neighbor_tsp, route_distance_km, greedy_cvrp_heterogeneous
 
-st.set_page_config(page_title="Ingeniería y Optimización", page_icon="🧠", layout="wide")
-
 # CSS especial para impresión y diseño de reporte
 st.markdown("""
 <style>
@@ -32,10 +30,10 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("🧠 Inteligencia de Operaciones y Optimizador")
+st.title("Rutas y Operaciones")
 st.markdown("Módulo gerencial avanzado basado en el modelo de tesis. Compara el rendimiento empírico de visitas de los preventistas vs. el ruteo algorítmico ideal (TSP), y genera planeación logística eficiente para la flota de reparto (CVRP).")
 
-data = load_data(st.session_state.get("fecha_historica"))
+data = load_data()
 if data is None or data['compras_detalle'].empty:
     st.error("No hay datos operativos para optimizar.")
     st.stop()
@@ -92,15 +90,12 @@ with tab_preventa:
         meta_horas = c_m2.number_input("Horas/Día", min_value=1.0, value=8.0, step=0.5, help="Jornada esperada (Disponibilidad)")
         meta_ticket = c_m3.number_input("Ticket ($)", min_value=1000, value=20000, step=1000, help="Venta meta por cliente (Calidad)")
         
-    cc1, cc2, cc3 = st.columns([2,1,1])
-    with cc2:
-        btn_generar = st.button("🚀 Calcular OEE", type="primary", use_container_width=True)
-    with cc3:
-        btn_imprimir = st.button("🖨️ PDF", type="secondary", use_container_width=True)
-        if btn_imprimir:
+    col_imp, _ = st.columns([1, 3])
+    with col_imp:
+        if st.button("🖨️ Imprimir / PDF", type="secondary", use_container_width=True):
             st.components.v1.html("<script>window.print()</script>", height=0)
 
-    if btn_generar and len(rango_fechas) == 2:
+    if len(rango_fechas) == 2:
         # Filtrar datos generales
         df_periodo = df_full[
             (df_full['Fecha'].dt.date >= rango_fechas[0]) & 
@@ -375,9 +370,8 @@ with tab_reparto:
         capacidad_diaria_total = cvrp_furgon_qty * cvrp_furgon_cap
 
     st.markdown("<br>", unsafe_allow_html=True)
-    btn_generar2 = st.button("🚀 Generar Análisis de Flota", type="primary", use_container_width=True)
 
-    if btn_generar2 and len(rango_entregas) == 2:
+    if len(rango_entregas) == 2:
         df_desp = df_full[
             (df_full['Fecha'].dt.date >= rango_entregas[0]) & 
             (df_full['Fecha'].dt.date <= rango_entregas[1])
@@ -464,19 +458,12 @@ with tab_pareto:
     st.markdown("### 🎯 Matriz de Rentabilidad vs Esfuerzo Logístico")
     st.markdown("Identifica mediante un análisis de cuadrantes cuáles clientes te están generando pérdidas debido a su lejanía y bajo volumen de compra.")
     
-    col_p1, col_p2, col_p3 = st.columns([1, 2, 1])
+    min_dp = df_full['Fecha'].min().date()
+    max_dp = df_full['Fecha'].max().date()
+    if min_dp == max_dp: max_dp += datetime.timedelta(days=1)
+    rango_pareto = st.slider("Rango de Evaluación Comercial:", min_value=min_dp, max_value=max_dp, value=(min_dp, max_dp), key="sl_pareto")
     
-    with col_p2:
-        min_dp = df_full['Fecha'].min().date()
-        max_dp = df_full['Fecha'].max().date()
-        if min_dp == max_dp: max_dp += datetime.timedelta(days=1)
-        rango_pareto = st.slider("Rango de Evaluación Comercial:", min_value=min_dp, max_value=max_dp, value=(min_dp, max_dp), key="sl_pareto")
-    
-    with col_p3:
-        st.markdown("<br>", unsafe_allow_html=True)
-        btn_pareto = st.button("🚀 Generar Matriz", type="primary", use_container_width=True)
-        
-    if btn_pareto and len(rango_pareto) == 2:
+    if len(rango_pareto) == 2:
         df_par = df_full[
             (df_full['Fecha'].dt.date >= rango_pareto[0]) & 
             (df_full['Fecha'].dt.date <= rango_pareto[1])

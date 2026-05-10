@@ -3,8 +3,6 @@ import pandas as pd
 import re
 from utils.data_loader import load_data
 
-st.set_page_config(page_title="Clientes", page_icon="👥", layout="wide")
-
 # Get user name
 user_name = "Evano"
 if "user_info" in st.session_state and st.session_state.user_info:
@@ -14,7 +12,7 @@ if "user_info" in st.session_state and st.session_state.user_info:
 # Greetings
 st.markdown(f"<h2 style='color: #000000; font-weight: 600; margin-bottom: 30px;'>Hola {user_name} 👋,</h2>", unsafe_allow_html=True)
 
-data = load_data(st.session_state.get("fecha_historica"))
+data = load_data()
 if data is None:
     st.error("No hay datos disponibles.")
     st.stop()

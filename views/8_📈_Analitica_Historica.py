@@ -4,11 +4,10 @@ import plotly.express as px
 import plotly.graph_objects as go
 from utils.data_loader import load_data
 
-st.set_page_config(page_title="Analítica Histórica", page_icon="📈", layout="wide")
-st.title("📈 Inteligencia de Preventa Histórica")
+st.title("Analítica Histórica")
 st.markdown("Analiza el comportamiento de ventas a lo largo del tiempo, evalúa el rendimiento por vendedor y audita rutas de visita.")
 
-data = load_data(st.session_state.get("fecha_historica"))
+data = load_data()
 if data is None or data['compras_detalle'].empty:
     st.error("No hay datos de compras disponibles. Carga un Purchase Order en el Gestor Base Maestra.")
     st.stop()
@@ -39,7 +38,7 @@ if sel_vendedor != "Todos":
 st.markdown("---")
 
 # ── KPIs ──────────────────────────────────────────────────────────────────────
-st.subheader("📊 Indicadores Clave de Rendimiento (KPIs)")
+st.subheader("Indicadores Clave")
 c1, c2, c3, c4 = st.columns(4)
 
 total_ventas      = df_filtered['Total'].sum()
@@ -58,7 +57,7 @@ st.markdown("---")
 col_ts, col_pay = st.columns([2, 1])
 
 with col_ts:
-    st.subheader("📅 Tendencia de Recaudo Diario")
+    st.subheader("Tendencia de Recaudo")
     ventas_diarias = df_filtered.groupby(df_filtered['Fecha'].dt.date)['Total'].sum().reset_index()
     ventas_diarias.columns = ['Fecha', 'Total']
     fig_ts = px.line(ventas_diarias, x='Fecha', y='Total', markers=True,
@@ -68,7 +67,7 @@ with col_ts:
     st.plotly_chart(fig_ts, use_container_width=True)
 
 with col_pay:
-    st.subheader("💳 Métodos de Pago")
+    st.subheader("Métodos de Pago")
     df_pedidos_pago = df_filtered.groupby('NoPedido').agg(MetodoPago=('MetodoPago', 'first'), Total=('Total', 'sum')).reset_index()
     metodos = df_pedidos_pago['MetodoPago'].value_counts().reset_index()
     metodos.columns = ['Método', 'Cantidad']
@@ -82,7 +81,7 @@ st.markdown("---")
 col_ven, col_freq = st.columns(2)
 
 with col_ven:
-    st.subheader("🏆 Rendimiento por Vendedor")
+    st.subheader("Rendimiento por Vendedor")
     if sel_vendedor == "Todos":
         rend = df_filtered.groupby('Vendedor')['Total'].sum().reset_index().sort_values('Total', ascending=False)
         fig_ven = px.bar(rend, x='Total', y='Vendedor', orientation='h',
@@ -94,20 +93,10 @@ with col_ven:
         st.info("Desactiva el filtro de Vendedor para ver el ranking general.")
 
 with col_freq:
-    st.subheader("🔄 Frecuencia de Compra de Clientes")
-    freq_real = df_filtered.groupby('ClienteCodigo')['NoPedido'].nunique().reset_index()
-    freq_real.columns = ['ClienteCodigo', 'Total Visitas']
-    freq_real['ClienteCodigo'] = freq_real['ClienteCodigo'].astype(str)
-
-    # Intentar agregar nombre del cliente
-    if not df_cli.empty and 'Nombre' in df_cli.columns:
-        df_cli['Codigo'] = df_cli['Codigo'].astype(str)
-        freq_merge = pd.merge(freq_real, df_cli[['Codigo', 'Nombre']].drop_duplicates(),
-                              left_on='ClienteCodigo', right_on='Codigo', how='left')
-        freq_merge['Nombre'] = freq_merge['Nombre'].fillna("Cliente " + freq_merge['ClienteCodigo'])
-    else:
-        freq_merge = freq_real.copy()
-        freq_merge['Nombre'] = "Cliente " + freq_merge['ClienteCodigo']
+    st.subheader("Frecuencia de Compra")
+    # Usar directamente ClienteNombre que ya viene mapeado en df_filtered
+    freq_merge = df_filtered.groupby(['ClienteCodigo', 'ClienteNombre'])['NoPedido'].nunique().reset_index()
+    freq_merge.columns = ['ClienteCodigo', 'Nombre', 'Total Visitas']
 
     top_freq = freq_merge.sort_values('Total Visitas', ascending=False).head(15)
     fig_freq = px.bar(top_freq, x='Total Visitas', y='Nombre', orientation='h',
@@ -118,7 +107,7 @@ with col_freq:
 st.markdown("---")
 
 # ── Ventas semanales y mensuales ──────────────────────────────────────────────
-st.subheader("📅 Análisis Semanal y Mensual")
+st.subheader("Análisis Semanal y Mensual")
 tab_sem, tab_mes = st.tabs(["Por Semana", "Por Mes"])
 
 with tab_sem:
@@ -140,7 +129,7 @@ with tab_mes:
 st.markdown("---")
 
 # ── Auditoría de rutas ────────────────────────────────────────────────────────
-st.subheader("🗺️ Auditoría de Rutas Históricas")
+st.subheader("Auditoría de Rutas")
 st.markdown("Selecciona **un Vendedor** y **una Fecha** para ver su recorrido en el mapa.")
 
 col_f1, col_f2 = st.columns(2)

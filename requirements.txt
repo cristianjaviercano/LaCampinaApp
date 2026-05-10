@@ -20,3 +20,4 @@ networkx
 osmnx
 branca
 haversine
+filelock

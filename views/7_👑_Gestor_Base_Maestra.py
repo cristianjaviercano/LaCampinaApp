@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
-import json
 from pathlib import Path
+from utils.file_utils import safe_write_json
+from utils.auth import list_users, add_or_update_user, delete_user, hash_password
 
-st.set_page_config(page_title="Gestor Base Maestra", page_icon="👑", layout="wide")
-st.title("👑 Gestor de Bases de Datos Maestras")
+st.title("Base Maestra")
 st.markdown(
     "Aquí viven los tres catálogos permanentes de la empresa (**Ubicaciones**, **Vendedores**, **Productos**) "
     "y el histórico acumulado de **compras**. Edítalos sin necesidad de recargar todo el sistema cada vez."
@@ -35,7 +35,7 @@ def read_json(key):
     return pd.DataFrame()
 
 def save_json(df, key):
-    df.to_json(PATHS[key], orient="records", force_ascii=False, indent=2)
+    safe_write_json(df, PATHS[key])
 
 def split_coordinates(coord):
     if pd.isna(coord):
@@ -59,19 +59,20 @@ def metrica(label, df, col_coord=None):
 # ─────────────────────────────────────────────────────────────────────────────
 # TABS principales
 # ─────────────────────────────────────────────────────────────────────────────
-tab_ubi, tab_vend, tab_prod, tab_clientes, tab_compras = st.tabs([
+tab_ubi, tab_vend, tab_prod, tab_clientes, tab_compras, tab_users = st.tabs([
     "📍 Ubicaciones de Tiendas",
     "👤 Vendedores",
     "📦 Productos",
     "👥 Clientes Maestros",
     "🧾 Historial de Compras (Purchase Order)",
+    "🔐 Usuarios del Sistema",
 ])
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # TAB 1 – UBICACIONES
 # ═══════════════════════════════════════════════════════════════════════════════
 with tab_ubi:
-    st.subheader("📍 Base Maestra de Ubicaciones de Tiendas")
+    st.subheader("Ubicaciones de Tiendas")
     st.markdown(
         "Contiene las coordenadas geográficas de cada punto de venta. "
         "Sube un nuevo Excel para actualizar masivamente o edita celdas directamente."
@@ -145,7 +146,7 @@ with tab_ubi:
 # TAB 2 – VENDEDORES
 # ═══════════════════════════════════════════════════════════════════════════════
 with tab_vend:
-    st.subheader("👤 Base Maestra de Vendedores")
+    st.subheader("Vendedores")
     st.markdown("Catálogo de la fuerza de ventas. Raramente cambia; se puede editar directamente.")
 
     df_vend = read_json("vendedores")
@@ -210,7 +211,7 @@ with tab_vend:
 # TAB 3 – PRODUCTOS
 # ═══════════════════════════════════════════════════════════════════════════════
 with tab_prod:
-    st.subheader("📦 Base Maestra de Productos  (catálogo)")
+    st.subheader("Catálogo de Productos")
     st.markdown("Catálogo completo de SKUs con precios y stock. Se puede ampliar cuando se agreguen nuevos productos.")
 
     df_prod = read_json("productos")
@@ -293,7 +294,7 @@ with tab_prod:
 # TAB 4 – CLIENTES MAESTROS
 # ═══════════════════════════════════════════════════════════════════════════════
 with tab_clientes:
-    st.subheader("👥 Base Maestra de Clientes")
+    st.subheader("Clientes")
     st.markdown(
         "Catálogo completo de clientes con información de contacto, ubicación geográfica y estado. "
         "Sube un Excel para actualizar masivamente o edita celdas directamente en la tabla."
@@ -492,7 +493,7 @@ with tab_clientes:
 # TAB 5 – HISTORIAL DE COMPRAS
 # ═══════════════════════════════════════════════════════════════════════════════
 with tab_compras:
-    st.subheader("🧾 Historial de Compras — Purchase Order Detail Report")
+    st.subheader("Historial de Compras")
     st.markdown(
         "Este es el archivo transaccional que **sí se actualiza periódicamente**. "
         "Sube el reporte mensual de pedidos; el sistema lo acumula (o reemplaza) en `compras_maestras.json` "
@@ -625,4 +626,104 @@ with tab_compras:
                 save_json(df_comp, "compras")
                 st.cache_data.clear()
                 st.warning(f"Se eliminaron {eliminadas:,} líneas del rango seleccionado.")
+                st.rerun()
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# TAB 6 – USUARIOS DEL SISTEMA
+# ═══════════════════════════════════════════════════════════════════════════════
+with tab_users:
+    st.subheader("Usuarios")
+    st.markdown(
+        "Administra los accesos al sistema. Las contraseñas se guardan como hashes "
+        "PBKDF2-SHA256 en `datos_maestros/users.json` — ningún texto plano se almacena."
+    )
+
+    ROLES_DISPONIBLES = ["ADMINISTRADOR", "DUEÑO", "SUPERVISOR", "PREVENTISTA", "BODEGA", "CONTADOR", "DEMO"]
+    MODULOS_DISPONIBLES = ["Dashboard", "Inventario", "Clientes", "Despacho", "Reporte_Compras", "Preventista", "Rutas"]
+
+    # ── Tabla actual ──────────────────────────────────────────────────────────
+    usuarios_actuales = list_users()
+    if usuarios_actuales:
+        df_users = pd.DataFrame(usuarios_actuales)
+        df_users["access"] = df_users["access"].apply(lambda x: ", ".join(x) if isinstance(x, list) else x)
+        cols_show = [c for c in ["username", "role", "name", "access"] if c in df_users.columns]
+        st.dataframe(df_users[cols_show].rename(columns={
+            "username": "Usuario", "role": "Rol", "name": "Nombre", "access": "Módulos"
+        }), use_container_width=True, hide_index=True)
+    else:
+        st.warning("No se encontró users.json. Crea el primer usuario abajo.")
+
+    st.markdown("---")
+
+    # ── Crear / editar usuario ────────────────────────────────────────────────
+    st.markdown("### ➕ Crear o Editar Usuario")
+    usernames_existentes = [u["username"] for u in usuarios_actuales]
+
+    u1, u2 = st.columns(2)
+    with u1:
+        nuevo_username = st.text_input("Usuario (login)", placeholder="ej: vendedor4").strip().lower()
+    with u2:
+        nuevo_nombre = st.text_input("Nombre para mostrar", placeholder="ej: PEDRO GARCIA").strip().upper()
+
+    u3, u4 = st.columns(2)
+    with u3:
+        nuevo_rol = st.selectbox("Rol", ROLES_DISPONIBLES)
+    with u4:
+        nueva_clave = st.text_input(
+            "Contraseña",
+            type="password",
+            placeholder="Dejar vacío para no cambiar (si ya existe)" if nuevo_username in usernames_existentes else "Nueva contraseña"
+        )
+
+    nuevos_modulos = st.multiselect("Módulos con acceso", MODULOS_DISPONIBLES,
+                                    default=["Dashboard"] if nuevo_rol not in ["ADMINISTRADOR", "DUEÑO"] else MODULOS_DISPONIBLES)
+
+    accion = "✏️ Actualizar" if nuevo_username in usernames_existentes else "✅ Crear Usuario"
+    if st.button(accion, type="primary"):
+        if not nuevo_username:
+            st.error("El nombre de usuario no puede estar vacío.")
+        elif not nueva_clave and nuevo_username not in usernames_existentes:
+            st.error("Debes ingresar una contraseña para un usuario nuevo.")
+        else:
+            add_or_update_user(
+                username=nuevo_username,
+                password=nueva_clave if nueva_clave else None,
+                role=nuevo_rol,
+                access=nuevos_modulos,
+                name=nuevo_nombre,
+            )
+            st.success(f"Usuario **{nuevo_username}** {'actualizado' if nuevo_username in usernames_existentes else 'creado'} correctamente.")
+            st.rerun()
+
+    st.markdown("---")
+
+    # ── Cambiar contraseña ────────────────────────────────────────────────────
+    if usernames_existentes:
+        with st.expander("🔑 Cambiar contraseña de un usuario existente", expanded=False):
+            usr_cambiar = st.selectbox("Usuario", usernames_existentes, key="usr_cambiar")
+            nueva_pw1 = st.text_input("Nueva contraseña", type="password", key="pw1")
+            nueva_pw2 = st.text_input("Repetir contraseña", type="password", key="pw2")
+            if st.button("Cambiar contraseña", key="btn_cambiar_pw"):
+                if not nueva_pw1:
+                    st.error("La contraseña no puede estar vacía.")
+                elif nueva_pw1 != nueva_pw2:
+                    st.error("Las contraseñas no coinciden.")
+                else:
+                    add_or_update_user(usr_cambiar, password=nueva_pw1,
+                                       role=next(u["role"] for u in usuarios_actuales if u["username"] == usr_cambiar),
+                                       access=next(u["access"].split(", ") if isinstance(u.get("access"), str) else u.get("access", [])
+                                                   for u in usuarios_actuales if u["username"] == usr_cambiar))
+                    st.success(f"Contraseña de **{usr_cambiar}** actualizada.")
+                    st.rerun()
+
+    # ── Eliminar usuario ──────────────────────────────────────────────────────
+    usuario_actual = st.session_state.get("user_info", {}).get("username", "")
+    eliminables = [u for u in usernames_existentes if u != usuario_actual]
+    if eliminables:
+        with st.expander("🗑️ Eliminar usuario", expanded=False):
+            usr_eliminar = st.selectbox("Selecciona el usuario a eliminar", eliminables, key="usr_eliminar")
+            st.warning(f"Esta acción es irreversible. El usuario **{usr_eliminar}** perderá acceso al sistema.")
+            if st.button("Eliminar Usuario", type="secondary", key="btn_eliminar_usr"):
+                delete_user(usr_eliminar)
+                st.success(f"Usuario **{usr_eliminar}** eliminado.")
                 st.rerun()

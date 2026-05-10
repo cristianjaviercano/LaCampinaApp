@@ -89,7 +89,7 @@ def clean_sales_data(input_file):
     # 6. Exportar Lote
     target_folder = OUTPUT_DIR / max_date
     target_folder.mkdir(parents=True, exist_ok=True)
-    target_file = target_folder / "compras_detalle.json"
+    target_file = target_folder / f"compras_detalle_{Path(input_file).stem.replace(' ', '_')}.json"
 
     # Save to JSON
     df.to_json(target_file, orient="records", date_format="iso", force_ascii=False, indent=4)
@@ -101,7 +101,7 @@ def procesar_lote_completo():
         print(f"❌ La carpeta de entrada no existe: {INPUT_DIR}")
         return
         
-    archivos_excel = glob.glob(str(INPUT_DIR / "*.xlsx"))
+    archivos_excel = glob.glob(str(INPUT_DIR / "**/*.xlsx"), recursive=True)
     if not archivos_excel:
         print(f"⚠️ No hay archivos .xlsx hallados en {INPUT_DIR}")
         return

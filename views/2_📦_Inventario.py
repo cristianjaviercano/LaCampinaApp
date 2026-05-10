@@ -3,11 +3,10 @@ import pandas as pd
 import plotly.express as px
 from utils.data_loader import load_data
 
-st.set_page_config(page_title="Inventario y Operaciones", page_icon="📦", layout="wide")
-st.title("📦 Gestión y Proyección de Inventario")
-st.markdown("Análisis de rotación de productos, ventas y proyección de inventario operativo.")
+st.title("Inventario")
+st.markdown("Estado de stock en tiempo real, rotación de productos y proyección de abastecimiento.")
 
-data = load_data(st.session_state.get("fecha_historica"))
+data = load_data()
 if data is None:
     st.error("No hay datos disponibles.")
     st.stop()
@@ -19,186 +18,205 @@ if df_productos.empty or df_detalle.empty:
     st.warning("Faltan datos de productos o historial de compras. Verifica la base maestra.")
     st.stop()
 
-# 1. Ajuste del inventario maestro
-# Inicializamos el inventario físico en cero, asumiendo la nueva lógica operativa.
-df_productos['Stock_Fisico'] = 0
-
-# 2. Construcción del "Inventario de Ventas" basado en el movimiento histórico
-# Calculamos las cantidades totales vendidas y el ingreso por producto
-historico_prod = df_detalle.groupby('CodigoProducto').agg(
-    CantidadVendida=('Cantidad', 'sum'),
-    IngresosTotales=('Total', 'sum')
-).reset_index()
-
-# Cruzamos con la base de productos
-# Convertir ambos a str para evitar errores de tipo al cruzar
+# ── StockAsignado: pedidos con Estado "Asignado" aún no despachados ─────────
+# El stock físico sólo se descuenta al momento del despacho.
+# "StockAsignado" refleja unidades comprometidas en pedidos pendientes de despacho.
 df_productos['Codigo'] = df_productos['Codigo'].astype(str)
-historico_prod['CodigoProducto'] = historico_prod['CodigoProducto'].astype(str)
 
-df_inventario = pd.merge(df_productos, historico_prod, left_on='Codigo', right_on='CodigoProducto', how='left')
-df_inventario['CantidadVendida'] = df_inventario['CantidadVendida'].fillna(0)
-df_inventario['IngresosTotales'] = df_inventario['IngresosTotales'].fillna(0)
-
-# Asegurar que exista la columna 'Categoria'
-if 'Categoria' not in df_inventario.columns:
-    df_inventario['Categoria'] = "Sin Categorizar"
+if 'Estado' in df_detalle.columns and 'Cantidad' in df_detalle.columns:
+    df_asignado = (
+        df_detalle[df_detalle['Estado'].str.upper().isin(["ASIGNADO", "PENDIENTE"])]
+        .groupby('CodigoProducto')['Cantidad']
+        .sum()
+        .reset_index()
+        .rename(columns={'CodigoProducto': 'Codigo', 'Cantidad': 'StockAsignado'})
+    )
+    df_asignado['Codigo'] = df_asignado['Codigo'].astype(str)
+    df_productos = df_productos.merge(df_asignado, on='Codigo', how='left')
 else:
-    df_inventario['Categoria'] = df_inventario['Categoria'].fillna("Sin Categorizar")
+    df_productos['StockAsignado'] = 0
 
-# Sidebar filter
+df_productos['StockAsignado'] = df_productos['StockAsignado'].fillna(0)
+
+# Stock físico (columna "Stock" si existe en maestros, 0 si no)
+if 'Stock' not in df_productos.columns:
+    df_productos['Stock'] = 0
+
+df_productos['StockDisponible'] = df_productos['Stock'] - df_productos['StockAsignado']
+
+# ── Categoría ───────────────────────────────────────────────────────────────
+if 'Categoria' not in df_productos.columns:
+    df_productos['Categoria'] = "Sin Categorizar"
+else:
+    df_productos['Categoria'] = df_productos['Categoria'].fillna("Sin Categorizar")
+
+# ── Sidebar ──────────────────────────────────────────────────────────────────
 st.sidebar.header("Filtros de Inventario")
-categorias = ['Todas'] + list(df_inventario['Categoria'].unique())
-categorias.sort()
-# Mover 'Todas' al principio de la lista de forma explícita si el sort lo movió
+categorias = ['Todas'] + sorted(df_productos['Categoria'].unique().tolist())
 if 'Todas' in categorias:
     categorias.remove('Todas')
 categorias.insert(0, 'Todas')
-
 sel_cat = st.sidebar.selectbox("Filtrar por Categoría", categorias)
+dias_proyeccion = st.sidebar.slider("Días de proyección de abastecimiento", 1, 60, 7)
+
+# ── Historial de ventas ──────────────────────────────────────────────────────
+df_detalle['Fecha'] = pd.to_datetime(df_detalle['Fecha'], errors='coerce')
+fechas_validas = df_detalle['Fecha'].dropna()
+dias_operacion = max((fechas_validas.max() - fechas_validas.min()).days, 1) if not fechas_validas.empty else 1
+
+historico_prod = (
+    df_detalle.groupby('CodigoProducto')
+    .agg(CantidadVendida=('Cantidad', 'sum'), IngresosTotales=('Total', 'sum'))
+    .reset_index()
+    .rename(columns={'CodigoProducto': 'Codigo'})
+)
+historico_prod['Codigo'] = historico_prod['Codigo'].astype(str)
+
+df_inventario = pd.merge(df_productos, historico_prod, on='Codigo', how='left')
+df_inventario['CantidadVendida'] = df_inventario['CantidadVendida'].fillna(0)
+df_inventario['IngresosTotales'] = df_inventario['IngresosTotales'].fillna(0)
+df_inventario['Demanda_Diaria'] = df_inventario['CantidadVendida'] / dias_operacion
+df_inventario['StockRecomendado'] = (df_inventario['Demanda_Diaria'] * dias_proyeccion).round().astype(int)
+
 if sel_cat != 'Todas':
     df_inventario = df_inventario[df_inventario['Categoria'] == sel_cat]
 
-# Cálculo de Proyección de Compras
-# Determinamos el periodo operativo en días basado en las fechas de los pedidos
-df_detalle['Fecha'] = pd.to_datetime(df_detalle['Fecha'], errors='coerce')
-fechas_validas = df_detalle['Fecha'].dropna()
+# ════════════════════════════════════════════════════════════════════════════
+# SECCIÓN 1 — Estado actual del stock
+# ════════════════════════════════════════════════════════════════════════════
+st.markdown("### 📊 Estado Actual del Stock")
+st.caption(f"Basado en {dias_operacion} días de historial · StockDisponible = Stock Físico − Stock Asignado (pedidos pendientes de despacho)")
 
-if not fechas_validas.empty:
-    dias_operacion = (fechas_validas.max() - fechas_validas.min()).days
-else:
-    dias_operacion = 1
-
-if dias_operacion <= 0:
-    dias_operacion = 1 # prevención división por cero
-
-# Asumimos que queremos proyectar el inventario necesario para X días
-dias_proyeccion = st.sidebar.slider("Días de Proyección de Inventario a Mantener", min_value=1, max_value=60, value=7)
-
-df_inventario['Demanda_Diaria_Promedio'] = df_inventario['CantidadVendida'] / dias_operacion
-df_inventario['Inventario_Proyectado'] = (df_inventario['Demanda_Diaria_Promedio'] * dias_proyeccion).apply(lambda x: int(round(x)))
-
-# Métricas Globales
-st.markdown("### 📊 Indicadores Generales de Movimiento")
-st.caption(f"Basado en {dias_operacion} días de historial de ventas")
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    st.metric("🔖 Referencias con Movimiento", len(df_inventario[df_inventario['CantidadVendida'] > 0]))
+    st.metric("📦 Referencias totales", len(df_inventario))
 with col2:
-    st.metric("📦 Unidades Movilizadas", f"{df_inventario['CantidadVendida'].sum():,.0f}")
+    total_asignado = int(df_inventario['StockAsignado'].sum())
+    st.metric("🔒 Unidades asignadas", f"{total_asignado:,}")
 with col3:
-    st.metric("💰 Ingresos Totales Generados", f"${df_inventario['IngresosTotales'].sum():,.0f}")
+    disponible = int(df_inventario['StockDisponible'].sum())
+    st.metric("✅ Stock disponible neto", f"{disponible:,}")
 with col4:
-    st.metric("🚚 Unidades a Comprar (Proyectado)", f"{df_inventario['Inventario_Proyectado'].sum():,.0f}")
+    sin_stock = int((df_inventario['StockDisponible'] <= 0).sum())
+    st.metric("⚠️ Refs. sin stock libre", sin_stock, delta_color="inverse")
+
+# Alertas de stock comprometido
+df_critico = df_inventario[df_inventario['StockDisponible'] < 0].copy()
+if not df_critico.empty:
+    st.error(
+        f"**{len(df_critico)} producto(s) con stock sobrecomprometido** "
+        f"(StockDisponible negativo). Revisar antes del próximo despacho."
+    )
+    st.dataframe(
+        df_critico[['Codigo', 'Nombre', 'Stock', 'StockAsignado', 'StockDisponible']]
+        .sort_values('StockDisponible'),
+        use_container_width=True, hide_index=True
+    )
 
 st.markdown("---")
 
-# Análisis 1: Top Productos y Lento Movimiento
-st.subheader("Análisis 1: Rotación y Rentabilidad de Productos")
+# ════════════════════════════════════════════════════════════════════════════
+# SECCIÓN 2 — Rotación y análisis ABC
+# ════════════════════════════════════════════════════════════════════════════
+st.subheader("Rotación y Rentabilidad de Productos")
+st.caption(f"Historial operativo: {dias_operacion} días")
 
-tab1, tab2, tab3 = st.tabs(["🔥 Top Movimiento y Rentabilidad", "🐢 Lento Movimiento", "💼 ABC por Ingresos"])
+tab1, tab2, tab3 = st.tabs(["🔥 Top Movimiento", "🐢 Lento Movimiento", "💼 Clasificación ABC"])
 
 with tab1:
     col_t1, col_t2 = st.columns(2)
     with col_t1:
-        # Top 10 por unidades
-        top_unidades = df_inventario.nlargest(10, 'CantidadVendida')
-        fig1 = px.bar(top_unidades, x='CantidadVendida', y='Nombre', orientation='h', 
-                      title='Top 10 Productos Más Vendidos (Unidades)',
-                      color='CantidadVendida', color_continuous_scale='Greens')
-        fig1.update_layout(yaxis={'categoryorder':'total ascending'})
+        top_u = df_inventario.nlargest(10, 'CantidadVendida')
+        fig1 = px.bar(
+            top_u, x='CantidadVendida', y='Nombre', orientation='h',
+            title='Top 10 por Unidades Vendidas',
+            color='CantidadVendida', color_continuous_scale='Greens'
+        )
+        fig1.update_layout(yaxis={'categoryorder': 'total ascending'}, showlegend=False)
         st.plotly_chart(fig1, use_container_width=True)
     with col_t2:
-        # Top 10 por rentabilidad/ingresos
-        top_ingresos = df_inventario.nlargest(10, 'IngresosTotales')
-        fig2 = px.bar(top_ingresos, x='IngresosTotales', y='Nombre', orientation='h', 
-                      title='Top 10 Productos de Mayor Ingreso ($)',
-                      color='IngresosTotales', color_continuous_scale='Blues')
-        fig2.update_layout(yaxis={'categoryorder':'total ascending'})
+        top_i = df_inventario.nlargest(10, 'IngresosTotales')
+        fig2 = px.bar(
+            top_i, x='IngresosTotales', y='Nombre', orientation='h',
+            title='Top 10 por Ingresos ($)',
+            color='IngresosTotales', color_continuous_scale='Blues'
+        )
+        fig2.update_layout(yaxis={'categoryorder': 'total ascending'}, showlegend=False)
         st.plotly_chart(fig2, use_container_width=True)
 
 with tab2:
-    st.markdown("#### Productos con Menor Rotación")
-    st.write("Muestra los productos que han tenido algún movimiento pero en muy bajas cantidades.")
-    lento_movimiento = df_inventario[df_inventario['CantidadVendida'] > 0].nsmallest(15, 'CantidadVendida')
-    fig3 = px.bar(lento_movimiento, x='CantidadVendida', y='Nombre', orientation='h', 
-                  title='15 Productos de Lento Movimiento (Unidades > 0)',
-                  color='CantidadVendida', color_continuous_scale='Reds_r')
-    fig3.update_layout(yaxis={'categoryorder':'total descending'})
+    lento = df_inventario[df_inventario['CantidadVendida'] > 0].nsmallest(15, 'CantidadVendida')
+    fig3 = px.bar(
+        lento, x='CantidadVendida', y='Nombre', orientation='h',
+        title='15 Productos de Menor Rotación (con movimiento > 0)',
+        color='CantidadVendida', color_continuous_scale='Reds_r'
+    )
+    fig3.update_layout(yaxis={'categoryorder': 'total descending'}, showlegend=False)
     st.plotly_chart(fig3, use_container_width=True)
 
 with tab3:
-    st.markdown("#### Clasificación ABC de Productos (Basado en Ingresos)")
-    # Calcular ABC por ingresos
     df_abc = df_inventario[df_inventario['IngresosTotales'] > 0].sort_values('IngresosTotales', ascending=False).copy()
-    total_revenue = df_abc['IngresosTotales'].sum()
-    if total_revenue > 0:
-        df_abc['CumSum_%'] = df_abc['IngresosTotales'].cumsum() / total_revenue
-        
-        def class_abc(pct):
-            if pct <= 0.80: return 'A (80% de Ingresos)'
-            elif pct <= 0.95: return 'B (15% de Ingresos)'
-            else: return 'C (5% de Ingresos)'
-        df_abc['Clase_ABC'] = df_abc['CumSum_%'].apply(class_abc)
-        
-        abc_summary = df_abc.groupby('Clase_ABC').agg(
-            Referencias=('Codigo', 'count'),
-            Ingresos=('IngresosTotales', 'sum')
-        ).reset_index()
-        
-        fig_abc = px.pie(abc_summary, values='Ingresos', names='Clase_ABC', hole=0.5,
-                         title='Distribución de Ingresos por Clasificación ABC',
-                         color='Clase_ABC', color_discrete_map={
-                             'A (80% de Ingresos)': '#1b5e20',
-                             'B (15% de Ingresos)': '#4caf50',
-                             'C (5% de Ingresos)': '#a5d6a7'
-                         })
+    total_rev = df_abc['IngresosTotales'].sum()
+    if total_rev > 0:
+        df_abc['CumPct'] = df_abc['IngresosTotales'].cumsum() / total_rev
+        df_abc['ABC'] = df_abc['CumPct'].apply(
+            lambda p: 'A — 80% ingresos' if p <= 0.80 else ('B — 15% ingresos' if p <= 0.95 else 'C — 5% ingresos')
+        )
+        abc_sum = df_abc.groupby('ABC').agg(Referencias=('Codigo', 'count'), Ingresos=('IngresosTotales', 'sum')).reset_index()
+        fig_abc = px.pie(
+            abc_sum, values='Ingresos', names='ABC', hole=0.5,
+            title='Distribución de Ingresos por Clase ABC',
+            color='ABC', color_discrete_map={
+                'A — 80% ingresos': '#1b5e20',
+                'B — 15% ingresos': '#4caf50',
+                'C — 5% ingresos': '#a5d6a7',
+            }
+        )
         fig_abc.update_traces(textposition='inside', textinfo='percent+label')
         st.plotly_chart(fig_abc, use_container_width=True)
     else:
-        st.info("No hay suficientes datos de ingresos para generar la clasificación ABC.")
+        st.info("Sin datos de ingresos suficientes para la clasificación ABC.")
 
 st.markdown("---")
 
-# Análisis 2: Proyección de Compras
-st.subheader(f"Análisis 2: Proyección de Inventario a Mantener ({dias_proyeccion} días)")
-st.markdown(f"Tomando como base un histórico operativo de **{dias_operacion} días**, esta gráfica señala la cantidad proyectada y sugerida de unidades que deben solicitarse a la central para mantener la bodega abastecida durante los próximos **{dias_proyeccion} días**, mitigando la rotura de inventario.")
+# ════════════════════════════════════════════════════════════════════════════
+# SECCIÓN 3 — Proyección de abastecimiento
+# ════════════════════════════════════════════════════════════════════════════
+st.subheader(f"Proyección de Abastecimiento — {dias_proyeccion} días")
 
-df_top_proyectado = df_inventario[df_inventario['Inventario_Proyectado'] > 0].sort_values('Inventario_Proyectado', ascending=False)
+df_proy = df_inventario[df_inventario['StockRecomendado'] > 0].sort_values('StockRecomendado', ascending=False)
 
-if not df_top_proyectado.empty:
-    top_3 = df_top_proyectado.head(3)
-    alerta_txt = f"**💡 Sugerencia Estratégica de Abastecimiento:** Para garantizar la operación sin quiebre de stock en los próximos **{dias_proyeccion} días**, sugerimos solicitar urgentemente a fábrica:\n"
-    for _, fila in top_3.iterrows():
-        alerta_txt += f"- **{fila['Inventario_Proyectado']:,.0f} unds** de _{fila['Nombre']}_\n"
-    
-    if len(df_top_proyectado) > 3:
-        alerta_txt += f"*(Revisa la tabla inferior para ver las {len(df_top_proyectado)-3} referencias adicionales que requieren atención).*\n"
+if not df_proy.empty:
+    top3 = df_proy.head(3)
+    alerta = f"**Sugerencia de compra para los próximos {dias_proyeccion} días:**\n"
+    for _, r in top3.iterrows():
+        alerta += f"- **{r['StockRecomendado']:,} unds** de _{r['Nombre']}_\n"
+    if len(df_proy) > 3:
+        alerta += f"*(+{len(df_proy) - 3} referencias adicionales — ver tabla)*"
+    st.info(alerta)
 
-    st.info(alerta_txt)
+    fig_p = px.bar(
+        df_proy.head(20), x='Nombre', y='StockRecomendado',
+        title='Top 20 — Unidades Sugeridas para Mantener en Bodega',
+        color='StockRecomendado', color_continuous_scale='Oranges'
+    )
+    fig_p.update_layout(xaxis_tickangle=-35)
+    st.plotly_chart(fig_p, use_container_width=True)
 
-fig_proy = px.bar(df_top_proyectado.head(20), x='Nombre', y='Inventario_Proyectado', 
-                  title=f'Top 20 Productos: Unidades Sugeridas a Mantener',
-                  color='Inventario_Proyectado', color_continuous_scale='Oranges')
-st.plotly_chart(fig_proy, use_container_width=True)
-
-with st.expander("🔍 Ver Tabla Detallada de Proyección y Datos Consolidados", expanded=False):
-    cols_show = ['Codigo', 'Nombre', 'Categoria', 'CantidadVendida', 'IngresosTotales', 'Demanda_Diaria_Promedio', 'Inventario_Proyectado']
-    
-    df_display = df_inventario[cols_show].copy()
-    
-    # Manejar formatos para visualizacion
-    df_display['Demanda_Diaria_Promedio'] = df_display['Demanda_Diaria_Promedio'].round(2)
-    
-    df_display.rename(columns={
+with st.expander("Ver tabla completa de inventario y proyección", expanded=False):
+    cols = [c for c in ['Codigo', 'Nombre', 'Categoria', 'Stock', 'StockAsignado', 'StockDisponible',
+                        'CantidadVendida', 'IngresosTotales', 'Demanda_Diaria', 'StockRecomendado']
+            if c in df_inventario.columns]
+    df_show = df_inventario[cols].copy()
+    df_show['Demanda_Diaria'] = df_show['Demanda_Diaria'].round(2)
+    df_show.rename(columns={
         'Codigo': 'Código',
-        'CantidadVendida': 'Unidades Vendidas',
+        'CantidadVendida': 'Vendidas',
         'IngresosTotales': 'Ingresos ($)',
-        'Demanda_Diaria_Promedio': 'Demanda Promedio /día',
-        'Inventario_Proyectado': f'Stock Recomendado ({dias_proyeccion} días)'
+        'Demanda_Diaria': 'Demanda/día',
+        'StockRecomendado': f'Recomendado ({dias_proyeccion}d)',
     }, inplace=True)
-    
     st.dataframe(
-        df_display.sort_values(f'Stock Recomendado ({dias_proyeccion} días)', ascending=False),
+        df_show.sort_values(f'Recomendado ({dias_proyeccion}d)', ascending=False),
         use_container_width=True, hide_index=True
     )
-
