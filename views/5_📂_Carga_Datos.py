@@ -6,6 +6,22 @@ from datetime import datetime
 import numpy as np
 from utils.file_utils import safe_write_json
 
+# Función auxiliar para mapear nombres de columnas de manera robusta
+def find_matching_column(df_cols, possible_names):
+    norm_possibles = [
+        str(n).lower().strip().replace(" ", "").replace("_", "").replace(".", "")
+        .replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o").replace("ú", "u")
+        for n in possible_names
+    ]
+    for col in df_cols:
+        norm_col = (
+            str(col).lower().strip().replace(" ", "").replace("_", "").replace(".", "")
+            .replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o").replace("ú", "u")
+        )
+        if norm_col in norm_possibles:
+            return col
+    return None
+
 st.title("Carga de Datos")
 st.markdown("Sube los archivos Excel del sistema operativo (Ventas, Productos, Vendedores) para almacenarlos, indexarlos y habilitarlos en los Dashboards. *La base de clientes y ubicaciones se gestiona de forma centralizada en el Módulo 7.*")
 
@@ -43,10 +59,12 @@ if btn_procesar:
                 
                 if f_compras:
                     df_compras = pd.read_excel(f_compras)
-                    if 'Fecha' in df_compras.columns:
+                    # Mapeo flexible para buscar la columna de fecha
+                    col_fecha_temp = find_matching_column(df_compras.columns, ['Fecha', 'OrderDate', 'Fecha de creacion', 'FechaCreacion', 'Date'])
+                    if col_fecha_temp and col_fecha_temp in df_compras.columns:
                         try:
                             # Intentar sacar la última fecha del archivo para nombrar el lote
-                            fechas_validas = pd.to_datetime(df_compras['Fecha'], errors='coerce').dropna()
+                            fechas_validas = pd.to_datetime(df_compras[col_fecha_temp], errors='coerce').dropna()
                             if not fechas_validas.empty:
                                 fecha_lote = fechas_validas.max().date()
                         except:
@@ -60,20 +78,26 @@ if btn_procesar:
                 
                 # --- COMPRAS Y DETALLE ---
                 if f_compras is not None and df_compras is not None:
-                    # Map the column names robustly since report format varies 
-                    id_col = 'No. Pedido' if 'No. Pedido' in df_compras.columns else 'Id'
-                    fecha_col = 'Fecha' if 'Fecha' in df_compras.columns else 'Fecha de creacion'
+                    # Mapeo robusto de columnas
+                    id_col = find_matching_column(df_compras.columns, ['No. Pedido', 'No Pedido', 'Id', 'No_Pedido', 'Pedido', 'PurchaseOrderID', 'Purchase Order ID'])
+                    fecha_col = find_matching_column(df_compras.columns, ['Fecha', 'OrderDate', 'Fecha de creacion', 'FechaCreacion', 'Date'])
+                    cliente_col = find_matching_column(df_compras.columns, ['Código cliente', 'Codigo cliente', 'ClienteCodigo', 'Cliente Código', 'ClientCode', 'Código_cliente'])
+                    total_col = find_matching_column(df_compras.columns, ['Total', 'LineTotal', 'Valor Total', 'ValorTotal', 'Monto'])
                     
-                    if id_col not in df_compras.columns or fecha_col not in df_compras.columns or 'Código cliente' not in df_compras.columns or 'Total' not in df_compras.columns:
-                        faltantes = [c for c in ['Id/No. Pedido', 'Fecha/Fecha de creacion', 'Código cliente', 'Total'] if c.split('/')[0] not in df_compras.columns and (len(c.split('/')) == 1 or c.split('/')[1] not in df_compras.columns)]
+                    if not id_col or not fecha_col or not cliente_col or not total_col:
+                        faltantes = []
+                        if not id_col: faltantes.append('No. Pedido')
+                        if not fecha_col: faltantes.append('Fecha')
+                        if not cliente_col: faltantes.append('Código cliente')
+                        if not total_col: faltantes.append('Total')
                         st.error(f"El Excel de Compras no tiene las columnas necesarias. Faltan: {faltantes}")
                         raise KeyError(f"{faltantes}")
                     
                     df_compras_clean = pd.DataFrame({
                         'PurchaseOrderID': df_compras[id_col],
                         'OrderDate': pd.to_datetime(df_compras[fecha_col]).dt.strftime('%Y-%m-%d'),
-                        'LineTotal': df_compras['Total'],
-                        'ClienteCodigo': df_compras['Código cliente']
+                        'LineTotal': df_compras[total_col],
+                        'ClienteCodigo': df_compras[cliente_col]
                     })
                     df_compras_agg = df_compras_clean.groupby('PurchaseOrderID', as_index=False).agg({
                         'OrderDate': 'first',
@@ -82,26 +106,37 @@ if btn_procesar:
                     })
                     safe_write_json(df_compras_agg, dest_dir / 'compras.json')
                     
-                    # Para el detalle, el PurchaseOrdersReport(cabecera) NO tiene productos, pero rellenamos con genéricos
-                    hora_col = 'Hora' if 'Hora' in df_compras.columns else 'Hora de creacion'
-                    metodo_pago = df_compras.get('Método de pago', df_compras.get('Tipo documento', 'Desconocido'))
+                    # Para el detalle, rellenamos de forma flexible
+                    hora_col = find_matching_column(df_compras.columns, ['Hora', 'Hora de creacion', 'HoraCreacion', 'Time'])
+                    metodo_pago_col = find_matching_column(df_compras.columns, ['Método de pago', 'Metodo de pago', 'MetodoPago', 'Tipo documento', 'PaymentMethod'])
+                    direccion_col = find_matching_column(df_compras.columns, ['Dirección', 'Direccion', 'Address'])
+                    ciudad_col = find_matching_column(df_compras.columns, ['Ciudad', 'City'])
+                    barrio_col = find_matching_column(df_compras.columns, ['Barrio', 'Neighborhood'])
+                    ruta_col = find_matching_column(df_compras.columns, ['Ruta', 'DiaRuta', 'RutaDia', 'Route'])
+                    vendedor_col = find_matching_column(df_compras.columns, ['Vendedor', 'Encargado', 'Seller'])
+                    prod_cod_col = find_matching_column(df_compras.columns, ['Código producto', 'Codigo producto', 'ProductoCodigo', 'Product Code', 'CodigoProducto'])
+                    prod_nom_col = find_matching_column(df_compras.columns, ['Producto', 'Nombre producto', 'NombreProducto', 'Product Name', 'ProductoNombre'])
+                    cant_col = find_matching_column(df_compras.columns, ['Cantidad', 'Total items', 'Quantity', 'Qty'])
+                    precio_col = find_matching_column(df_compras.columns, ['Precio base', 'PrecioBase', 'Subtotal', 'Base Price'])
+
+                    metodo_pago = df_compras[metodo_pago_col] if metodo_pago_col else 'Desconocido'
                     
                     df_compras_detalle = pd.DataFrame({
                         'PurchaseOrderID': df_compras[id_col],
                         'OrderDate': pd.to_datetime(df_compras[fecha_col]).dt.strftime('%Y-%m-%d'),
-                        'Hora': pd.to_datetime(df_compras.get(hora_col, "00:00:00"), format='%H:%M:%S', errors='coerce').dt.strftime('%H:%M:%S').fillna("00:00:00"),
+                        'Hora': pd.to_datetime(df_compras[hora_col], format='%H:%M:%S', errors='coerce').dt.strftime('%H:%M:%S').fillna("00:00:00") if hora_col else "00:00:00",
                         'MetodoPago': metodo_pago,
-                        'Direccion': df_compras.get('Dirección', ''),
-                        'Ciudad': df_compras.get('Ciudad', 'SAHAGUN').fillna('SAHAGUN'),
-                        'Barrio': df_compras.get('Barrio', 'Desconocido').fillna('Desconocido'),
-                        'ClienteCodigo': df_compras['Código cliente'],
-                        'DiaRuta': df_compras.get('Ruta', ''),
-                        'Vendedor': df_compras.get('Vendedor', df_compras.get('Encargado', '')),
-                        'ProductoCodigo': df_compras.get('Código producto', 'VARIOS'),
-                        'ProductoNombre': df_compras.get('Producto', 'PRODUCTOS VARIOS (Reporte Cabecera)'),
-                        'Cantidad': df_compras.get('Cantidad', df_compras.get('Total items', 1)),
-                        'PrecioBase': df_compras.get('Precio base', df_compras.get('Subtotal', df_compras['Total'])),
-                        'LineTotal': df_compras['Total']
+                        'Direccion': df_compras[direccion_col] if direccion_col else '',
+                        'Ciudad': df_compras[ciudad_col].fillna('SAHAGUN') if ciudad_col else 'SAHAGUN',
+                        'Barrio': df_compras[barrio_col].fillna('Desconocido') if barrio_col else 'Desconocido',
+                        'ClienteCodigo': df_compras[cliente_col],
+                        'DiaRuta': df_compras[ruta_col] if ruta_col else '',
+                        'Vendedor': df_compras[vendedor_col] if vendedor_col else '',
+                        'ProductoCodigo': df_compras[prod_cod_col] if prod_cod_col else 'VARIOS',
+                        'ProductoNombre': df_compras[prod_nom_col] if prod_nom_col else 'PRODUCTOS VARIOS (Reporte Cabecera)',
+                        'Cantidad': df_compras[cant_col] if cant_col else 1,
+                        'PrecioBase': df_compras[precio_col] if precio_col else df_compras[total_col],
+                        'LineTotal': df_compras[total_col]
                     })
                     safe_write_json(df_compras_detalle, dest_dir / 'compras_detalle.json')
 
@@ -183,17 +218,23 @@ if btn_procesar:
                     try:
                         df_sold = pd.read_excel(f_sold_products)
                         
-                        col_codigo = 'Código' if 'Código' in df_sold.columns else ('Codigo' if 'Codigo' in df_sold.columns else None)
+                        col_codigo = find_matching_column(df_sold.columns, ['Código', 'Codigo', 'ProductoCodigo', 'ProductCode', 'Code'])
+                        col_nombre = find_matching_column(df_sold.columns, ['Nombre', 'Producto', 'ProductName', 'Name'])
+                        col_cantidad = find_matching_column(df_sold.columns, ['Total productos vendidos', 'Cantidad', 'CantidadVendida', 'Quantity', 'Qty'])
+                        col_precio = find_matching_column(df_sold.columns, ['Precio base promedio', 'Precio base', 'PrecioPromedio', 'AveragePrice', 'Price'])
+                        col_total = find_matching_column(df_sold.columns, ['Total base (sin impuestos)', 'Total', 'TotalIngresos', 'LineTotal', 'Revenue'])
+                        col_clientes = find_matching_column(df_sold.columns, ['Clientes que compraron', 'ClientesDiferentes', 'Clientes', 'Customers'])
+                        
                         if not col_codigo:
-                            raise KeyError(f"No se encontró la columna 'Código'. Columnas detectadas: {df_sold.columns.tolist()}")
+                            raise KeyError(f"No se encontró la columna de Código de producto. Columnas detectadas: {df_sold.columns.tolist()}")
                             
                         df_sold_clean = pd.DataFrame({
                             'CodigoProducto': df_sold[col_codigo],
-                            'Nombre': df_sold.get('Nombre', 'Variado'),
-                            'CantidadVendida': df_sold.get('Total productos vendidos', df_sold.get('Cantidad', 0)),
-                            'PrecioPromedio': df_sold.get('Precio base promedio', df_sold.get('Precio base', 0)),
-                            'TotalIngresos': df_sold.get('Total base (sin impuestos)', df_sold.get('Total', 0)),
-                            'ClientesDiferentes': df_sold.get('Clientes que compraron', 1)
+                            'Nombre': df_sold[col_nombre] if col_nombre else 'Variado',
+                            'CantidadVendida': df_sold[col_cantidad] if col_cantidad else 0,
+                            'PrecioPromedio': df_sold[col_precio] if col_precio else 0,
+                            'TotalIngresos': df_sold[col_total] if col_total else 0,
+                            'ClientesDiferentes': df_sold[col_clientes] if col_clientes else 1
                         })
                         safe_write_json(df_sold_clean, dest_dir / 'sold_products.json')
                         procesados.append("Reporte Totalizado de Ventas por Producto")
@@ -205,12 +246,21 @@ if btn_procesar:
                 if f_productos is not None:
                     try:
                         df_productos = pd.read_excel(f_productos)
+                        col_prod_codigo = find_matching_column(df_productos.columns, ['CÓDIGO (Obligatorio)', 'Código', 'Codigo', 'Code', 'ProductCode'])
+                        col_prod_nombre = find_matching_column(df_productos.columns, ['NOMBRE (Obligatorio)', 'Nombre', 'Name', 'ProductName'])
+                        col_prod_cat = find_matching_column(df_productos.columns, ['CÓDIGO CATEGORÍA', 'Categoría', 'Categoria', 'Category'])
+                        col_prod_precio = find_matching_column(df_productos.columns, ['PRECIO BASE (Obligatorio)', 'Precio base', 'Precio', 'Price'])
+                        col_prod_stock = find_matching_column(df_productos.columns, ['CANTIDAD EN INVENTARIO', 'Stock', 'Inventario', 'Cantidad'])
+
+                        if not col_prod_codigo or not col_prod_nombre or not col_prod_precio:
+                            raise KeyError("Faltan campos obligatorios en el archivo de Productos (Código, Nombre o Precio).")
+
                         df_productos_clean = pd.DataFrame({
-                            'Codigo': df_productos['CÓDIGO (Obligatorio)'],
-                            'Nombre': df_productos['NOMBRE (Obligatorio)'],
-                            'Categoria': df_productos['CÓDIGO CATEGORÍA'],
-                            'Precio': df_productos['PRECIO BASE (Obligatorio)'],
-                            'Stock': df_productos['CANTIDAD EN INVENTARIO']
+                            'Codigo': df_productos[col_prod_codigo],
+                            'Nombre': df_productos[col_prod_nombre],
+                            'Categoria': df_productos[col_prod_cat] if col_prod_cat else 'Sin Categoria',
+                            'Precio': df_productos[col_prod_precio],
+                            'Stock': df_productos[col_prod_stock] if col_prod_stock else 0
                         })
                         df_productos_clean['Categoria'] = df_productos_clean['Categoria'].fillna('Sin Categoria')
                         df_productos_clean['Stock'] = df_productos_clean['Stock'].fillna(0)
@@ -224,9 +274,15 @@ if btn_procesar:
                 if f_vendedores is not None:
                     try:
                         df_vendedores = pd.read_excel(f_vendedores)
+                        col_vend_codigo = find_matching_column(df_vendedores.columns, ['USUARIO (NUMÉRICO)', 'Usuario', 'Código', 'Codigo', 'ID', 'SellerID'])
+                        col_vend_nombre = find_matching_column(df_vendedores.columns, ['NOMBRE', 'Nombre', 'Name'])
+                        
+                        if not col_vend_codigo or not col_vend_nombre:
+                            raise KeyError("Faltan campos obligatorios en el archivo de Vendedores (Usuario o Nombre).")
+
                         df_vendedores_clean = pd.DataFrame({
-                            'Codigo': df_vendedores['USUARIO (NUMÉRICO)'],
-                            'Nombre': df_vendedores['NOMBRE']
+                            'Codigo': df_vendedores[col_vend_codigo],
+                            'Nombre': df_vendedores[col_vend_nombre]
                         })
                         safe_write_json(df_vendedores_clean, dest_dir / 'vendedores.json')
                         procesados.append("Vendedores")
