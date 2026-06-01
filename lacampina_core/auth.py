@@ -88,8 +88,11 @@ def authenticate(username: str, password: str):
     """
     Verifica credenciales. Retorna dict del usuario sin password_hash, o None.
     """
+    if not username:
+        return None
     users = load_users()
-    user = users.get(username)
+    uname_clean = username.strip().lower()
+    user = users.get(uname_clean)
     if user and verify_password(password, user["password_hash"]):
         return {k: v for k, v in user.items() if k != "password_hash"}
     return None
@@ -110,8 +113,11 @@ def add_or_update_user(username: str, password: str | None, role: str,
     Crea o actualiza un usuario.
     Si password es None o vacío, conserva el hash existente (solo actualiza metadata).
     """
+    if not username:
+        return
     users = load_users()
-    existing_hash = users.get(username, {}).get("password_hash", "")
+    uname_clean = username.strip().lower()
+    existing_hash = users.get(uname_clean, {}).get("password_hash", "")
 
     entry: dict = {
         "password_hash": hash_password(password) if password else existing_hash,
@@ -121,15 +127,18 @@ def add_or_update_user(username: str, password: str | None, role: str,
     if name:
         entry["name"] = name
 
-    users[username] = entry
+    users[uname_clean] = entry
     save_users(users)
 
 
 def delete_user(username: str) -> bool:
     """Elimina un usuario. Devuelve True si existía."""
+    if not username:
+        return False
     users = load_users()
-    if username in users:
-        del users[username]
+    uname_clean = username.strip().lower()
+    if uname_clean in users:
+        del users[uname_clean]
         save_users(users)
         return True
     return False
