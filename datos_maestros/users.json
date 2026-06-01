@@ -1,0 +1,119 @@
+{
+  "admin": {
+    "password_hash": "9865bf261080b1b640b1337366bd31a5:177512e0fa194f6b4b1c1c308432e052eb861e74e37ff64a850f0378eafaa518",
+    "role": "ADMINISTRADOR",
+    "access": [
+      "Dashboard",
+      "Inventario",
+      "Clientes",
+      "Despacho",
+      "Reporte_Compras",
+      "Preventista"
+    ],
+    "name": "Administrador Principal"
+  },
+  "dueño": {
+    "password_hash": "c593496d3252f06ed612e41b0452783f:60a650b98563d3e824ea2188416be11acc114a4537467947deddb7cb98e21bf2",
+    "role": "DUEÑO",
+    "access": [
+      "Dashboard",
+      "Inventario",
+      "Clientes",
+      "Rutas",
+      "Reporte_Compras",
+      "Preventista"
+    ]
+  },
+  "propietario": {
+    "password_hash": "45d0d25f384d906a61d3f21132205cb7:79049636d5f72e3144c822cf0918b89ba191e57b2563443e257d5e4f75b2c0e5",
+    "role": "DUEÑO",
+    "access": [
+      "Dashboard",
+      "Inventario",
+      "Clientes",
+      "Rutas"
+    ]
+  },
+  "supervisor": {
+    "password_hash": "45b444a67006e93a6d6495cc059c07d1:c6f9b435d73f8652a6c91dc83e0e3f975831aceef401457c8db85a026f35eecf",
+    "role": "SUPERVISOR",
+    "access": [
+      "Dashboard",
+      "Inventario",
+      "Clientes",
+      "Reporte_Compras",
+      "Rutas"
+    ],
+    "name": "Supervisor de Ruta"
+  },
+  "vendedor1": {
+    "password_hash": "ab1d12adacbda1171d6c40c85ca942b0:3b1206fe718d81244df4f32f29c580a6dc6b27f02889a718069bd4c237083591",
+    "role": "PREVENTISTA",
+    "name": "DAIFER GENEY",
+    "access": [
+      "Preventista"
+    ]
+  },
+  "vendedor2": {
+    "password_hash": "1fc563cac6e207754f0095e37be45388:4141fd6b4fd275e0b30612e6b693178889ddcd936d68daf45d00ac673748a83f",
+    "role": "PREVENTISTA",
+    "name": "JUNIOR MARQUEZ",
+    "access": [
+      "Preventista"
+    ]
+  },
+  "vendedor3": {
+    "password_hash": "94910b9ab4864f2fb39e4cfcdeca984b:7fbf3446604795fb77c631bdb39400614a4a273284de644ea6a989d681a3eeb6",
+    "role": "PREVENTISTA",
+    "name": "JOSE PEREZ",
+    "access": [
+      "Preventista"
+    ]
+  },
+  "contador": {
+    "password_hash": "ab1cd992a2bcda19f11f094ac832c735:0892290421035c2fd4c4bb82cb04b55bb4b17a749258b844c19c0a1f9d45b971",
+    "role": "CONTADOR",
+    "access": [
+      "Dashboard"
+    ]
+  },
+  "bodega1": {
+    "password_hash": "5d2270620b5e73497a1c6b61a0f5f4dd:98021fed14587820fb2db94cc3474fdf76a9fddd6da283c893c6cf4384a6cd8c",
+    "role": "BODEGA",
+    "access": [
+      "Despacho",
+      "Inventario"
+    ],
+    "name": "Operador de Bodega"
+  },
+  "demo": {
+    "password_hash": "49f2f0a92c17d48183b0d1db6af2cbce:c768d0ed03c6ec347be53555f5e54c0a88e31a392fc16f02918943e3c5adf099",
+    "role": "DEMO",
+    "access": [
+      "Dashboard"
+    ],
+    "name": "Usuario Demo"
+  },
+  "dueno": {
+    "password_hash": "427665e4aaa8e2844aced81d38c5f1e2:44929940ad66730b25ba8773735bf1ff22cda2fc76b999c050afbd42caff0ced",
+    "role": "DUEÑO",
+    "access": [
+      "Dashboard",
+      "Inventario",
+      "Clientes",
+      "Despacho",
+      "Reporte_Compras",
+      "Preventista"
+    ],
+    "name": "Dueño del Almacén"
+  },
+  "preventista1": {
+    "password_hash": "d6db0401dc06c60fdf937cdbeec46646:0587e7bb228472c2c6139134397b200c56ff20175f3ed81b53ff9e4d280a786b",
+    "role": "PREVENTISTA",
+    "access": [
+      "Dashboard",
+      "Preventista"
+    ],
+    "name": "Preventista 1"
+  }
+}
